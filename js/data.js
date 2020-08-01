@@ -17,6 +17,6 @@ function test(){
     for(var i = 0;i<subjects.length;i++){
         // alert(subjects[i].Name);
         var tmp = document.getElementsByClassName("debug");
-        tmp[0].innerHTML += subjects[i].Name; 
+        tmp[0].innerHTML += subjects[i].Code; 
     }
 }
