@@ -579,6 +579,81 @@ subjectsData = {
                     felev: 4,
                     elo:["BMEEOTMAT42","BMEEOHSAT41"],
                     substitutes:[],
+                    branches:["magasepites","hidesmutargy"],
+                },
+                {
+                    name: "Faszerkezetek",
+                    code: "BMEEOHSAS44",
+                    credit: 3,
+                    lecture: 2,
+                    seminar: 0,
+                    lab: 0,
+                    consultation: 0,
+                    requirement: "Félévközi",
+                    felev: 4,
+                    elo:["BMEEOTMAT42","BMEEOHSAT41"],
+                    substitutes:[
+                        {
+                            name: "BIM az építőiparban",
+                            code: "BMEEOFTAM41",
+                        },
+                        {
+                            name: "Közlekedési földművek és víztelenítése",
+                            code: "BMEEOGMAI41",
+                        },
+                        {
+                            name: "Városi környezetvédelem",
+                            code: "BMEEOVKAI42",
+                        },
+                        {
+                            name: "Közlekedési létesítmények pályaszerkezetei",
+                            code: "BMEEOUVAI41",
+                        },
+                        {
+                            name: "Műholdas helymeghatározás",
+                            code: "BMEEOAFAG45",
+                        },
+                        {
+                            name: "Térinformatikai modellezés",
+                            code: "BMEEOFTAG41",
+                        },
+                    ],
+                    branches:["geotech","epitestech","szerkezetianyagok"],
+                },
+                {
+                    name: "Faszerkezetek",
+                    code: "BMEEOHSAS44",
+                    credit: 3,
+                    lecture: 2,
+                    seminar: 0,
+                    lab: 0,
+                    consultation: 0,
+                    requirement: "Félévközi",
+                    felev: 4,
+                    elo:["BMEEOTMAT42","BMEEOHSAT41"],
+                    substitutes:[
+                        {
+                            name: "Közlekedési földművek és víztelenítése",
+                            code: "BMEEOGMAI41",
+                        },
+                        {
+                            name: "Városi környezetvédelem",
+                            code: "BMEEOVKAI42",
+                        },
+                        {
+                            name: "Közlekedési létesítmények pályaszerkezetei",
+                            code: "BMEEOUVAI41",
+                        },
+                        {
+                            name: "Műholdas helymeghatározás",
+                            code: "BMEEOAFAG45",
+                        },
+                        {
+                            name: "Térinformatikai modellezés",
+                            code: "BMEEOFTAG41",
+                        },
+                    ],
+                    branches:["epitmenyinformacio"],
                 },
                 {
                     name: "Általános szilárdságtan",
@@ -721,6 +796,74 @@ subjectsData = {
                             code: "BMEEOFTAG41",
                         },
                     ],
+                    branches:["magasepites","hidesmutargy","epitestech","szerkezetianyagok"],
+
+                },
+                {
+                    name: "Kőzetmechanika",
+                    code: "BMEEOGMAS41",
+                    credit: 3,
+                    lecture: 1,
+                    seminar: 1,
+                    lab: 0,
+                    consultation: 0,
+                    requirement: "Félévközi",
+                    felev: 6,
+                    elo:["BMEEOGMAT41"],
+                    substitutes:[],
+                    branches:["geotech"],
+
+                },
+                {
+                    name: "Kőzetmechanika",
+                    code: "BMEEOGMAS41",
+                    credit: 3,
+                    lecture: 1,
+                    seminar: 1,
+                    lab: 0,
+                    consultation: 0,
+                    requirement: "Félévközi",
+                    felev: 6,
+                    elo:["BMEEOGMAT41"],
+                    substitutes:[
+                        {
+                            name: "Közlekedési földművek és víztelenítése",
+                            code: "BMEEOGMAI41",
+                        },
+                        {
+                            name: "Városi környezetvédelem",
+                            code: "BMEEOVKAI42",
+                        },
+                        {
+                            name: "Közlekedési létesítmények pályaszerkezetei",
+                            code: "BMEEOUVAI41",
+                        },
+                        {
+                            name: "Műholdas helymeghatározás",
+                            code: "BMEEOAFAG45",
+                        },
+                        {
+                            name: "Térinformatikai modellezés",
+                            code: "BMEEOFTAG41",
+                        },
+                    ],
+                    branches:["epitmenyinformacio"],
+
+                },
+                {
+                    name: "BIM az építőiparban",
+                    code: "BMEEOFTAM41",
+                    credit: 3,
+                    lecture: 2,
+                    seminar: 0,
+                    lab: 0,
+                    consultation: 0,
+                    requirement: "Félévközi",
+                    felev: 5,
+                    elo:[],
+                    substitutes:[],
+                    branches:["epitmenyinformacio"],
+
                 },
                 {
                     name: "Földalatti műtárgyak, alapozás",
