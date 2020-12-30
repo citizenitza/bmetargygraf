@@ -11,187 +11,198 @@
  </head>
 
 <body onunload="pageUnload()" onload="pageInit('szerkezet')">
-<div class="pageWrap">
-<div id="type" data-szak="jarmu"></div>
-<div class="container">
-    <div class="sidebar">
-		<div class="sidebarInner">
-            <div class="buttonCont">
-               <a href="jarmu.html">
-                <div class="button" id="jarmu">
-                    <div class="icon"><img src="icons/szerkezet.fw.png" /></div>
-                    <div class="title">Szerkezet-Építőmérnöki ágazat</div>
+    <div class="pageWrap">
+        <div id="type" data-szak="jarmu"></div>
+        <div class="container">
+            <div class="sidebar">
+                <div class="sidebarInner">
+                    <div class="buttonCont">
+                    <a href="jarmu.html">
+                        <div class="button" id="jarmu">
+                            <div class="icon"><img src="icons/szerkezet.fw.png" /></div>
+                            <div class="title">Szerkezet-Építőmérnöki ágazat</div>
+                        </div>
+                        </a>
+                        <a href="kozlek.html">
+                        <div class="button" id="kozlek">
+                            <div class="icon"><img src="icons/infrastruktura.fw.png" /></div>
+                            <div class="title">Infrastruktúra-Építőmérnöki ágazat</div>
+                        </div>
+                        </a>
+                        <a href="logisztika.html" >
+                        <div class="button" id="log">
+                            <div class="icon"><img  src="icons/geoinformatika.fw.png" /></div>
+                            <div class="title">Geoinformatika-Építőmérnöki ágazat</div>
+                        </div>
+                        </a>
+                        <a href="info.html" >
+                        <div class="button" id="inf">
+                            <div class="icon"><img  src="icons/info.fw.png" /></div>
+                            <div class="title infospec">Info</div>
+                        </div>
+                        </a>
+                    </div>
                 </div>
-                </a>
-                <a href="kozlek.html">
-                 <div class="button" id="kozlek">
-                    <div class="icon"><img src="icons/infrastruktura.fw.png" /></div>
-                    <div class="title">Infrastruktúra-Építőmérnöki ágazat</div>
-                </div>
-                </a>
-                <a href="logisztika.html" >
-                <div class="button" id="log">
-                    <div class="icon"><img  src="icons/geoinformatika.fw.png" /></div>
-                    <div class="title">Geoinformatika-Építőmérnöki ágazat</div>
-                </div>
-                </a>
-                   <a href="info.html" >
-                <div class="button" id="inf">
-                    <div class="icon"><img  src="icons/info.fw.png" /></div>
-                    <div class="title infospec">Info</div>
-                </div>
-                </a>
             </div>
+            
+            
+            
+            
+            
+        <div class="content">
+        <div class="gombWrap">
+        <!--	<div class="gomb" id="share" title="Megosztás" onclick="createLink()"><img src="icons/share.fw.png" /></div>-->
+            <div class="gomb" id="clear" title="Törlés" onclick="deleteData()"><img src="icons/delete.fw.png" /></div>
+            <div class="clear"></div>
         </div>
-    </div>
-    
-    
-    
-    
-    
-<div class="content">
-<div class="gombWrap">
-<!--	<div class="gomb" id="share" title="Megosztás" onclick="createLink()"><img src="icons/share.fw.png" /></div>-->
-    <div class="gomb" id="clear" title="Törlés" onclick="deleteData()"><img src="icons/delete.fw.png" /></div>
-    <div class="clear"></div>
-</div>
-<div class="gombWrap">
-	<div id="linkToShare"></div>
-</div>
-<h2 class="pageTitle">Szerkezet-Építőmérnöki ágazat</h2>
-<div class="kreditWrap">
-	<div>
-			<div id="kreditBar" class="kreditBar">
-				<div class="bar Telj" id="Telj">0</div>
-				<div class="bar Felv" id="Felv">0</div>
-			</div>
-	</div>
-	
-</div>
-
-<div class="middleSection">
-	<div class="szakiranyWrap">
-        <h4>Szakirány:</h4>
-        <div class="selectWrap">
-        <select id="szakirany" onchange="szakirany()">
-          <option>Válassz specializációt</option>
-          <option data-szak="gep"  value="1">Gépjárművek</option>
-          <option data-szak="leg"  value="2">Légijárművek</option>
-          <option data-szak="vas"  value="3">Vasúti járművek</option>
-          <option data-szak="viz"  value="4">Vízi járművek</option>
-          <option data-szak="mech" value="5">Járműmechatronika</option>
-          <option data-szak="gyar" value="6">Járműgyártás</option>
-          <option data-szak="ep"   value="7">Építőgépek</option>
-          <option data-szak="aut"  value="8">Automatizált anyagmozgató berendezések és robotok</option>
-          <option data-szak="fep"  value="9">Járműfelépítmények</option>
-        </select>
+        <div class="gombWrap">
+            <div id="linkToShare"></div>
         </div>
-    </div>
-    <div class="targyInfo">
-       	<div class="targyInfoBox boxNarrow">
-            <div class="targyInfoTitle">Név:</div>
-            <div class="targyInfoTitle">Kredit:</div>
-            <div class="targyInfoTitle">Tárgykód:</div>
-         </div>
-         <div class="targyInfoBox">
-            <div class="targyInfoSingle" id="targyNev"></div>
-            <div class="targyInfoSingle" id="targyKredit"></div>
-            <div class="targyInfoSingle" id="targyKod"></div>
-         </div>
-          <div class="targyInfoBox boxNarrow2">
-            <div class="targyInfoTitle">Követelmény:</div>
-            <div class="targyInfoTitle">Tanszék:</div>
-            <div class="targyInfoTitle">Felelős oktató:</div>
-         </div>
-         <div class="targyInfoBox">
-            <div class="targyInfoSingle" id="targyKovetelmeny"></div>
-            <div class="targyInfoSingle" id="targyTanszek"></div>
-            <div class="targyInfoSingle" id="targyFelelos"></div>
-         </div>
-    </div>
-</div>
-<br class="clear" />
-<div class="felevWrap">
-			<div class="felev">
-            	<div class="title">1. félév</div>
-                <div class="torzs" id="torzs_01">
-
-                </div>
-            </div>
-            <div class="felev">
-            <div class="title">2. félév</div>
-                <div class="torzs" id="torzs_02">
-                     
-                </div>
-            </div>
-            <div class="felev">
-            <div class="title">3. félév</div>
-            <div class="torzs" id="torzs_03">
-                     
-                </div>
-            </div>
-            <div class="felev">
-            <div class="title">4. félév</div>
-            <div class="torzs" id="torzs_04">
-                    
-            </div>
-            <div class="agazat" id="agazat_04"> 
-            </div>
-            </div>
-            <div class="felev">
-            	<div class="title">5. félév</div>
-                <div class="torzs" id="torzs_05">
-                     
-                </div>
-                <div class="agazat" id="agazat_05"> 
+        <h2 class="pageTitle">Szerkezet-Építőmérnöki ágazat</h2>
+        <div class="kreditWrap">
+            <div>
+                    <div id="kreditBar" class="kreditBar">
+                        <div class="bar Telj" id="Telj">0</div>
+                        <div class="bar Felv" id="Felv">0</div>
                     </div>
             </div>
-            <div class="felev">
-                 <div class="title">6. félév</div>
-                 <div class="torzs" id="torzs_06">
-                     
-                </div>
-                 <div class="agazat" id="agazat_06"> 
-                </div>
-                <div class="spec" id="spec_06"> 
-                </div>
-            </div>
-            <div class="felev">
-              <div class="title">7. félév</div>
-              <div class="torzs" id="torzs_07">
-                     
-                </div>
-                <div class="agazat" id="agazat_07"> 
-                </div>
-                <div class="spec" id="spec_07"> 
-                </div>
-            </div>
-            <div class="felev">
-                <div class="title">8. félév</div>
-                <div class="torzs" id="torzs_08">
-                     
-                </div>
-                <div class="agazat" id="agazat_08"> 
-                </div>
-                <div class="spec" id="spec_08"> 
-                </div>
-            </div>
-               <div class="clear"></div>
-   	</div>
-   
-    <div class="banner"> 
-    <div class="gombWrap">Színmagyarázat:</div>
-<div class="minta">Nem felvehető</div>
-<div class="minta felveheto">Felvehető</div>
-<div class="minta felvett">Felvett</div>
-<div class="minta teljesitett">Teljesített</div>
-<div class="minta utokovetelmeny">Ráépülő</div>
-<div class="minta elokovetelmeny">Előfeltétel</div>
-<div class="clear"></div>
-</div>
-   </div>
+            
+        </div>
 
-</div>
+        <div class="middleSection">
+            <div class="szakiranyWrap">
+                <div class="selectWrap">
+                    <h4>Ágazat:</h4>
+                    <select id="szakirany" onchange="szakirany()">
+                        <option>Válassz specializációt</option>
+                        <option data-szak="gep"  value="1">Gépjárművek</option>
+                    </select>
+                </div>
+                <div class="selectWrap">
+                    <h4>Specializáció:</h4>
+                    <select id="szakirany" onchange="szakirany()">
+                        <option>Válassz specializációt</option>
+                        <option data-szak="gep"  value="1">Gépjárművek</option>
+                    </select>
+                </div>
+            </div>
+            <div class="targyInfo">
+                <div class="targyInfoBox boxNarrow">
+                    <div class="targyInfoTitle">Név:</div>
+                    <div class="targyInfoTitle">Kredit:</div>
+                    <div class="targyInfoTitle">Tárgykód:</div>
+                </div>
+                <div class="targyInfoBox">
+                    <div class="targyInfoSingle" id="targyNev"></div>
+                    <div class="targyInfoSingle" id="targyKredit"></div>
+                    <div class="targyInfoSingle" id="targyKod"></div>
+                </div>
+                <div class="targyInfoBox boxNarrow2">
+                    <div class="targyInfoTitle">Követelmény:</div>
+                    <div class="targyInfoTitle">Tanszék:</div>
+                    <div class="targyInfoTitle">Felelős oktató:</div>
+                </div>
+                <div class="targyInfoBox">
+                    <div class="targyInfoSingle" id="targyKovetelmeny"></div>
+                    <div class="targyInfoSingle" id="targyTanszek"></div>
+                    <div class="targyInfoSingle" id="targyFelelos"></div>
+                </div>
+            </div>
+        </div>
+        <br class="clear" />
+
+        <div class="felevWrap">
+                    <div class="felev">
+                        <div class="title">1. félév</div>
+                        <div class="torzs" id="torzs_01">
+
+                        </div>
+                    </div>
+                    <div class="felev">
+                    <div class="title">2. félév</div>
+                        <div class="torzs" id="torzs_02">
+                            
+                        </div>
+                    </div>
+                    <div class="felev">
+                    <div class="title">3. félév</div>
+                    <div class="torzs" id="torzs_03">
+                            
+                        </div>
+                    </div>
+                    <div class="felev">
+                    <div class="title">4. félév</div>
+                    <div class="torzs" id="torzs_04">
+                            
+                    </div>
+                    <div class="agazat" id="agazat_04"> 
+                    </div>
+                    </div>
+                    <div class="felev">
+                        <div class="title">5. félév</div>
+                        <div class="torzs" id="torzs_05">
+                            
+                        </div>
+                        <div class="agazat" id="agazat_05"> 
+                            </div>
+                    </div>
+                    <div class="felev">
+                        <div class="title">6. félév</div>
+                        <div class="torzs" id="torzs_06">
+                            
+                        </div>
+                        <div class="agazat" id="agazat_06"> 
+                        </div>
+                        <div class="spec" id="spec_06"> 
+                        </div>
+                    </div>
+                    <div class="felev">
+                    <div class="title">7. félév</div>
+                    <div class="torzs" id="torzs_07">
+                            
+                        </div>
+                        <div class="agazat" id="agazat_07"> 
+                        </div>
+                        <div class="spec" id="spec_07"> 
+                        </div>
+                    </div>
+                    <div class="felev">
+                        <div class="title">8. félév</div>
+                        <div class="torzs" id="torzs_08">
+                            
+                        </div>
+                        <div class="agazat" id="agazat_08"> 
+                        </div>
+                        <div class="spec" id="spec_08"> 
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+            </div>
+            <div class="mintaSection"> 
+                    <br/>
+                    <br/>
+                </div>
+            <div class="mintaSection"> 
+                <div class="gombWrap">Színmagyarázat:</div>
+                <div class="minta">Nem felvehető</div>
+                <div class="minta felveheto">Felvehető</div>
+                <div class="minta felvett">Felvett</div>
+                <div class="minta teljesitett">Teljesített</div>
+                <div class="minta utokovetelmeny">Ráépülő</div>
+                <div class="minta elokovetelmeny">Előfeltétel</div>
+                <div class="clear"></div>
+            </div>
+            <div class="mintaSection"> 
+                    <div class="minta alairas">Aláírás elegendő</div>
+                    <div class="minta azonosfelev">Azonos félévben felvehető</div>
+            </div>
+            <div class="mintaSection"> 
+                <br/>
+                <br/>
+            </div>
+        </div>
+
+    </div>
 <a href="https://www.mystat.hu/query.php?id=158092" target="_blank"><script language="JavaScript" type="text/javascript" src="https://stat.mystat.hu/stat.php?h=1&amp;id=158092"></script></a><noscript><a href="https://www.mystat.hu/query.php?id=158092" target="_blank"><img src="https://stat.mystat.hu/collect.php?id=158092&amp;h=1" alt="mystat" border="0"></img></a></noscript>
 </div>
 </body>

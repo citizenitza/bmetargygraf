@@ -2,11 +2,19 @@
 select:active, select:hover {
   outline-color: #6C3C25;
 }
-body {
-    padding:50px;
-	font-family: 'titillium-regular';
-	background-color:white;
-}
+html {
+	height: 100%;
+	box-sizing: border-box;
+	margin:0px;
+	padding:0px;
+	font-family: 'Raleway', sans-serif; 
+  
+  }
+  body{
+	  background-color:#EEE;
+	  margin:0px;
+		padding:0px;
+  }
 .pageWrap{
 	min-width:1085px;
 }
@@ -103,19 +111,7 @@ body {
 	font-weight:normal;
 	font-style:normal;
 }
-html {
-  height: 100%;
-  box-sizing: border-box;
-  margin:0px;
-  padding:0px;
-  font-family: 'Raleway', sans-serif; 
 
-}
-body{
-	background-color:#EEE;
-	margin:0px;
-  	padding:0px;
-}
 .sidebar{
 	position:fixed;
 	float:left;
@@ -295,9 +291,9 @@ body{
 	font-family: 'raleway-semibold';
 }
 .elokovetelmeny{
-	background-color:#7f8c8d ;
+	background-color:#e1b12c ;
 	color:#fff;
-	border:solid 1px #7f8c8d ;
+	border:solid 1px #e1b12c ;
 	font-family: 'raleway-semibold';
 		-webkit-transition:  0.3s, ease;
     -moz-transition:  0.3s, ease;
@@ -317,6 +313,28 @@ body{
     -o-transition:  0.3s, ease;
     transition:  0.3s, ease;
 	
+}
+.alairas{
+	background-color:#0097e6 ;
+	color:#fff;
+	border:solid 1px #0097e6 ;
+	font-family: 'raleway-semibold';
+		-webkit-transition:  0.3s, ease;
+    -moz-transition:  0.3s, ease;
+    -ms-transition: 0.3s, ease;
+    -o-transition:  0.3s, ease;
+    transition:  0.3s, ease;
+}
+.azonosfelev{
+	background-color:#8c7ae6 ;
+	color:#fff;
+	border:solid 1px #8c7ae6 ;
+	font-family: 'raleway-semibold';
+		-webkit-transition:  0.3s, ease;
+    -moz-transition:  0.3s, ease;
+    -ms-transition: 0.3s, ease;
+    -o-transition:  0.3s, ease;
+    transition:  0.3s, ease;
 }
 .gombWrap{
 	width:100%;
@@ -442,19 +460,26 @@ body{
 	float:left;
 	margin-left:20px;
 }
+.mintaSection{
+	margin-bottom: 10px;
+}
 /* Info section ********************************************/
+#szakirany{
+	width: 80%;
+}
 .szakiranyWrap{
 	position:relative;
 	width:40%;
 	float:left;
 }
 .szakiranyWrap h4{
-	margin-top:-10px;
-	padding-left:30px;
+
 }
 .selectWrap{
 	position:relative;
-	padding-left:30px;
+	width: 40%;
+	float: left;
+	padding-left:10px;
 }
 .szakiranyWrap select{
 
