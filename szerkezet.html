@@ -6,16 +6,11 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/data_targyak.js"></script>
-<script src="js/szin.js"></script>
 <script src="js/data.js"></script>
-<script src="js/save.js"></script>
-<script src="js/szakirany_jar.js"></script>
 
-<script src="js/cookie_jar.js"></script>
-<script src="js/pre_jar.js"></script>
  </head>
 
-<body onunload="pageUnload()">
+<body onunload="pageUnload()" onload="pageInit('szerkezet')">
 <div class="pageWrap">
 <div id="type" data-szak="jarmu"></div>
 <div class="container">
@@ -43,7 +38,7 @@
                    <a href="info.html" >
                 <div class="button" id="inf">
                     <div class="icon"><img  src="icons/info.fw.png" /></div>
-                    <div class="title">Info</div>
+                    <div class="title infospec">Info</div>
                 </div>
                 </a>
             </div>
@@ -63,7 +58,7 @@
 <div class="gombWrap">
 	<div id="linkToShare"></div>
 </div>
-<h2 class="pageTitle">Járműmérnök BSc </h2>
+<h2 class="pageTitle">Szerkezet-Építőmérnöki ágazat</h2>
 <div class="kreditWrap">
 	<div>
 			<div id="kreditBar" class="kreditBar">
@@ -119,74 +114,68 @@
 <div class="felevWrap">
 			<div class="felev">
             	<div class="title">1. félév</div>
-            	<div id="11" data-elo="" data-uto="21" data-felveheto="0" data-status="0" data-kredit="6" class="targy">Matematika A1a</div>
-                <div id="12" data-elo="" data-uto="24 y56" data-felveheto="0" data-status="0" data-kredit="3" class="targy">Fizika</div>
-                <div id="13" data-elo="" data-uto="22" data-felveheto="0" data-status="0" data-kredit="3" class="targy">Műszaki kémia</div>
-                <div id="14" data-elo="" data-uto="99" data-felveheto="0" data-status="0" data-kredit="8" class="targy">JKL rendszerek</div>
-                <div id="15" data-elo="" data-uto="41" data-felveheto="0" data-status="0" data-kredit="3" class="targy">Általános járműgéptan</div>
-                <div id="16" data-elo="" data-uto="54 55" data-felveheto="0" data-status="0" data-kredit="7" class="targy">Programozás</div>
+                <div class="torzs" id="torzs_01">
+
+                </div>
             </div>
             <div class="felev">
             <div class="title">2. félév</div>
-            	<div id="21" data-elo="11" data-uto="31 34" data-felveheto="0" data-status="0" data-kredit="6" class="targy">Matematika A2a</div>
-                <div id="22" data-elo="13" data-uto="37 y47 y56 y58" data-felveheto="0" data-status="0" data-kredit="4" class="targy">Anyagismeret</div>
-                <div id="23" data-elo="" data-uto="32 h47 h48 e47 a47 a57 f48"  data-felveheto="0" data-status="0" data-kredit="6" class="targy">Mechanika 1</div>
-                <div id="24" data-elo="12" data-uto="54 55 v47 v57 m69 e58 a58" data-felveheto="0" data-status="0" data-kredit="6" class="targy">Elektrotechnika</div>
-                <div id="25" data-elo="" data-uto="" data-felveheto="0" data-status="0" data-kredit="4" class="targy">Mikro- és makor ökonómia</div>
-                <div id="26" data-elo="" data-uto="35" data-felveheto="0" data-status="0" data-kredit="4" class="targy">Műszaki ábrázolás I.</div>
+                <div class="torzs" id="torzs_02">
+                     
+                </div>
             </div>
             <div class="felev">
             <div class="title">3. félév</div>
-            	<div id="31" data-elo="21" data-uto="41 54 55" data-felveheto="0" data-status="0" data-kredit="4" class="targy">Matematika A3</div>
-                <div id="32" data-elo="23" data-uto="43 h58" data-felveheto="0" data-status="0" data-kredit="4" class="targy">Mechanika 2</div>
-                <div id="33" data-elo="" data-uto="" data-felveheto="0" data-status="0" data-kredit="4" class="targy">Menedzsment és vállakozásgazdaságtan</div>
-                <div id="34" data-elo="21" data-uto="53 l47 l48 v58" data-felveheto="0" data-status="0" data-kredit="3" class="targy">Hőtan</div>
-                <div id="35" data-elo="26" data-uto="45" data-felveheto="0" data-status="0" data-kredit="4" class="targy">Műszaki ábrázolás II.</div>
-                <div id="36" data-elo="" data-uto="44" data-felveheto="0" data-status="0" data-kredit="3" class="targy">Mérnöki számítások</div>
-                <div id="37" data-elo="22" data-uto="46 l57 y57" data-felveheto="0" data-status="0" data-kredit="6" class="targy">Járműszerkezeti anyagok és technológiák</div>
-                <div id="38" data-elo="" data-uto="" data-felveheto="0" data-status="0" data-kredit="2" class="targy">Szabadon választható 1</div>
+            <div class="torzs" id="torzs_03">
+                     
+                </div>
             </div>
             <div class="felev">
             <div class="title">4. félév</div>
-            	<div id="41" data-elo="31 15" data-uto="53 h69" data-felveheto="0" data-status="0" data-kredit="3" class="targy">Áramlástan</div>
-                <div id="42" data-elo="" data-uto="y67" data-felveheto="0" data-status="0" data-kredit="2" class="targy">Minőségügy</div>
-                <div id="43" data-elo="32" data-uto="51" data-felveheto="0" data-status="0" data-kredit="4" class="targy">Járműmérnöki mechanika</div>
-                <div id="44" data-elo="36" data-uto="" data-felveheto="0" data-status="0" data-kredit="3" class="targy">Járműmérnöki számítások elméleti alapjai</div>
-                <div id="45" data-elo="35" data-uto="52" data-felveheto="0" data-status="0" data-kredit="5" class="targy">Jármű- és hajtáselemek I.</div>
-                <div id="46" data-elo="37" data-uto="" data-felveheto="0" data-status="0" data-kredit="5" class="targy">Járműgyártás és javítás</div>
-                            <div class="szakirany" id="szakBlock_4">Válassz specializációt
-                            </div>
+            <div class="torzs" id="torzs_04">
+                    
+            </div>
+            <div class="agazat" id="agazat_04"> 
+            </div>
             </div>
             <div class="felev">
             	<div class="title">5. félév</div>
-            	<div id="51" data-elo="43" data-uto="f66 f67 f68" data-felveheto="0" data-status="0" data-kredit="3" class="targy">Jármű vázszerkezetek</div>
-                <div id="52" data-elo="45" data-uto="62" data-felveheto="0" data-status="0" data-kredit="4" class="targy">Jármű- és hajtáselemek II.</div>
-                <div id="53" data-elo="34 41" data-uto="63 h67" data-felveheto="0" data-status="0" data-kredit="4" class="targy">Járművek hő- és áramlástech. berendezései I.</div>
-               <div id="54" data-elo="16 24 31" data-uto="m68" data-felveheto="0" data-status="0" data-kredit="3" class="targy">Logikai hálózatok</div>
-                <div id="55" data-elo="16 24 31" data-uto="" data-felveheto="0" data-status="0" data-kredit="3" class="targy">Irányítástechnika</div>
-                            <div class="szakirany" id="szakBlock_5">Válassz specializációt
-                            </div>
+                <div class="torzs" id="torzs_05">
+                     
                 </div>
+                <div class="agazat" id="agazat_05"> 
+                    </div>
+            </div>
             <div class="felev">
                  <div class="title">6. félév</div>
-            	<div id="61" data-elo="" data-uto="" data-felveheto="0" data-status="0"  data-kredit="2" class="targy">Üzleti jog</div>
-                <div id="62" data-elo="52" data-uto="" data-felveheto="0" data-status="0" data-kredit="4" class="targy">Jármű- és hajtáselemek III.</div>
-                <div id="63" data-elo="53" data-uto="" data-felveheto="0" data-status="0" data-kredit="3" class="targy">Járművek hő- és áramlástech. berendezései II.</div>
-                <div id="64" data-elo="" data-uto="" data-felveheto="0" data-status="0" data-kredit="2" class="targy">Szabadon választható tárgy 2</div>
-                <div id="65" data-elo="" data-uto="" data-felveheto="0" data-status="0" data-kredit="2" class="targy">Szabadon választható tárgy 3</div>
-           				<div class="szakirany" id="szakBlock_6">Válassz specializációt
-               			</div>
+                 <div class="torzs" id="torzs_06">
+                     
                 </div>
+                 <div class="agazat" id="agazat_06"> 
+                </div>
+                <div class="spec" id="spec_06"> 
+                </div>
+            </div>
             <div class="felev">
               <div class="title">7. félév</div>
-            	<div id="71" data-elo="" data-uto="" data-felveheto="0" data-status="0" data-kredit="2" class="targy">Üzemszervezés járműmérnököknek</div>
-                <div id="72" data-elo="" data-uto="" data-felveheto="0" data-status="0" data-kredit="2" class="targy">Munkavédelem</div>
-                <div id="73" data-elo="" data-uto="" data-felveheto="0" data-status="0" data-kredit="15" class="targy">Szakdolgozat</div>
-                <div id="74" data-elo="" data-uto="" data-felveheto="0" data-status="0" data-kredit="2" class="targy">Szabadon választható tárgy 4</div>
-                <div id="78" data-elo="" data-uto="" data-felveheto="0" data-status="0" data-kredit="2" class="targy">Szabadon választható tárgy 5</div>
-                            <div class="szakirany" id="szakBlock_7">Válassz specializációt
-                            </div>
-               </div>
+              <div class="torzs" id="torzs_07">
+                     
+                </div>
+                <div class="agazat" id="agazat_07"> 
+                </div>
+                <div class="spec" id="spec_07"> 
+                </div>
+            </div>
+            <div class="felev">
+                <div class="title">8. félév</div>
+                <div class="torzs" id="torzs_08">
+                     
+                </div>
+                <div class="agazat" id="agazat_08"> 
+                </div>
+                <div class="spec" id="spec_08"> 
+                </div>
+            </div>
                <div class="clear"></div>
    	</div>
    

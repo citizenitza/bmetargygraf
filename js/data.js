@@ -20,3 +20,17 @@ function test(){
         tmp[0].innerHTML += subjects[i].Code; 
     }
 }
+function pageInit(_type){
+    //Create HTML objects for each semester
+    LoadSubjectElements(_type)
+
+    //set initial states
+}
+function LoadSubjectElements(_type){
+    //load torzsanyag
+    subjectsData.Groups[0].subjects.forEach(element => {
+                document.getElementById("torzs_0" + element.felev).innerHTML += '<div class="targy" status="0" code="' + element.code +'">' + element.name + '</div>'
+    });
+    //load agazat
+
+}

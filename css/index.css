@@ -1,0 +1,72 @@
+
+.contMain{
+	position:fixed;
+	float:left;
+	height:100%;
+	background-color:#F5F5F5;
+	width:100%;
+	color:#395933;	
+	font-family: 'titillium-regular';
+}
+@font-face {
+	font-family: 'titillium-regular';
+	src:url('../fonts/TitilliumWeb-Regular.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+}
+.innerMain{
+	position:fixed;
+	float:left;
+	height:100%;
+	width:100%;
+}
+.logo{
+		width: 50%;
+	min-height: 100px;
+	position:relative;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.logoTitle p.first{
+	font-size: 24px;
+	font-weight: 500;
+}
+.logoTitle p.second{
+	font-size: 18px;
+}
+.buttonWrap{
+	width: 50%;
+	height: 100px;
+	position:relative;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.buttonMain{
+	height: 100%;
+	width: 33.33%;
+	float: left;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.upper{
+	width: 100%;
+	height: 50%;
+	text-align: center;
+	font-size: 18px;
+	color:#395933;
+
+}
+.upper img{
+	margin-top: 5px;
+}
+.buttonMain:hover{
+	background-color:rgba(0,0,0,0.1);
+	-webkit-transition:  0.3s, ease;
+    -moz-transition:  0.3s, ease;
+    -ms-transition: 0.3s, ease;
+    -o-transition:  0.3s, ease;
+    transition:  0.3s, ease;
+}
