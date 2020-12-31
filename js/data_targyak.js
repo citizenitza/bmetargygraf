@@ -570,6 +570,7 @@ subjectsData = {
                 {
                     name: "Faszerkezetek",
                     code: "BMEEOHSAS44",
+                    uniquecode: "BMEEOHSAS44_1",
                     credit: 3,
                     lecture: 2,
                     seminar: 0,
@@ -579,11 +580,12 @@ subjectsData = {
                     felev: 4,
                     elo:["BMEEOTMAT42","BMEEOHSAT41"],
                     substitutes:[],
-                    branches:["magasepites","hidesmutargy"],
+                    specializations:["magasepites","hidesmutargy"],
                 },
                 {
                     name: "Faszerkezetek",
                     code: "BMEEOHSAS44",
+                    uniquecode: "BMEEOHSAS44_2",
                     credit: 3,
                     lecture: 2,
                     seminar: 0,
@@ -618,11 +620,12 @@ subjectsData = {
                             code: "BMEEOFTAG41",
                         },
                     ],
-                    branches:["geotech","epitestech","szerkezetianyagok"],
+                    specializations:["geotech","epitestech","szerkezetianyagok"],
                 },
                 {
                     name: "Faszerkezetek",
                     code: "BMEEOHSAS44",
+                    uniquecode: "BMEEOHSAS44_3",
                     credit: 3,
                     lecture: 2,
                     seminar: 0,
@@ -653,7 +656,7 @@ subjectsData = {
                             code: "BMEEOFTAG41",
                         },
                     ],
-                    branches:["epitmenyinformacio"],
+                    specializations:["epitmenyinformacio"],
                 },
                 {
                     name: "Általános szilárdságtan",
@@ -762,6 +765,7 @@ subjectsData = {
                 {
                     name: "Kőzetmechanika",
                     code: "BMEEOGMAS41",
+                    uniquecode: "BMEEOGMAS41_1",
                     credit: 3,
                     lecture: 1,
                     seminar: 1,
@@ -796,12 +800,13 @@ subjectsData = {
                             code: "BMEEOFTAG41",
                         },
                     ],
-                    branches:["magasepites","hidesmutargy","epitestech","szerkezetianyagok"],
+                    specializations:["magasepites","hidesmutargy","epitestech","szerkezetianyagok"],
 
                 },
                 {
                     name: "Kőzetmechanika",
                     code: "BMEEOGMAS41",
+                    uniquecode: "BMEEOGMAS41_2",
                     credit: 3,
                     lecture: 1,
                     seminar: 1,
@@ -811,12 +816,13 @@ subjectsData = {
                     felev: 6,
                     elo:["BMEEOGMAT41"],
                     substitutes:[],
-                    branches:["geotech"],
+                    specializations:["geotech"],
 
                 },
                 {
                     name: "Kőzetmechanika",
                     code: "BMEEOGMAS41",
+                    uniquecode: "BMEEOGMAS41_3",
                     credit: 3,
                     lecture: 1,
                     seminar: 1,
@@ -847,7 +853,7 @@ subjectsData = {
                             code: "BMEEOFTAG41",
                         },
                     ],
-                    branches:["epitmenyinformacio"],
+                    specializations:["epitmenyinformacio"],
 
                 },
                 {
@@ -862,7 +868,7 @@ subjectsData = {
                     felev: 5,
                     elo:[],
                     substitutes:[],
-                    branches:["epitmenyinformacio"],
+                    specializations:["epitmenyinformacio"],
 
                 },
                 {

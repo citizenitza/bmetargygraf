@@ -4,9 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>BME-ÉMK tárgygráf</title>
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
-<script src="js/jquery-1.11.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/data_targyak.js"></script>
-<script src="js/data.js"></script>
+<script src="js/data_load.js"></script>
+<script src="js/main.js"></script>
 
  </head>
 
@@ -72,20 +73,15 @@
         <div class="middleSection">
             <div class="szakiranyWrap">
                 <div class="selectWrap">
-                    <h4>Ágazat:</h4>
-                    <select id="szakirany" onchange="szakirany()">
-                        <option>Válassz specializációt</option>
-                        <option data-szak="gep"  value="1">Gépjárművek</option>
-                    </select>
-                </div>
-                <div class="selectWrap">
                     <h4>Specializáció:</h4>
-                    <select id="szakirany" onchange="szakirany()">
-                        <option>Válassz specializációt</option>
-                        <option data-szak="gep"  value="1">Gépjárművek</option>
+                    <select id="Specializations" onchange="SpecializationsChanged('szerkezet')">
+
                     </select>
                 </div>
             </div>
+
+
+
             <div class="targyInfo">
                 <div class="targyInfoBox boxNarrow">
                     <div class="targyInfoTitle">Név:</div>
@@ -135,6 +131,7 @@
                     <div class="torzs" id="torzs_04">
                             
                     </div>
+                    <div class="separator">Ágazat</div>
                     <div class="agazat" id="agazat_04"> 
                     </div>
                     </div>
@@ -143,6 +140,7 @@
                         <div class="torzs" id="torzs_05">
                             
                         </div>
+                        <div class="separator">Ágazat</div>
                         <div class="agazat" id="agazat_05"> 
                             </div>
                     </div>
@@ -151,8 +149,10 @@
                         <div class="torzs" id="torzs_06">
                             
                         </div>
+                        <div class="separator">Ágazat</div>
                         <div class="agazat" id="agazat_06"> 
                         </div>
+                        <div class="separator">Specializáció</div>
                         <div class="spec" id="spec_06"> 
                         </div>
                     </div>
@@ -161,8 +161,10 @@
                     <div class="torzs" id="torzs_07">
                             
                         </div>
+                        <div class="separator">Ágazat</div>
                         <div class="agazat" id="agazat_07"> 
                         </div>
+                        <div class="separator">Specializáció</div>
                         <div class="spec" id="spec_07"> 
                         </div>
                     </div>
@@ -171,8 +173,10 @@
                         <div class="torzs" id="torzs_08">
                             
                         </div>
+                        <!-- <div class="separator">Ágazat</div>
                         <div class="agazat" id="agazat_08"> 
-                        </div>
+                        </div> -->
+                        <div class="separator">Specializáció</div>
                         <div class="spec" id="spec_08"> 
                         </div>
                     </div>

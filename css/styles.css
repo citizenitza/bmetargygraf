@@ -464,16 +464,13 @@ html {
 	margin-bottom: 10px;
 }
 /* Info section ********************************************/
-#szakirany{
+#Specializations{
 	width: 80%;
 }
 .szakiranyWrap{
 	position:relative;
 	width:40%;
 	float:left;
-}
-.szakiranyWrap h4{
-
 }
 .selectWrap{
 	position:relative;
@@ -532,3 +529,21 @@ font-family: 'raleway-semibold';
 	    transition: color 2s ease 0s;
 }
 /* Info section END ********************************************/
+.separator {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-top: 6px;
+	color: #666;
+}
+.separator::before, .separator::after {
+	content: '';
+	flex: 1;
+	border-bottom: 1px solid #666;
+}
+.separator::before {
+	margin-right: .25em;
+}
+.separator::after {
+	margin-left: .25em;
+}
