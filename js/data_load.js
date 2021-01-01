@@ -23,17 +23,7 @@ const Agazat = {
     epitmenyinformacio: 2,
 };
 
-function pageInit(_branch){
-    //Create HTML objects for each semester
-    LoadSpecNames("szerkezet");
-    LoadSubjectElements();
-    //set initial states
-    jQuery(function($) {
-		var spec = $("#Specializations").find(':selected').attr('data-szak');
-        LoadBranchElements(_branch,spec);
-        LoadSpecElements(_branch,spec);
-	});
-}
+
 function SpecializationsChanged(_branch){
     jQuery(function($) {
         //clear previous subjects
@@ -80,9 +70,9 @@ function LoadBranchElements(_branch, _spec){ //spec needed because
     subjectsData.Groups.forEach(branch => {
         if(branch.type == "agazat" && branch.name == _branch){
             branch.subjects.forEach(element => {
-                if("specializations" in element){
-                    if(element.specializations.length > 0){
-                        if(element.specializations.some(x => x == _spec)){ //if specializations array containst the currently selected spec
+                if("parentSpecializations" in element){
+                    if(element.parentSpecializations.length > 0){
+                        if(element.parentSpecializations.some(x => x == _spec)){ //if specializations array containst the currently selected spec
                             document.getElementById("agazat_0" + element.felev).innerHTML += '<div class="targy" status="0" code="' + element.code +'" uniquecode="' + element.uniquecode +'">' + element.name + '</div>'
                         }
                     

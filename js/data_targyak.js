@@ -208,7 +208,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Félévközi",
                     felev: 3,
-                    elo:["!BMEEOAFAT42~",""]
+                    elo:["!BMEEOAFAT42~"]
                 },    
                 {
                     name: "Talajmechanika",
@@ -476,7 +476,7 @@ subjectsData = {
                 },    
                 {
                     name: "Szabadon választható 1",
-                    code: "-",
+                    code: "",
                     credit: 2,
                     lecture: 2,
                     seminar: 0,
@@ -488,7 +488,7 @@ subjectsData = {
                 },    
                 {
                     name: "Szabadon választható 2",
-                    code: "-",
+                    code: "",
                     credit: 2,
                     lecture: 2,
                     seminar: 0,
@@ -500,7 +500,7 @@ subjectsData = {
                 },      
                 {
                     name: "Szabadon választható 3",
-                    code: "-",
+                    code: "",
                     credit: 2,
                     lecture: 2,
                     seminar: 0,
@@ -512,7 +512,7 @@ subjectsData = {
                 },      
                 {
                     name: "Szabadon választható 4",
-                    code: "-",
+                    code: "",
                     credit: 2,
                     lecture: 2,
                     seminar: 0,
@@ -524,7 +524,7 @@ subjectsData = {
                 },      
                 {
                     name: "Szabadon választható 5",
-                    code: "-",
+                    code: "",
                     credit: 2,
                     lecture: 2,
                     seminar: 0,
@@ -536,7 +536,7 @@ subjectsData = {
                 },       
                 {
                     name: "Szabadon választható 6",
-                    code: "-",
+                    code: "",
                     credit: 2,
                     lecture: 2,
                     seminar: 0,
@@ -580,7 +580,7 @@ subjectsData = {
                     felev: 4,
                     elo:["BMEEOTMAT42","BMEEOHSAT41"],
                     substitutes:[],
-                    specializations:["magasepites","hidesmutargy"],
+                    parentSpecializations:["magasepites","hidesmutargy"],
                 },
                 {
                     name: "Faszerkezetek",
@@ -620,7 +620,7 @@ subjectsData = {
                             code: "BMEEOFTAG41",
                         },
                     ],
-                    specializations:["geotech","epitestech","szerkezetianyagok"],
+                    parentSpecializations:["geotech","epitestech","szerkezetianyagok"],
                 },
                 {
                     name: "Faszerkezetek",
@@ -656,7 +656,7 @@ subjectsData = {
                             code: "BMEEOFTAG41",
                         },
                     ],
-                    specializations:["epitmenyinformacio"],
+                    parentSpecializations:["epitmenyinformacio"],
                 },
                 {
                     name: "Általános szilárdságtan",
@@ -800,7 +800,7 @@ subjectsData = {
                             code: "BMEEOFTAG41",
                         },
                     ],
-                    specializations:["magasepites","hidesmutargy","epitestech","szerkezetianyagok"],
+                    parentSpecializations:["magasepites","hidesmutargy","epitestech","szerkezetianyagok"],
 
                 },
                 {
@@ -816,7 +816,7 @@ subjectsData = {
                     felev: 6,
                     elo:["BMEEOGMAT41"],
                     substitutes:[],
-                    specializations:["geotech"],
+                    parentSpecializations:["geotech"],
 
                 },
                 {
@@ -853,7 +853,7 @@ subjectsData = {
                             code: "BMEEOFTAG41",
                         },
                     ],
-                    specializations:["epitmenyinformacio"],
+                    parentSpecializations:["epitmenyinformacio"],
 
                 },
                 {
@@ -868,7 +868,7 @@ subjectsData = {
                     felev: 5,
                     elo:[],
                     substitutes:[],
-                    specializations:["epitmenyinformacio"],
+                    parentSpecializations:["epitmenyinformacio"],
 
                 },
                 {
@@ -1629,7 +1629,7 @@ subjectsData = {
             name: "infrastr",
             fullname:"Infrastruktúra-Építőmérnöki Ágazat", 
             subjects:[
-                0
+                
             ],
             specializations:[
                 {
