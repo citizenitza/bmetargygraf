@@ -37,11 +37,34 @@ $(document).ready(function() {
                     utoPrereqArray = subject.prereq;
                 }
                 if(utoPrereqArray.length != 0){
-                    if(utoPrereqArray.some(x=> x == SourceAddress)){
-                        if(!cTargy_array[i].className.includes("utokovetelmeny")){
-                        cTargy_array[i].className += " utokovetelmeny";
+                    utoPrereqArray.forEach(x => {
+                        if(x.includes("!")){ //azonos felev
+                            var newCode = x.replace('!', '');
+                            if(newCode == SourceAddress){
+                                if(!cTargy_array[i].className.includes("utokovetelmeny")){
+                                    cTargy_array[i].className += " utokovetelmeny";
+                                }
+                            }
+                        }else if(x.includes("~")){//alairas
+                            var newCode = x.replace('~', '');
+                            if(newCode == SourceAddress){
+                                if(!cTargy_array[i].className.includes("utokovetelmeny")){
+                                    cTargy_array[i].className += " utokovetelmeny";
+                                }
+                            }
+                        }else{//sima elokovetelmeny
+                            if(x == SourceAddress){
+                                if(!cTargy_array[i].className.includes("utokovetelmeny")){
+                                    cTargy_array[i].className += " utokovetelmeny";
+                                }
+                            }
                         }
-                    }
+                    });
+                    // if(utoPrereqArray.some(x=> x == SourceAddress)){
+                        // if(!cTargy_array[i].className.includes("utokovetelmeny")){
+                        // cTargy_array[i].className += " utokovetelmeny";
+                        // }
+                    // }
                 }
             });
             if(uniquecode != null){
