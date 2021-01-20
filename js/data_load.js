@@ -40,6 +40,10 @@ function SpecializationsChanged(_branch){
 		var spec = $("#Specializations").find(':selected').attr('data-szak');
         LoadBranchElements(_branch,spec);
         LoadSpecElements(_branch,spec);
+
+        //clear data
+        ClearDataForBranchSubjects();
+        RefreshState();
     });
 }
 function LoadSpecNames(_branch){
@@ -58,7 +62,7 @@ function LoadSpecNames(_branch){
     });
 }
 
-function LoadSubjectElements(){
+function LoadSubjectElements(){ //torzs targyak
     //torzsanyag
     subjectsData.Groups[0].subjects.forEach(subject => {
                 document.getElementById("torzs_0" + subject.felev).innerHTML += '<div class="targy" status="0" code="' + subject.code +'">' + subject.name + '</div>'
