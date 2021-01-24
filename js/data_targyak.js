@@ -476,7 +476,7 @@ subjectsData = {
                 },    
                 {
                     name: "Szabadon választható 1",
-                    code: "",
+                    code: "Szabad01",
                     credit: 2,
                     lecture: 2,
                     seminar: 0,
@@ -488,7 +488,7 @@ subjectsData = {
                 },    
                 {
                     name: "Szabadon választható 2",
-                    code: "",
+                    code: "Szabad02",
                     credit: 2,
                     lecture: 2,
                     seminar: 0,
@@ -500,7 +500,7 @@ subjectsData = {
                 },      
                 {
                     name: "Szabadon választható 3",
-                    code: "",
+                    code: "Szabad03",
                     credit: 2,
                     lecture: 2,
                     seminar: 0,
@@ -512,7 +512,7 @@ subjectsData = {
                 },      
                 {
                     name: "Szabadon választható 4",
-                    code: "",
+                    code: "Szabad04",
                     credit: 2,
                     lecture: 2,
                     seminar: 0,
@@ -524,7 +524,7 @@ subjectsData = {
                 },      
                 {
                     name: "Szabadon választható 5",
-                    code: "",
+                    code: "Szabad05",
                     credit: 2,
                     lecture: 2,
                     seminar: 0,
@@ -536,7 +536,7 @@ subjectsData = {
                 },       
                 {
                     name: "Szabadon választható 6",
-                    code: "",
+                    code: "Szabad06",
                     credit: 2,
                     lecture: 2,
                     seminar: 0,

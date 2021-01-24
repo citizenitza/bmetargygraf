@@ -23,7 +23,7 @@ function pageInit(_branch){
 }
 
 function RefreshState(){
-    SetStateData();
+    SetState();
     SetColor();
 }
 
@@ -80,7 +80,7 @@ function ClearDataForBranchSubjects(){
         }
     });
 }
-function SetStateData(){
+function SetState(){
     StateDataArray.forEach(item =>{
         //check for prequirements
         if(item.prereq.length == 0){
@@ -129,7 +129,15 @@ function SetColor(){
         }
         if(found){
             if(StateDataArray[index].felveheto == 1){
-                item.className = "targy felveheto";
+                if(StateDataArray[index].status == 0){
+                    item.className = "targy felveheto";
+                }else if(StateDataArray[index].status == 1){
+                    item.className = "targy felvett";
+                }else if(StateDataArray[index].status == 2){
+                    item.className = "targy teljesitett";
+                }
+            }else if (StateDataArray[index].felveheto == 0){
+                item.className = "targy";
             }
         }
     }

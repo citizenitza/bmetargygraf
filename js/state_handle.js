@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+/*******************************************************************************************************
+ * Hover
+ * *****************************************************************************************************/
     $(document).on('mouseenter', '.targy', function() {
         var SourceAddress = this.getAttribute("code");
         var PrereqArray = [];
@@ -82,4 +86,49 @@ $(document).ready(function() {
             cTargy_array[i].className = cTargy_array[i].className.replace(' elokovetelmeny', '');
         }
     });
+
+/*******************************************************************************************************
+ * Click
+ * *****************************************************************************************************/
+    $(document).on('click', '.targy', function() {
+
+        var code = "";
+        var unique = "";
+        code = this.getAttribute("code");
+        if(this.hasAttribute("uniquecode")){
+            unique = this.getAttribute("uniquecode");
+        }
+
+        var found = false;
+        var index = 0;
+        for(var j =0;j<StateDataArray.length;j++){
+            if(StateDataArray[j].uniquecode !== undefined){
+                if(StateDataArray[j].uniquecode == unique){
+                    //item found
+                    found = true;
+                    index = j;
+                    break;
+                }
+            }else{
+                if(StateDataArray[j].code == code){
+                    //item found
+                    found = true;
+                    index = j;
+                    break;
+                }
+            }
+
+        }
+        if(found){
+            if(StateDataArray[index].felveheto == 1){
+                StateDataArray[index].status += 1;
+                if(StateDataArray[index].status >=3){
+                    StateDataArray[index].status = 0;
+                }
+            }
+
+        }
+        RefreshState();
+    });
+
 });
