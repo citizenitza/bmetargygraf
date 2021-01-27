@@ -18,6 +18,7 @@ function pageInit(_branch){
 		var spec = $("#Specializations").find(':selected').attr('data-szak');
         LoadBranchElements(_branch,spec);
         LoadSpecElements(_branch,spec);
+        SetActive();
         RefreshState();
     });
 }
@@ -26,7 +27,36 @@ function RefreshState(){
     SetState();
     SetColor();
 }
+function SetActive(){
+    //reset
+    StateDataArray.forEach(item => {
+        item.active = 0;
+    });
+    var subject_array = document.getElementsByClassName('targy');
+    for (var i = 0; i < subject_array.length; ++i) {
+        var item = subject_array[i];  
+        var code = "";
+        var unique = "";
+        code = item.getAttribute("code");
+        if(item.hasAttribute("uniquecode")){
+            unique = item.getAttribute("uniquecode");
+        }
+        for(var j =0;j<StateDataArray.length;j++){
+            if(StateDataArray[j].uniquecode !== undefined){
+                if(StateDataArray[j].uniquecode == unique){
+                    //item found
+                    StateDataArray[j].active = 1;
+                    break;
+                }
+            }else if(StateDataArray[j].code == code){
+                    //item found
+                    StateDataArray[j].active = 1;
+                    break;
+            }
 
+        }
+    }
+}
 function InitStateDataArray(){
     //emty array
     StateDataArray = [];
@@ -45,6 +75,7 @@ function InitStateDataArray(){
                 status:0, //0 - nem felvett, 1 -felvett, 2 - teljesitett
                 felveheto:0, //0 - nem felveheto, 1 -felveheto
                 specprereq:0,
+                active:0,
             };
             StateDataArray.push(newsubject);
         });
@@ -63,6 +94,7 @@ function InitStateDataArray(){
                         status:0,
                         felveheto:0,
                         specprereq:0,
+                        active:0,
                     };
                     StateDataArray.push(newsubject);
                 });
@@ -85,6 +117,24 @@ function SetState(){
         //check for prequirements
         if(item.prereq.length == 0){
             item.felveheto = 1;
+        }else{
+            var AllCompleted = true;
+            item.prereq.forEach(preSubject =>{
+                // var
+                for(var i = 0; i<StateDataArray.length;i++){
+                    if(StateDataArray[i].code == preSubject && StateDataArray[i].active == 1){
+                        if(StateDataArray[i].status != 2){
+                            AllCompleted = false;
+                            break;
+                        }
+                    }   
+                }
+                if(AllCompleted){
+                    item.felveheto = 1;
+                }else{
+                    // item.felveheto = 0;
+                }
+            });
         }
     
     });

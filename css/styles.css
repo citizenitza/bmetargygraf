@@ -310,9 +310,10 @@ html {
 	
 }
 .alairas{
-	background-color:#0097e6 ;
+	/* background-color:#0097e6 ; */
+	background:linear-gradient(90deg,#0097e6 20%, #e1b12c 20%);
 	color:#fff;
-	border:solid 1px #0097e6 ;
+	border:solid 1px #999999;
 		-webkit-transition:  0.3s, ease;
     -moz-transition:  0.3s, ease;
     -ms-transition: 0.3s, ease;
@@ -320,9 +321,51 @@ html {
     transition:  0.3s, ease;
 }
 .azonosfelev{
-	background-color:#8c7ae6 ;
+	/* background-color:#8c7ae6 ; */
+	background:linear-gradient(90deg,#e1b12c 80%, #8c7ae6 20%);
 	color:#fff;
-	border:solid 1px #8c7ae6 ;
+	border:solid 1px #999999;
+		-webkit-transition:  0.3s, ease;
+    -moz-transition:  0.3s, ease;
+    -ms-transition: 0.3s, ease;
+    -o-transition:  0.3s, ease;
+    transition:  0.3s, ease;
+}
+.alairasAzonosfelev{
+	/* background-color:#8c7ae6 ; */
+	background:linear-gradient(90deg,#0097e6 20%, #e1b12c 20%, #e1b12c 80%, #8c7ae6 20%);
+	color:#fff;
+	border:solid 1px #999999;
+		-webkit-transition:  0.3s, ease;
+    -moz-transition:  0.3s, ease;
+    -ms-transition: 0.3s, ease;
+    -o-transition:  0.3s, ease;
+    transition:  0.3s, ease;
+}
+.alairasuto{
+	background:linear-gradient(90deg,#0097e6 20%, #c0392b 20%);
+	color:#fff;
+	border:solid 1px #999999;
+		-webkit-transition:  0.3s, ease;
+    -moz-transition:  0.3s, ease;
+    -ms-transition: 0.3s, ease;
+    -o-transition:  0.3s, ease;
+    transition:  0.3s, ease;
+}
+.azonosfelevuto{
+	background:linear-gradient(90deg,#c0392b 80%, #8c7ae6 20%);
+	color:#fff;
+	border:solid 1px #999999;
+		-webkit-transition:  0.3s, ease;
+    -moz-transition:  0.3s, ease;
+    -ms-transition: 0.3s, ease;
+    -o-transition:  0.3s, ease;
+    transition:  0.3s, ease;
+}
+.alairasAzonosfelevuto{
+	background:linear-gradient(90deg,#0097e6 20%, #c0392b 20%, #c0392b 80%, #8c7ae6 20%);
+	color:#fff;
+	border:solid 1px #999999;
 		-webkit-transition:  0.3s, ease;
     -moz-transition:  0.3s, ease;
     -ms-transition: 0.3s, ease;

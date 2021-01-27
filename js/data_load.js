@@ -43,6 +43,7 @@ function SpecializationsChanged(_branch){
 
         //clear data
         ClearDataForBranchSubjects();
+        SetActive();
         RefreshState();
     });
 }
@@ -99,7 +100,6 @@ function LoadSpecElements(_branch, _spec){
                 if(spec.type == "spec" && spec.name == _spec){
                     spec.subjects.forEach(subject =>{
                         document.getElementById("spec_0" + subject.felev).innerHTML += '<div class="targy" status="0" code="' + subject.code +'">' + subject.name + '</div>'
-
                     });
                 }
             });
