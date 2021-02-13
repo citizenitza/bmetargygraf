@@ -69,6 +69,7 @@ function InitStateDataArray(){
                 type: branch.type,
                 name:subject.name,
                 code:subject.code,
+                credit:subject.credit,
                 uniquecode:subject.uniquecode,
                 prereq:subject.elo,
                 substitues:subject.substitues,
@@ -76,6 +77,7 @@ function InitStateDataArray(){
                 felveheto:0, //0 - nem felveheto, 1 -felveheto
                 specprereq:0,
                 active:0,
+                substitutes:subject.substitutes,
             };
             StateDataArray.push(newsubject);
         });
@@ -88,6 +90,7 @@ function InitStateDataArray(){
                         type: branch.type,
                         name:specSubject.name,
                         code:specSubject.code,
+                        credit:specSubject.credit,
                         uniquecode:specSubject.uniquecode,
                         prereq:specSubject.elo,
                         substitues:specSubject.substitues,
@@ -95,6 +98,7 @@ function InitStateDataArray(){
                         felveheto:0,
                         specprereq:0,
                         active:0,
+                        substitutes:specSubject.substitutes,
                     };
                     StateDataArray.push(newsubject);
                 });
@@ -120,28 +124,62 @@ function SetState(){
         }else{
             var AllCompleted = true;
             item.prereq.forEach(preSubject =>{
+                if(item.name == "Vasbetonszerkezetek"){
+                    var debug1 = 45;//deubg break
+                }
+                var rawCode = "";
+                var type = 0;//0-normal, 1 -azonos felev,
+                if(preSubject.includes("!") && preSubject.includes("~")){
+                    type = 1;
+                    rawCode = preSubject.replace('!', '').replace('~', '');
+                }else if(preSubject.includes("!")){
+                    type = 1;
+                    rawCode = preSubject.replace('!', '');
+                }else if(preSubject.includes("~")){
+                    type = 0;                    
+                    rawCode = preSubject.replace('~', '');
+                }else{
+                    type = 0;
+                    rawCode = preSubject;
+                }
                 // var
                 for(var i = 0; i<StateDataArray.length;i++){
-                    if(StateDataArray[i].code == preSubject && StateDataArray[i].active == 1){
-                        if(StateDataArray[i].status != 2){
-                            AllCompleted = false;
-                            break;
+                    if(StateDataArray[i].code == rawCode && StateDataArray[i].active == 1){
+                        if(type == 0){
+                            if(StateDataArray[i].status == 0 || StateDataArray[i].status == 1){
+                                AllCompleted = false;
+                                break;
+                            }
+                        }else if(type == 1){
+                            if(StateDataArray[i].status == 0){
+                                AllCompleted = false;
+                                break;
+                            } 
                         }
                     }   
                 }
-                if(AllCompleted){
-                    item.felveheto = 1;
-                }else{
-                    // item.felveheto = 0;
-                }
             });
+            if(AllCompleted){
+                item.felveheto = 1;
+            }else{
+                item.felveheto = 0;
+                item.status = 0;
+            }
         }
     
     });
 }
 
+function deleteData(){
+    StateDataArray.forEach(item =>{
+        item.status = 0;
+    });
+    RefreshState();
+}
 
-
+function PushDatatoDisplay(){
+    
+}
 
 /*******************************************************************************************************
  * Colour

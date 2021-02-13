@@ -501,7 +501,7 @@ html {
 }
 /* Info section ********************************************/
 #Specializations{
-	width: 80%;
+	width: 100%;
 }
 .szakiranyWrap{
 	position:relative;
@@ -510,7 +510,7 @@ html {
 }
 .selectWrap{
 	position:relative;
-	width: 40%;
+	width: 75%;
 	float: left;
 	padding-left:10px;
 }
@@ -540,7 +540,6 @@ font-family: 'raleway-semibold';
 .targyInfoBox{
 	position:relative;
 	float:left;
-	width:30%;
 	margin:5px;
 }
 .boxNarrow{	
@@ -548,6 +547,12 @@ font-family: 'raleway-semibold';
 }
 .boxNarrow2{	
 	width:18%;
+}
+.Box1{
+	width:20%;
+}
+.Box2{
+	width:40%;
 }
 .targyInfoTitle{
 	font-weight:bold;
@@ -559,6 +564,9 @@ font-family: 'raleway-semibold';
 .targyInfo a:visited{
 	text-decoration:none;
 	color:#67809F;
+}
+.alterSubject{
+	font-size: 12px;
 }
 #test1{
 	color:#000000;

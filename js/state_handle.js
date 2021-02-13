@@ -117,7 +117,7 @@ $(document).ready(function() {
 
         var found = false;
         var index = 0;
-        for(var j =0;j<StateDataArray.length;j++){
+        for(var j = 0; j < StateDataArray.length; j++){
             if(StateDataArray[j].uniquecode !== undefined){
                 if(StateDataArray[j].uniquecode == unique){
                     //item found
@@ -142,9 +142,31 @@ $(document).ready(function() {
                     StateDataArray[index].status = 0;
                 }
             }
+            //push info to infoBox
+            document.getElementById("targyNev").innerHTML = StateDataArray[index].name;
+            document.getElementById("targyKredit").innerHTML = StateDataArray[index].credit;
+            document.getElementById("targyKod").innerHTML = StateDataArray[index].code;
+            if(StateDataArray[index].substitutes === undefined){
+                document.getElementById("targyaAlternativ").innerHTML = "Nincs";
+            }else{
+                document.getElementById("targyaAlternativ").innerHTML = "";
+                if(StateDataArray[index].substitutes.length != 0){
+                    for(var k = 0;k <StateDataArray[index].substitutes.length;k++){
+                        document.getElementById("targyaAlternativ").innerHTML += "<div class='alterSubject'>" + (k+1) + ". " +StateDataArray[index].substitutes[k].name + " - <b>"+StateDataArray[index].substitutes[k].code + "<b>" + "</div>";
+                        
+                        
+                    }
+                }else{
+                    document.getElementById("targyaAlternativ").innerHTML = "Nincs";                    
+                }
+            }
 
         }
+
+        
         RefreshState();
+
+        
     });
 
 });
