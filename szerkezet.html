@@ -5,11 +5,12 @@
 <title>BME-ÉMK tárgygráf</title>
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- <script src="js/jquery-1.11.0.min.js"></script> -->
+<script src="js/js.cookie.js"></script>
 <script src="js/data_targyak.js"></script>
 <script src="js/data_load.js"></script>
 <script src="js/main.js"></script>
 <script src="js/state_handle.js"></script>
+<script src="js/cookie.js"></script>
 
  </head>
  <!-- onunload="pageUnload()"  -->
@@ -187,8 +188,8 @@
                 </div>
             <div class="mintaSection"> 
                 <div class="gombWrap">Színmagyarázat:</div>
-                <div class="minta">Nem felvehető</div>
-                <div class="minta felveheto">Felvehető</div>
+                <div class="minta" onclick="DebugTest()">Nem felvehető</div>
+                <div class="minta felveheto" onclick="DebugTest2()">Felvehető</div>
                 <div class="minta felvett">Felvett</div>
                 <div class="minta teljesitett">Teljesített</div>
                 <div class="minta utokovetelmeny">Ráépülő</div>

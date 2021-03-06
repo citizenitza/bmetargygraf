@@ -9,6 +9,7 @@ $(document).ready(function() {
         StateDataArray.forEach(subject => {    
             if(subject.code == SourceAddress){
                 PrereqArray = subject.prereq;
+                // console.log(subject.name +" _status:  " +subject.status);
             }
         });
 
@@ -136,6 +137,7 @@ $(document).ready(function() {
 
         }
         if(found){
+            console.log(StateDataArray[index].name + "_" + index);
             if(StateDataArray[index].felveheto == 1){
                 StateDataArray[index].status += 1;
                 if(StateDataArray[index].status >=3){

@@ -25,6 +25,10 @@ const Agazat = {
 
 
 function SpecializationsChanged(_branch){
+    //clear data
+    console.log("clear start");
+    ClearDataForSpecSubjects();
+    console.log("clear end");
     jQuery(function($) {
         //clear previous subjects
         for(var i=0;i<5;i++){ // for the 4 semester with branch and spec subjects
@@ -41,11 +45,12 @@ function SpecializationsChanged(_branch){
         LoadBranchElements(_branch,spec);
         LoadSpecElements(_branch,spec);
 
-        //clear data
-        ClearDataForBranchSubjects();
+
+        
         SetActive();
         RefreshState();
     });
+    return 0;
 }
 function LoadSpecNames(_branch){
     //iterate branches

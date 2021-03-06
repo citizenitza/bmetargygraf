@@ -108,9 +108,9 @@ function InitStateDataArray(){
 
 }
 
-function ClearDataForBranchSubjects(){
+function ClearDataForSpecSubjects(){
     StateDataArray.forEach(item =>{
-        if(item.type != "torzs"){
+        if(item.type == "spec"){
             item.status = 0;
             item.felveheto = 0;
         }
