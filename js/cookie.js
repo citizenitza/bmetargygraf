@@ -6,6 +6,9 @@ function DebugTest(){
 function DebugTest2(){
     getCookie("szerkezet");
 }
+function pageUnload(_agazatname){
+    setCookie(_agazatname);
+}
 
 function setCookie(_agazatname) {
     var cookiestring = prepareCookie();
@@ -14,6 +17,13 @@ function setCookie(_agazatname) {
     //save cookies
     Cookies.set(_agazatname, cookiestring, { expires: 60 });
     Cookies.set(specCookieName, spec, { expires: 60 });
+
+    var d = new Date();
+    d.setTime(d.getTime() + (60*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+
+    // document.cookie = _agazatname + "=" + cookiestring + ";" + expires;
+    // document.cookie = specCookieName + "=" + spec + ";" + expires;
 
 }
 function getCookie(_agazatname) {

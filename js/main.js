@@ -9,7 +9,7 @@ function pageInit(_branch){
 
     //Create HTML objects for each semester
     //load dropdown menu
-    LoadSpecNames("szerkezet");
+    LoadSpecNames(_branch);
     //torzsanyag
     LoadSubjectElements();
     
@@ -21,6 +21,9 @@ function pageInit(_branch){
         SetActive();
         RefreshState();
     });
+
+    getCookie(_branch);
+    RefreshState();
 }
 
 function RefreshState(){
