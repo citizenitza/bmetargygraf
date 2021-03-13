@@ -23,6 +23,7 @@ html {
     padding-right:10px;
 }
 .pageTitle{
+	margin-top: 0px;
 	text-align:center;
 }
 .select {
@@ -133,7 +134,7 @@ html {
 	margin-left: 190px;
 	min-height:50px;
 	background-color:#EEE;
-	
+	padding-top: 15px;
 }
 .buttonCont{
 	position:relative;

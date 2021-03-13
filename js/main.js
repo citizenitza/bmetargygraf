@@ -1,12 +1,11 @@
-
+var currentBranch;
 var StateDataArray = [];
 
 
 function pageInit(_branch){
+    currentBranch = _branch;
     //load state data array
     InitStateDataArray();
-
-
     //Create HTML objects for each semester
     //load dropdown menu
     LoadSpecNames(_branch);
@@ -21,9 +20,15 @@ function pageInit(_branch){
         SetActive();
         RefreshState();
     });
-
-    getCookie(_branch);
-    RefreshState();
+    //check for url param
+    var qSpec = getQueryVariable("spec");
+    var qData = getQueryVariable("data");
+    if(qSpec == false){ // no url -> load from cookie
+        getCookie(_branch);
+        RefreshState();
+    }else{//url query 
+        restoreFromURL(qData,qSpec,_branch);
+    }
 }
 
 function RefreshState(){
