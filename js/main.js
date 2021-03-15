@@ -184,7 +184,18 @@ function deleteData(){
     });
     RefreshState();
 }
+function createLink(){
+    var url = "";
+    url = getURL("szerkezet");
+    console.log(url);
 
+    const el = document.createElement('textarea');
+    el.value = url;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    alert("Copied!");
+}
 function PushDatatoDisplay(){
     
 }

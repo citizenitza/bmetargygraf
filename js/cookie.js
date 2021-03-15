@@ -1,8 +1,7 @@
 function DebugTest(){
     // prepareCookie();
     // setCookie("szerkezet");
-    var url = getURL("szerkezet");
-    console.log(url);
+
 }
 function DebugTest2(){
     getCookie("szerkezet");
@@ -69,8 +68,12 @@ function SetSpecialization(data) {
 	});
 }
 function restoreFromURL(data,spec,_agazatname){
+    console.log(data);
+    console.log(spec);
+    console.log(_agazatname);
     jQuery(function($) {
         var decodedData = window.atob(data);
+        console.log(decodedData);
         SetSpecialization(spec);
         var retVal = SpecializationsChanged(_agazatname);
         if(retVal == 0){
@@ -86,7 +89,7 @@ function restoreFromURL(data,spec,_agazatname){
 function getURL(_agazatname){
     var cookiestring = prepareCookie();
     var spec = $("#Specializations").find(':selected').attr('data-szak');
-    var currentURL = window.location.href; 
+    var currentURL =location.protocol + '//' + location.host + location.pathname; 
     var result = currentURL + "?spec=" + spec + "&data=" + cookiestring;
     return result;
 }

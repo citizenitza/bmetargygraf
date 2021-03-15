@@ -1626,7 +1626,7 @@ subjectsData = {
         },        
         {
             type: "agazat",
-            name: "infrastr",
+            name: "infrastruktura",
             fullname:"Infrastruktúra-Építőmérnöki Ágazat", 
             subjects:[
                 
@@ -1676,7 +1676,7 @@ subjectsData = {
         },   
         {
             type: "agazat",
-            name: "geoinfo",
+            name: "geoinformatika",
             fullname:"Geoinformatika-Építőmérnöki Ágazat", 
             subjects:[
                 
