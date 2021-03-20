@@ -1,4 +1,5 @@
 var currentBranch;
+var currentSpech;
 var StateDataArray = [];
 
 
@@ -15,9 +16,10 @@ function pageInit(_branch){
     //agazat + spec
     jQuery(function($) {
 		var spec = $("#Specializations").find(':selected').attr('data-szak');
+        currentSpech = spec;
         LoadBranchElements(_branch,spec);
         LoadSpecElements(_branch,spec);
-        SetActive();
+        SetActive(_branch,spec);
         RefreshState();
     });
     //check for url param
@@ -35,7 +37,7 @@ function RefreshState(){
     SetState();
     SetColor();
 }
-function SetActive(){
+function SetActive(_branch,_spec){
     //reset
     StateDataArray.forEach(item => {
         item.active = 0;
@@ -50,18 +52,26 @@ function SetActive(){
             unique = item.getAttribute("uniquecode");
         }
         for(var j =0;j<StateDataArray.length;j++){
+
             if(StateDataArray[j].uniquecode !== undefined){
                 if(StateDataArray[j].uniquecode == unique){
-                    //item found
-                    StateDataArray[j].active = 1;
-                    break;
+                    if(StateDataArray[j].branch == "torzsanyag" || StateDataArray[j].branch == _branch){
+                        //item found
+                        StateDataArray[j].active = 1;
+                        break;
+                    }else{
+                        var debug =55;
+                    }
                 }
             }else if(StateDataArray[j].code == code){
+                if(StateDataArray[j].branch == "torzsanyag" || StateDataArray[j].branch == _branch){
                     //item found
                     StateDataArray[j].active = 1;
                     break;
+                }else{
+                    var debug =55;
+                }
             }
-
         }
     }
 }
@@ -74,6 +84,8 @@ function InitStateDataArray(){
         branch.subjects.forEach(subject =>{
             //load all subject from group
             var newsubject ={
+                branch: branch.name,
+                spec: "NotSpec",
                 type: branch.type,
                 name:subject.name,
                 code:subject.code,
@@ -88,6 +100,7 @@ function InitStateDataArray(){
                 substitutes:subject.substitutes,
             };
             StateDataArray.push(newsubject);
+            console.log(newsubject.branch);
         });
         if("specializations" in branch){
             branch.specializations.forEach(spec=>{
@@ -95,6 +108,8 @@ function InitStateDataArray(){
                 spec.subjects.forEach(specSubject =>{
                     //load all subject from spec
                     var newsubject ={
+                        branch: branch.name,
+                        spec:spec.name,
                         type: branch.type,
                         name:specSubject.name,
                         code:specSubject.code,
@@ -109,6 +124,7 @@ function InitStateDataArray(){
                         substitutes:specSubject.substitutes,
                     };
                     StateDataArray.push(newsubject);
+                    console.log(newsubject.branch);
                 });
             });
         }
@@ -126,55 +142,58 @@ function ClearDataForSpecSubjects(){
 }
 function SetState(){
     StateDataArray.forEach(item =>{
-        //check for prequirements
-        if(item.prereq.length == 0){
-            item.felveheto = 1;
-        }else{
-            var AllCompleted = true;
-            item.prereq.forEach(preSubject =>{
-                if(item.name == "Vasbetonszerkezetek"){
-                    var debug1 = 45;//deubg break
-                }
-                var rawCode = "";
-                var type = 0;//0-normal, 1 -azonos felev,
-                if(preSubject.includes("!") && preSubject.includes("~")){
-                    type = 1;
-                    rawCode = preSubject.replace('!', '').replace('~', '');
-                }else if(preSubject.includes("!")){
-                    type = 1;
-                    rawCode = preSubject.replace('!', '');
-                }else if(preSubject.includes("~")){
-                    type = 0;                    
-                    rawCode = preSubject.replace('~', '');
-                }else{
-                    type = 0;
-                    rawCode = preSubject;
-                }
-                // var
-                for(var i = 0; i<StateDataArray.length;i++){
-                    if(StateDataArray[i].code == rawCode && StateDataArray[i].active == 1){
-                        if(type == 0){
-                            if(StateDataArray[i].status == 0 || StateDataArray[i].status == 1){
-                                AllCompleted = false;
-                                break;
-                            }
-                        }else if(type == 1){
-                            if(StateDataArray[i].status == 0){
-                                AllCompleted = false;
-                                break;
-                            } 
-                        }
-                    }   
-                }
-            });
-            if(AllCompleted){
+        if(item.active == 1){
+            //check for prequirements
+            if(item.prereq.length == 0){
                 item.felveheto = 1;
             }else{
-                item.felveheto = 0;
-                item.status = 0;
+                var AllCompleted = true;
+                item.prereq.forEach(preSubject =>{
+                    if(item.name == "Építmény-információs mod. és menedzsment proj."){
+                        var debug1 = 45;//deubg break
+                    }
+                    var rawCode = "";
+                    var type = 0;//0-normal, 1 -azonos felev,
+                    if(preSubject.includes("!") && preSubject.includes("~")){
+                        type = 1;
+                        rawCode = preSubject.replace('!', '').replace('~', '');
+                    }else if(preSubject.includes("!")){
+                        type = 1;
+                        rawCode = preSubject.replace('!', '');
+                    }else if(preSubject.includes("~")){
+                        type = 0;                    
+                        rawCode = preSubject.replace('~', '');
+                    }else{
+                        type = 0;
+                        rawCode = preSubject;
+                    }
+                    // var
+                    for(var i = 0; i<StateDataArray.length;i++){
+                        if(StateDataArray[i].code == rawCode && StateDataArray[i].active == 1){
+                            if(StateDataArray[i].branch == "torzsanyag" || StateDataArray[i].branch == currentBranch){
+                                if(type == 0){
+                                    if(StateDataArray[i].status == 0 || StateDataArray[i].status == 1){
+                                        AllCompleted = false;
+                                        break;
+                                    }
+                                }else if(type == 1){
+                                    if(StateDataArray[i].status == 0){
+                                        AllCompleted = false;
+                                        break;
+                                    } 
+                                }
+                            }
+                        }   
+                    }
+                });
+                if(AllCompleted){
+                    item.felveheto = 1;
+                }else{
+                    item.felveheto = 0;
+                    item.status = 0;
+                }
             }
         }
-    
     });
 }
 
@@ -219,17 +238,21 @@ function SetColor(){
         for(var j =0;j<StateDataArray.length;j++){
             if(StateDataArray[j].uniquecode !== undefined){
                 if(StateDataArray[j].uniquecode == unique){
-                    //item found
-                    found = true;
-                    index = j;
-                    break;
+                    if(StateDataArray[j].branch == "torzsanyag" || StateDataArray[j].branch == currentBranch){
+                        //item found
+                        found = true;
+                        index = j;
+                        break;
+                    }
                 }
             }else{
                 if(StateDataArray[j].code == code){
-                    //item found
-                    found = true;
-                    index = j;
-                    break;
+                    if(StateDataArray[j].branch == "torzsanyag" || StateDataArray[j].branch == currentBranch){
+                        //item found
+                        found = true;
+                        index = j;
+                        break;
+                    }
                 }
             }
 

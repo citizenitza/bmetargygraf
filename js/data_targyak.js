@@ -959,7 +959,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Aláírás",
                     felev: 7,
-                    elo:[],
+                    elo:["BMEEOHSAS47","BMEEOHSAS42"],
                     substitutes:[],
                 },
             ],

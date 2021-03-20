@@ -42,12 +42,10 @@ function SpecializationsChanged(_branch){
         }
         //load new
 		var spec = $("#Specializations").find(':selected').attr('data-szak');
+        currentSpech = spec;
         LoadBranchElements(_branch,spec);
         LoadSpecElements(_branch,spec);
-
-
-        
-        SetActive();
+        SetActive(_branch,spec);
         RefreshState();
     });
     return 0;
