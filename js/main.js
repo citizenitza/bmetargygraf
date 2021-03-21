@@ -76,6 +76,11 @@ function SetActive(_branch,_spec){
             }
         }
     }
+    StateDataArray.forEach(item => {
+        if(item.active == 0){
+            item.status = 0;
+        }
+    });
 }
 function InitStateDataArray(){
     //emty array
