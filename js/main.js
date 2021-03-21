@@ -30,12 +30,14 @@ function pageInit(_branch){
         RefreshState();
     }else{//url query 
         restoreFromURL(qData,qSpec,_branch);
+        RefreshState();
     }
 }
 
 function RefreshState(){
     SetState();
     SetColor();
+    setCreditBar();
 }
 function SetActive(_branch,_spec){
     //reset
@@ -271,4 +273,34 @@ function SetColor(){
             }
         }
     }
+}
+/*******************************************************************************************************
+ * Credit bar
+ * *****************************************************************************************************/
+function setCreditBar(){
+    jQuery(function($) {
+		var teljsum = 0;
+		var felvsum = 0;
+
+        for (var i = 0; i < StateDataArray.length; i++) {
+            if(StateDataArray[i].active == 1){
+                if(StateDataArray[i].status == 1){
+                    felvsum += StateDataArray[i].credit;
+                }else if(StateDataArray[i].status == 2){
+                    teljsum += StateDataArray[i].credit;
+                }
+            }
+        }
+        document.getElementById("Felv").innerHTML = felvsum.toString();
+        document.getElementById("Telj").innerHTML = teljsum.toString();
+		
+		var x_f = felvsum/240;
+		var x_t = teljsum/240;
+		var width = document.getElementById("kreditBar").offsetWidth;
+		var width_f = x_f*width;
+		var width_t = x_t*width;
+		
+		$('.Felv').animate({width: width_f}, 200 );
+		$('.Telj').animate({width: width_t}, 200 );
+	});
 }
