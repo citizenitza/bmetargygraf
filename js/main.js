@@ -287,7 +287,7 @@ function setCreditBar(){
 		var teljsum = 0;
 		var felvsum = 0;
 
-        for (var i = 0; i < StateDataArray.length; i++) {
+        for (var i = 0; i < StateDataArray.length; i++) {//branch check
             if(StateDataArray[i].active == 1){
                 if(StateDataArray[i].status == 1){
                     felvsum += StateDataArray[i].credit;
