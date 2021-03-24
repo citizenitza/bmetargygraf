@@ -739,7 +739,7 @@ subjectsData = {
                 {
                     name: "Szerkezet és anyagvizsgáló laborseminar",
                     code: "BMEEOHSAS46",
-                    credit: 0,
+                    credit: 2,
                     lecture: 0,
                     seminar: 0,
                     lab: 4,
