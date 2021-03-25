@@ -14,32 +14,32 @@
 
  </head>
  <!-- onunload="pageUnload()"  -->
-<body onload="pageInit('szerkezet')" onunload="pageUnload('szerkezet')">
+<body onload="pageInit('geoinformatika')" onunload="pageUnload('geoinformatika')">
     <div class="pageWrap">
         <div id="type" data-szak="jarmu"></div>
         <div class="container">
             <div class="sidebar">
                 <div class="sidebarInner">
                     <div class="buttonCont">
-                    <a href="szerkezet">
+                    <a href="emk/szerkezet">
                         <div class="button" id="jarmu">
                             <div class="icon"><img src="icons/szerkezet.fw.png" /></div>
                             <div class="title">Szerkezet-Építőmérnöki ágazat</div>
                         </div>
                         </a>
-                        <a href="infrastruktura">
+                        <a href="emk/infrastruktura">
                         <div class="button" id="kozlek">
                             <div class="icon"><img src="icons/infrastruktura.fw.png" /></div>
                             <div class="title">Infrastruktúra-Építőmérnöki ágazat</div>
                         </div>
                         </a>
-                        <a href="geoinformatika" >
+                        <a href="emk/geoinformatika" >
                         <div class="button" id="log">
                             <div class="icon"><img  src="icons/geoinformatika.fw.png" /></div>
                             <div class="title">Geoinformatika-Építőmérnöki ágazat</div>
                         </div>
                         </a>
-                        <a href="info" >
+                        <a href="emk/info" >
                         <div class="button" id="inf">
                             <div class="icon"><img  src="icons/info.fw.png" /></div>
                             <div class="title infospec">Info</div>
@@ -54,11 +54,11 @@
             
             
         <div class="content">
-        <div class="gombWrap">
-        	<div class="gomb" id="share" title="Megosztás" onclick="createLink()"><img src="icons/share.fw.png" /></div>
-            <div class="gomb" id="clear" title="Törlés" onclick="deleteData()"><img src="icons/delete.fw.png" /></div>
-            <div class="clear"></div>
-        </div>
+            <div class="gombWrap">
+                <div class="gomb" id="share" title="Megosztás" onclick="createLink()"><img src="icons/share.fw.png" /></div>
+                <div class="gomb" id="clear" title="Törlés" onclick="deleteData()"><img src="icons/delete.fw.png" /></div>
+                <div class="clear"></div>
+            </div>
         <!-- <div class="gombWrap">
             <div id="linkToShare"></div>
         </div> -->
@@ -77,7 +77,7 @@
             <div class="szakiranyWrap">
                 <div class="selectWrap">
                     <h4>Specializáció:</h4>
-                    <select id="Specializations" onchange="SpecializationsChanged('szerkezet')">
+                    <select id="Specializations" onchange="SpecializationsChanged('geoinformatika')">
 
                     </select>
                 </div>
