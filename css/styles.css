@@ -387,11 +387,13 @@ html {
 	margin-left:20px;
 	margin-top:20px;
 	text-align:center;
-	line-height:35px;
-	border-radius:3px;
+	border-radius:1px;
+}
+.gomb:hover{
+	background-color:#598b50;
 }
 .gomb img{
-	margin-top:5px;
+	margin-top:7px;
 }
 .banner {
 	margin-top:50px;
