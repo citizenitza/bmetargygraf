@@ -1,0 +1,80 @@
+.sidebarInner{
+	background-color:#324D2D;
+}
+.content{
+	background-color:#EEE;
+}
+.felev{
+	width:10.5%; 
+}
+.felveheto{
+	background-color:#C0D8BC;
+	color:#333;
+	border:solid 1px #C0D8BC;
+}
+.felvett{
+	background-color:#6AA361;
+	color:#FFF;
+	border:solid 1px #6AA361;
+}
+.teljesitett{
+	background-color:#324D2D;
+	color:#FFF;
+	border:solid 1px #324D2D;
+}
+.elokovetelmeny{
+	background-color:#e1b12c !important;
+	color:#fff!important;
+	border:solid 1px #e1b12c !important;	
+}
+.utokovetelmeny{
+		background-color:#c0392b;
+	color:#fff;
+	border:solid 1px #c0392b;	
+}
+.alairas{
+	/* background-color:#0097e6 ; */
+	background:linear-gradient(90deg,#0097e6 20%, #e1b12c 20%);
+	color:#fff;
+	border:solid 1px #999999;
+}
+.azonosfelev{
+	/* background-color:#8c7ae6 ; */
+	background:linear-gradient(90deg,#e1b12c 80%, #8c7ae6 20%);
+	color:#fff;
+	border:solid 1px #999999;
+}
+.alairasAzonosfelev{
+	/* background-color:#8c7ae6 ; */
+	background:linear-gradient(90deg,#0097e6 20%, #e1b12c 20%, #e1b12c 80%, #8c7ae6 20%);
+	color:#fff;
+	border:solid 1px #999999;
+}
+.alairasuto{
+	background:linear-gradient(90deg,#0097e6 20%, #c0392b 20%);
+	color:#fff;
+	border:solid 1px #999999;
+}
+.azonosfelevuto{
+	background:linear-gradient(90deg,#c0392b 80%, #8c7ae6 20%);
+	color:#fff;
+	border:solid 1px #999999;
+}
+.alairasAzonosfelevuto{
+	background:linear-gradient(90deg,#0097e6 20%, #c0392b 20%, #c0392b 80%, #8c7ae6 20%);
+	color:#fff;
+	border:solid 1px #999999;
+}
+.gomb{
+	background-color:#395933;
+}
+.gomb:hover{
+	background-color:#598b50;
+}
+.Telj{
+	background-color: #324D2D;
+
+}
+.Felv{
+	background-color:#6AA361;
+}

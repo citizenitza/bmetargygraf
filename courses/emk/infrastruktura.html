@@ -2,19 +2,18 @@
 <html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>BME-ÉMK tárgygráf</title>
-<link rel="stylesheet" type="text/css" href="..//css/styles.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="..//js/js.cookie.js"></script>
-<script src="..//js/cookie.js"></script>
-<script src="..//js/data_targyak.js"></script>
-<script src="..//js/data_load.js"></script>
-<script src="..//js/main.js"></script>
-<script src="..//js/state_handle.js"></script>
-
- </head>
- <!-- onunload="pageUnload()"  -->
-<body onload="pageInit('szerkezet')" onunload="pageUnload('szerkezet')">
+    <title>BME-ÉMK tárgygráf</title>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../js/js.cookie.js"></script>
+    <script src="../../js/cookie.js"></script>
+    <script src="data/data_targyak.js"></script>
+    <script src="../../js/data_load.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/state_handle.js"></script>
+</head>
+<body onload="pageInit('infrastruktura')" onunload="pageUnload('infrastruktura')">
     <div class="pageWrap">
         <div id="type" data-szak="jarmu"></div>
         <div class="container">
@@ -23,25 +22,25 @@
                     <div class="buttonCont">
                     <a href="szerkezet">
                         <div class="button" id="jarmu">
-                            <div class="icon"><img src="..//icons/szerkezet.fw.png" /></div>
+                            <div class="icon"><img src="../../icons/szerkezet.fw.png" /></div>
                             <div class="title">Szerkezet-Építőmérnöki ágazat</div>
                         </div>
                         </a>
                         <a href="infrastruktura">
                         <div class="button" id="kozlek">
-                            <div class="icon"><img src="..//icons/infrastruktura.fw.png" /></div>
+                            <div class="icon"><img src="../../icons/infrastruktura.fw.png" /></div>
                             <div class="title">Infrastruktúra-Építőmérnöki ágazat</div>
                         </div>
                         </a>
                         <a href="geoinformatika" >
                         <div class="button" id="log">
-                            <div class="icon"><img  src="..//icons/geoinformatika.fw.png" /></div>
+                            <div class="icon"><img  src="../../icons/geoinformatika.fw.png" /></div>
                             <div class="title">Geoinformatika-Építőmérnöki ágazat</div>
                         </div>
                         </a>
                         <a href="info" >
                         <div class="button" id="inf">
-                            <div class="icon"><img  src="..//icons/info.fw.png" /></div>
+                            <div class="icon"><img  src="../../icons/info.fw.png" /></div>
                             <div class="title infospec">Info</div>
                         </div>
                         </a>
@@ -54,11 +53,11 @@
             
             
         <div class="content">
-        <div class="gombWrap">
-        	<div class="gomb" id="share" title="Megosztás" onclick="createLink()"><img src="..//icons/share.fw.png" /></div>
-            <div class="gomb" id="clear" title="Törlés" onclick="deleteData()"><img src="..//icons/delete.fw.png" /></div>
-            <div class="clear"></div>
-        </div>
+            <div class="gombWrap">
+                <div class="gomb" id="share" title="Megosztás" onclick="createLink()"><img src="../../icons/share.fw.png" /></div>
+                <div class="gomb" id="clear" title="Törlés" onclick="deleteData()"><img src="../../icons/delete.fw.png" /></div>
+                <div class="clear"></div>
+            </div>
         <!-- <div class="gombWrap">
             <div id="linkToShare"></div>
         </div> -->
@@ -77,7 +76,7 @@
             <div class="szakiranyWrap">
                 <div class="selectWrap">
                     <h4>Specializáció:</h4>
-                    <select id="Specializations" onchange="SpecializationsChanged('szerkezet')">
+                    <select id="Specializations" onchange="SpecializationsChanged('infrastruktura')">
 
                     </select>
                 </div>
@@ -205,8 +204,9 @@
                 <br/>
             </div>
         </div>
-    </div>
-    <a href="https://www.mystat.hu/query.php?id=158374" target="_blank"><script language="JavaScript" type="text/javascript" src="https://stat.mystat.hu/stat.php?h=1&amp;id=158374"></script></a><noscript><a href="https://www.mystat.hu/query.php?id=158374" target="_blank"><img src="https://stat.mystat.hu/collect.php?id=158374&amp;h=1" alt="mystat" border="0"></img></a></noscript>
+   </div>
+</div>
+<a href="https://www.mystat.hu/query.php?id=158374" target="_blank"><script language="JavaScript" type="text/javascript" src="https://stat.mystat.hu/stat.php?h=1&amp;id=158374"></script></a><noscript><a href="https://www.mystat.hu/query.php?id=158374" target="_blank"><img src="https://stat.mystat.hu/collect.php?id=158374&amp;h=1" alt="mystat" border="0"></img></a></noscript>
 </body>
 
 </html>
