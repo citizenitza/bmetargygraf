@@ -2,16 +2,16 @@
 <html xmlns="https://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>BME-ÉMK tárgygráf</title>
-    <link rel="stylesheet" type="text/css" href="..//css/styles.css" />
+    <title>BME-KJK tárgygráf</title>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="..//js/js.cookie.js"></script>
-    <script src="..//js/cookie.js"></script>
+    <script src="../../js/js.cookie.js"></script>
+    <script src="../../js/cookie.js"></script>
     <script src="data/data_targyak.js"></script>
-    <script src="..//js/data_load.js"></script>
-    <script src="..//js/main.js"></script>
-    <script src="..//js/state_handle.js"></script>
+    <script src="../../js/data_load.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/state_handle.js"></script>
 </head>
 <body onload="pageInit('szerkezet')" onunload="pageUnload('szerkezet')">
     <div class="pageWrap">
@@ -22,25 +22,25 @@
                     <div class="buttonCont">
                     <a href="szerkezet">
                         <div class="button" id="jarmu">
-                            <div class="icon"><img src="..//icons/szerkezet.fw.png" /></div>
-                            <div class="title">Szerkezet-Építőmérnöki ágazat</div>
+                            <div class="icon"><img src="../../icons/jarmu.fw.png" /></div>
+                            <div class="title">Járműmérnök</div>
                         </div>
                         </a>
                         <a href="infrastruktura">
                         <div class="button" id="kozlek">
-                            <div class="icon"><img src="..//icons/infrastruktura.fw.png" /></div>
-                            <div class="title">Infrastruktúra-Építőmérnöki ágazat</div>
+                            <div class="icon"><img src="../../icons/kozlek.fw.png" /></div>
+                            <div class="title">Közlekedésmérnök</div>
                         </div>
                         </a>
                         <a href="geoinformatika" >
                         <div class="button" id="log">
-                            <div class="icon"><img  src="..//icons/geoinformatika.fw.png" /></div>
-                            <div class="title">Geoinformatika-Építőmérnöki ágazat</div>
+                            <div class="icon"><img  src="../../icons/log.fw.png" /></div>
+                            <div class="title">Logisztikai mérnök</div>
                         </div>
                         </a>
                         <a href="info" >
                         <div class="button" id="inf">
-                            <div class="icon"><img  src="..//icons/info.fw.png" /></div>
+                            <div class="icon"><img  src="../../icons/info.fw.png" /></div>
                             <div class="title infospec">Info</div>
                         </div>
                         </a>
@@ -54,14 +54,14 @@
             
         <div class="content">
         <div class="gombWrap">
-        	<div class="gomb" id="share" title="Megosztás" onclick="createLink()"><img src="..//icons/share.fw.png" /></div>
-            <div class="gomb" id="clear" title="Törlés" onclick="deleteData()"><img src="..//icons/delete.fw.png" /></div>
+        	<div class="gomb" id="share" title="Megosztás" onclick="createLink()"><img src="../../icons/share.fw.png" /></div>
+            <div class="gomb" id="clear" title="Törlés" onclick="deleteData()"><img src="../../icons/delete.fw.png" /></div>
             <div class="clear"></div>
         </div>
         <!-- <div class="gombWrap">
             <div id="linkToShare"></div>
         </div> -->
-        <h2 class="pageTitle">Szerkezet-Építőmérnöki ágazat</h2>
+        <h2 class="pageTitle">Járműmérnök Bsc</h2>
         <div class="kreditWrap">
             <div>
                     <div id="kreditBar" class="kreditBar">
@@ -81,27 +81,27 @@
                     </select>
                 </div>
             </div>
-
-
-
             <div class="targyInfo">
-                <div class="targyInfoBox boxNarrow">
-                    <div class="targyInfoTitle">Név:</div>
-                    <div class="targyInfoTitle">Kredit:</div>
-                    <div class="targyInfoTitle">Tárgykód:</div>
-                </div>
-                <div class="targyInfoBox Box1">
-                    <div class="targyInfoSingle" id="targyNev"></div>
-                    <div class="targyInfoSingle" id="targyKredit"></div>
-                    <div class="targyInfoSingle" id="targyKod"></div>
-                </div>
-                <div class="targyInfoBox boxNarrow2">
-                    <div class="targyInfoTitle">Alternatív tárgyak:</div>
-                </div>
-                <div class="targyInfoBox Box2">
-                    <div class="targyInfoSingle" id="targyaAlternativ">
+                <div class="targyInfoBox">
+                    <div class="infoBoxRow">
+                        <div class="targyInfoTitle">Név:</div>
+                        <div class="targyInfoSingle" id="targyNev">Click on a subject</div>
+                    </div>                    
+                    <div class="infoBoxRow">
+                        <div class="targyInfoTitle">Kredit:</div>
+                        <div class="targyInfoSingle" id="targyKredit">Click on a subject</div>
+                    </div>                    
+                    <div class="infoBoxRow">
+                        <div class="targyInfoTitle">Tárgykód:</div>
+                        <div class="targyInfoSingle" id="targyKod">Click on a subject</div>
                     </div>
                 </div>
+                <div class="targyInfoBox">
+                    <div class="infoBoxRow">
+                        <div class="targyInfoTitle">Alternatív tárgyak:</div>
+                        <div class="targyInfoSingle" id="targyaAlternativ">Click on a subject</div>
+                    </div>                 
+                </div>        
             </div>
         </div>
         <br class="clear" />

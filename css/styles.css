@@ -281,9 +281,7 @@ body{
 	padding-left:10px;
 }
 .szakiranyWrap select{
-
 	font-family: 'raleway-semibold';
-	background:#C0D8BC;
 	border:solid 1px #999999;
 	border-radius:1px;
 }
@@ -295,34 +293,33 @@ font-family: 'raleway-semibold';
 	width:50%;
 	min-width:600px;
 	float:left;
-	background:#C0D8BC;
 	border-radius:1px;
 	font-size:14px;
-	border:solid 1px #999999;
-}
-.targyInfoSingle{
-	margin-left:5px;
-}
-.targyInfoBox{
-	position:relative;
-	float:left;
-	margin:5px;
-}
-.boxNarrow{	
-	width:12%;
-}
-.boxNarrow2{	
-	width:18%;
-}
-.Box1{
-	width:20%;
-}
-.Box2{
-	width:40%;
 }
 .targyInfoTitle{
+	position: relative;
+	float: left;
 	font-weight:bold;
+	min-width: 48%;
+	max-width: 48%;
 }
+.targyInfoSingle{
+	position: relative;
+	float: left;
+	margin-left:5px;
+	min-width: 48%;
+	max-width: 48%;
+}
+.targyInfoBox{
+	position: relative;
+	width: 45%;
+	float: left;;
+	margin:5px;
+}
+.infoBoxRow{
+	width: 100%;
+}
+
 .alterSubject{
 	font-size: 12px;
 }

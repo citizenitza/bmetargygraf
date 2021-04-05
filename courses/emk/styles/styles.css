@@ -33,19 +33,16 @@
 	border:solid 1px #c0392b;	
 }
 .alairas{
-	/* background-color:#0097e6 ; */
 	background:linear-gradient(90deg,#0097e6 20%, #e1b12c 20%);
 	color:#fff;
 	border:solid 1px #999999;
 }
 .azonosfelev{
-	/* background-color:#8c7ae6 ; */
 	background:linear-gradient(90deg,#e1b12c 80%, #8c7ae6 20%);
 	color:#fff;
 	border:solid 1px #999999;
 }
 .alairasAzonosfelev{
-	/* background-color:#8c7ae6 ; */
 	background:linear-gradient(90deg,#0097e6 20%, #e1b12c 20%, #e1b12c 80%, #8c7ae6 20%);
 	color:#fff;
 	border:solid 1px #999999;
@@ -73,8 +70,14 @@
 }
 .Telj{
 	background-color: #324D2D;
-
 }
 .Felv{
 	background-color:#6AA361;
+}
+.targyInfo{
+	background:#C0D8BC;
+	border:solid 1px #999999;
+}
+.szakiranyWrap select{
+	background:#C0D8BC;
 }

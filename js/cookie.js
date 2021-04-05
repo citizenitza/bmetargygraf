@@ -1,11 +1,3 @@
-function DebugTest(){
-    // prepareCookie();
-    // setCookie("szerkezet");
-
-}
-function DebugTest2(){
-    getCookie("szerkezet");
-}
 function pageUnload(_agazatname){
     setCookie(_agazatname);
 }
@@ -16,9 +8,6 @@ function setCookie(_agazatname) {
     //save cookies
     Cookies.set(_agazatname, cookiestring, { expires: 60 });
     Cookies.set(specCookieName, spec, { expires: 60 });
-    // var d = new Date();
-    // d.setTime(d.getTime() + (60*24*60*60*1000));
-    // var expires = "expires="+ d.toUTCString();
 }
 function getCookie(_agazatname) {
     jQuery(function($) {
@@ -30,9 +19,9 @@ function getCookie(_agazatname) {
         if(retVal == 0){
             var dataTargyak = Cookies.get(_agazatname);
             var decodedData = window.atob(dataTargyak);
-            console.log("restore start");    
+            // console.log("restore start");      
             restoreFromCookie(decodedData);
-            console.log("restore end");   
+            // console.log("restore end");   
         }
     });
 }
@@ -68,12 +57,12 @@ function SetSpecialization(data) {
 	});
 }
 function restoreFromURL(data,spec,_agazatname){
-    console.log(data);
-    console.log(spec);
-    console.log(_agazatname);
+    // console.log(data);
+    // console.log(spec);
+    // console.log(_agazatname);
     jQuery(function($) {
         var decodedData = window.atob(data);
-        console.log(decodedData);
+        // console.log(decodedData);
         SetSpecialization(spec);
         var retVal = SpecializationsChanged(_agazatname);
         if(retVal == 0){
@@ -86,7 +75,7 @@ function restoreFromURL(data,spec,_agazatname){
         }
     });
 }
-function getURL(_agazatname){
+function getURL(){
     var cookiestring = prepareCookie();
     var spec = $("#Specializations").find(':selected').attr('data-szak');
     var currentURL =location.protocol + '//' + location.host + location.pathname; 

@@ -107,7 +107,7 @@ function InitStateDataArray(){
                 substitutes:subject.substitutes,
             };
             StateDataArray.push(newsubject);
-            console.log(newsubject.branch);
+            // console.log(newsubject.branch); 
         });
         if("specializations" in branch){
             branch.specializations.forEach(spec=>{
@@ -131,7 +131,7 @@ function InitStateDataArray(){
                         substitutes:specSubject.substitutes,
                     };
                     StateDataArray.push(newsubject);
-                    console.log(newsubject.branch);
+                    // console.log(newsubject.branch);
                 });
             });
         }
@@ -212,18 +212,13 @@ function deleteData(){
 }
 function createLink(){
     var url = "";
-    url = getURL("szerkezet");
-    console.log(url);
-
+    url = getURL();
     const el = document.createElement('textarea');
     el.value = url;
     document.body.appendChild(el);
     el.select();
     document.execCommand("copy");
     alert("Copied!");
-}
-function PushDatatoDisplay(){
-    
 }
 
 /*******************************************************************************************************

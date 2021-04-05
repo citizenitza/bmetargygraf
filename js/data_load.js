@@ -1,34 +1,8 @@
-const Agazat = {
-    szerkezet: 1,
-    infrastr: 2,
-    geoinfo: 3,
- };
- const SpecSzerk = {
-    magasepites: 0,
-    hidesmutargy: 1,
-    geotech: 2,
-    epitestech: 3,
-    szerkezetianyagok: 4,
-    epitmenyinformacio: 5,
- };
- const SpecInfrastr ={
-    kozlekedesiletesitmeny: 0,
-    vizimernoki: 1,
-    epitmenyinformacio: 2,
-    geotech: 3,
- };
- const SpecGeoinfo ={
-    geodezia: 0,
-    terinfo: 1,
-    epitmenyinformacio: 2,
-};
-
-
 function SpecializationsChanged(_branch){
     //clear data
-    console.log("clear start");
+    // console.log("clear start");
     ClearDataForSpecSubjects();
-    console.log("clear end");
+    // console.log("clear end");
     jQuery(function($) {
         //clear previous subjects
         for(var i=0;i<5;i++){ // for the 4 semester with branch and spec subjects

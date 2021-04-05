@@ -1,5 +1,5 @@
 .sidebarInner{
-	background-color:#324D2D;
+	background-color:#27140c;
 }
 .content{
 	background-color:#EEE;
@@ -8,73 +8,76 @@
 	width:10.5%; 
 }
 .felveheto{
-	background-color:#C0D8BC;
+	background-color:#FDE3A7;
 	color:#333;
-	border:solid 1px #C0D8BC;
+	border:solid 1px #FDE3A7;
 }
 .felvett{
-	background-color:#6AA361;
+	background-color:#966B46;
 	color:#FFF;
-	border:solid 1px #6AA361;
+	border:solid 1px #966B46;
 }
 .teljesitett{
-	background-color:#324D2D;
+	background-color:#6C3C25;
 	color:#FFF;
-	border:solid 1px #324D2D;
+	border:solid 1px #6C3C25;
 }
 .elokovetelmeny{
-	background-color:#e1b12c !important;
+	background-color:#67809F !important;
 	color:#fff!important;
-	border:solid 1px #e1b12c !important;	
+	border:solid 1px #67809F !important;	
 }
 .utokovetelmeny{
-		background-color:#c0392b;
+		background-color:#00B16A;
 	color:#fff;
-	border:solid 1px #c0392b;	
+	border:solid 1px #00B16A;	
 }
 .alairas{
-	/* background-color:#0097e6 ; */
-	background:linear-gradient(90deg,#0097e6 20%, #e1b12c 20%);
+	background:linear-gradient(90deg,#e1b12c 20%, #67809F 20%);
 	color:#fff;
 	border:solid 1px #999999;
 }
 .azonosfelev{
-	/* background-color:#8c7ae6 ; */
-	background:linear-gradient(90deg,#e1b12c 80%, #8c7ae6 20%);
+	background:linear-gradient(90deg,#67809F 80%, #c0392b 20%);
 	color:#fff;
 	border:solid 1px #999999;
 }
 .alairasAzonosfelev{
-	/* background-color:#8c7ae6 ; */
-	background:linear-gradient(90deg,#0097e6 20%, #e1b12c 20%, #e1b12c 80%, #8c7ae6 20%);
+	background:linear-gradient(90deg,#e1b12c 20%, #67809F 20%, #67809F 80%, #c0392b 20%);
 	color:#fff;
 	border:solid 1px #999999;
 }
 .alairasuto{
-	background:linear-gradient(90deg,#0097e6 20%, #c0392b 20%);
+	background:linear-gradient(90deg,#e1b12c 20%, #00B16A 20%);
 	color:#fff;
 	border:solid 1px #999999;
 }
 .azonosfelevuto{
-	background:linear-gradient(90deg,#c0392b 80%, #8c7ae6 20%);
+	background:linear-gradient(90deg,#00B16A 80%, #c0392b 20%);
 	color:#fff;
 	border:solid 1px #999999;
 }
 .alairasAzonosfelevuto{
-	background:linear-gradient(90deg,#0097e6 20%, #c0392b 20%, #c0392b 80%, #8c7ae6 20%);
+	background:linear-gradient(90deg,#e1b12c 20%, #00B16A 20%, #00B16A 80%, #c0392b 20%);
 	color:#fff;
 	border:solid 1px #999999;
 }
 .gomb{
-	background-color:#395933;
+	background-color:#6C3C25;
 }
 .gomb:hover{
-	background-color:#598b50;
+	background-color:#8f4f31;
 }
 .Telj{
-	background-color: #324D2D;
-
+	background-color: #6C3C25;
 }
 .Felv{
-	background-color:#6AA361;
+	background-color:#966B46;
+}
+.targyInfo{
+	background:#E2D1C2;
+	border:solid 1px #999999;
+}
+.szakiranyWrap select{
+	background:#E2D1C2;
 }
