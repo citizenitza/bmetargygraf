@@ -57,9 +57,6 @@ function SetSpecialization(data) {
 	});
 }
 function restoreFromURL(data,spec,_agazatname){
-    // console.log(data);
-    // console.log(spec);
-    // console.log(_agazatname);
     jQuery(function($) {
         var decodedData = window.atob(data);
         // console.log(decodedData);
@@ -83,11 +80,11 @@ function getURL(){
     return result;
 }
 function getQueryVariable(variable){
-       var query = window.location.search.substring(1);
-       var vars = query.split("&");
-       for (var i=0;i<vars.length;i++) {
-               var pair = vars[i].split("=");
-               if(pair[0] == variable){return pair[1];}
-       }
-       return(false);
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+    }
+    return(false);
 }
