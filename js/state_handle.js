@@ -36,6 +36,11 @@ $(document).ready(function() {
                     if(newCode == code){
                         cTargy_array[i].className += " alairas";
                     }
+                }else if(x.includes("$")){//ajanlott
+                    var newCode = x.replace('$', '');
+                    if(newCode == code){
+                        cTargy_array[i].className += " ajanlott";
+                    }
                 }else{//sima elokovetelmeny
                     if(x == code){
                         cTargy_array[i].className += " elokovetelmeny";
@@ -105,6 +110,7 @@ $(document).ready(function() {
             cTargy_array[i].className = cTargy_array[i].className.replace(' azonosfelev', '');
             cTargy_array[i].className = cTargy_array[i].className.replace(' alairas', '');
             cTargy_array[i].className = cTargy_array[i].className.replace(' elokovetelmeny', '');
+            cTargy_array[i].className = cTargy_array[i].className.replace(' ajanlott', '');
         }
     });
 
@@ -160,26 +166,28 @@ $(document).ready(function() {
             document.getElementById("targyNev").innerHTML = StateDataArray[index].name;
             document.getElementById("targyKredit").innerHTML = StateDataArray[index].credit;
             document.getElementById("targyKod").innerHTML = StateDataArray[index].code;
-            if(StateDataArray[index].substitutes === undefined){
-                document.getElementById("targyaAlternativ").innerHTML = "Nincs";
-            }else{
-                document.getElementById("targyaAlternativ").innerHTML = "";
-                if(StateDataArray[index].substitutes.length != 0){
-                    for(var k = 0;k <StateDataArray[index].substitutes.length;k++){
-                        document.getElementById("targyaAlternativ").innerHTML += "<div class='alterSubject'>" + (k+1) + ". " +StateDataArray[index].substitutes[k].name + " - <b>"+StateDataArray[index].substitutes[k].code + "<b>" + "</div>";
-                        
-                        
-                    }
+            document.getElementById("targyInfoLecture").innerHTML = StateDataArray[index].lecture;
+            document.getElementById("targyInfoSeminar").innerHTML = StateDataArray[index].seminar;
+            document.getElementById("targyInfoLab").innerHTML = StateDataArray[index].lab;
+            document.getElementById("targyInfoConsultation").innerHTML = StateDataArray[index].consultation;
+            try{
+                if(StateDataArray[index].substitutes === undefined){
+                    document.getElementById("targyaAlternativ").innerHTML = "Nincs";
                 }else{
-                    document.getElementById("targyaAlternativ").innerHTML = "Nincs";                    
+                    document.getElementById("targyaAlternativ").innerHTML = "";
+                    if(StateDataArray[index].substitutes.length != 0){
+                        for(var k = 0;k <StateDataArray[index].substitutes.length;k++){
+                            document.getElementById("targyaAlternativ").innerHTML += "<div class='alterSubject'>" + (k+1) + ". " +StateDataArray[index].substitutes[k].name + " - <b>"+StateDataArray[index].substitutes[k].code + "<b>" + "</div>";       
+                        }
+                    }else{
+                        document.getElementById("targyaAlternativ").innerHTML = "Nincs";                    
+                    }
                 }
+            }catch{
+                //not defined
             }
-
         }
-
-        
         RefreshState();
-
         
     });
 

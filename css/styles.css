@@ -300,21 +300,24 @@ font-family: 'raleway-semibold';
 	position: relative;
 	float: left;
 	font-weight:bold;
-	min-width: 48%;
-	max-width: 48%;
+	min-width: 20%;
+	max-width: 20%;
 }
 .targyInfoSingle{
 	position: relative;
 	float: left;
-	margin-left:5px;
-	min-width: 48%;
-	max-width: 48%;
+	margin-left:15px;
 }
 .targyInfoBox{
 	position: relative;
-	width: 45%;
+	width: 100%;
 	float: left;;
-	margin:5px;
+	margin:3px;
+	margin-left: 20px;
+}
+.Hours{
+	position: relative;
+	float: left;
 }
 .infoBoxRow{
 	width: 100%;

@@ -1,4 +1,6 @@
 subjectsData = {
+    CurriculumType: "EMK",
+    MaxCredit: 240,
     Groups:[
         {
             type: "torzs",

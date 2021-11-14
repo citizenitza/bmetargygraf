@@ -4,24 +4,44 @@ function SpecializationsChanged(_branch){
     ClearDataForSpecSubjects();
     // console.log("clear end");
     jQuery(function($) {
-        //clear previous subjects
-        for(var i=0;i<5;i++){ // for the 4 semester with branch and spec subjects
-            
-            try{
-                document.getElementById("agazat_0" + (i+4)).innerHTML ="";
-            }catch{; }
-            try{
-                document.getElementById("spec_0" + (i+4)).innerHTML = "";
-            }catch{; }
+        if('CurriculumType' in subjectsData){
+            if(subjectsData.CurriculumType == "EMK"){
+                //clear previous subjects
+                for(var i=0;i<5;i++){ // for the 4 semester with branch and spec subjects
+                    
+                    try{
+                        document.getElementById("agazat_0" + (i+4)).innerHTML ="";
+                    }catch{; }
+                    try{
+                        document.getElementById("spec_0" + (i+4)).innerHTML = "";
+                    }catch{; }
+                }
+                //load new
+                var spec = $("#Specializations").find(':selected').attr('data-szak');
+                currentSpech = spec;
+                LoadBranchElements(_branch,spec);
+                LoadSpecElements(_branch,spec);
+                SetActive(_branch,spec);
+                RefreshState();
+            }else if(subjectsData.CurriculumType == "Simple"){
+                for(var i=0;i<7;i++){ // for the 4 semester with branch and spec subjects
+                    try{
+                        document.getElementById("spec_0" + (i+1)).innerHTML = "";
+                    }catch{; }
+                }
+                var spec = $("#Specializations").find(':selected').attr('data-szak');
+                currentSpech = spec;
+                // LoadBranchElements(_branch,spec);
+                LoadSpecElements(_branch,spec);
+                SetActive(_branch,spec);
+                RefreshState();
+            }
+
+        }else{
+            console.log("false");
         }
-        //load new
-		var spec = $("#Specializations").find(':selected').attr('data-szak');
-        currentSpech = spec;
-        LoadBranchElements(_branch,spec);
-        LoadSpecElements(_branch,spec);
-        SetActive(_branch,spec);
-        RefreshState();
     });
+
     return 0;
 }
 function LoadSpecNames(_branch){
@@ -49,8 +69,10 @@ function LoadSubjectElements(){ //torzs targyak
 function LoadBranchElements(_branch, _spec){ //spec needed because 
 //agazat
     //iterate branches
+    console.log("func called");
     subjectsData.Groups.forEach(branch => {
         if(branch.type == "agazat" && branch.name == _branch){
+            console.log("bramch");
             branch.subjects.forEach(element => {
                 if("parentSpecializations" in element){
                     if(element.parentSpecializations.length > 0){
@@ -63,6 +85,7 @@ function LoadBranchElements(_branch, _spec){ //spec needed because
                     }
                 }else{//no specializations field in object -> no spec requieremnt
                     document.getElementById("agazat_0" + element.felev).innerHTML += '<div class="targy" status="0" code="' + element.code +'">' + element.name + '</div>'
+                    console.log("subject added");
                 }
             });
         }

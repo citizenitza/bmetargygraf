@@ -5,7 +5,7 @@
 	background-color:#EEE;
 }
 .felev{
-	width:10.5%; 
+	width:12.0%; 
 }
 .felveheto{
 	background-color:#FDE3A7;
@@ -18,9 +18,9 @@
 	border:solid 1px #966B46;
 }
 .teljesitett{
-	background-color:#6C3C25;
+	background-color:#4F2817;
 	color:#FFF;
-	border:solid 1px #6C3C25;
+	border:solid 1px #4F2817;
 }
 .elokovetelmeny{
 	background-color:#67809F !important;
@@ -62,14 +62,19 @@
 	color:#fff;
 	border:solid 1px #999999;
 }
+.ajanlott{
+	background-color:#9c88ff;
+	color:#fff;
+	border:solid 1px #9c88ff;	
+}
 .gomb{
-	background-color:#6C3C25;
+	background-color:#4F2817;
 }
 .gomb:hover{
 	background-color:#8f4f31;
 }
 .Telj{
-	background-color: #6C3C25;
+	background-color: #4F2817;
 }
 .Felv{
 	background-color:#966B46;

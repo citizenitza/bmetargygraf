@@ -105,6 +105,10 @@ function InitStateDataArray(){
                 specprereq:0,
                 active:0,
                 substitutes:subject.substitutes,
+                lecture:subject.lecture,
+                seminar:subject.seminar,
+                lab:subject.lab,
+                consultation:subject.consultation,
             };
             StateDataArray.push(newsubject);
             // console.log(newsubject.branch); 
@@ -129,6 +133,10 @@ function InitStateDataArray(){
                         specprereq:0,
                         active:0,
                         substitutes:specSubject.substitutes,
+                        lecture:specSubject.lecture,
+                        seminar:specSubject.seminar,
+                        lab:specSubject.lab,
+                        consultation:specSubject.consultation,
                     };
                     StateDataArray.push(newsubject);
                     // console.log(newsubject.branch);
@@ -294,8 +302,8 @@ function setCreditBar(){
         document.getElementById("Felv").innerHTML = felvsum.toString();
         document.getElementById("Telj").innerHTML = teljsum.toString();
 		
-		var x_f = felvsum/240;
-		var x_t = teljsum/240;
+		var x_f = felvsum/subjectsData.MaxCredit;
+		var x_t = teljsum/subjectsData.MaxCredit;
 		var width = document.getElementById("kreditBar").offsetWidth;
 		var width_f = x_f*width;
 		var width_t = x_t*width;
