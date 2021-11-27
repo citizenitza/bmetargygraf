@@ -109,6 +109,7 @@ function InitStateDataArray(){
                 seminar:subject.seminar,
                 lab:subject.lab,
                 consultation:subject.consultation,
+                requirement:subject.requirement,
             };
             StateDataArray.push(newsubject);
             // console.log(newsubject.branch); 
@@ -137,6 +138,7 @@ function InitStateDataArray(){
                         seminar:specSubject.seminar,
                         lab:specSubject.lab,
                         consultation:specSubject.consultation,
+                        requirement:specSubject.requirement,
                     };
                     StateDataArray.push(newsubject);
                     // console.log(newsubject.branch);

@@ -170,6 +170,7 @@ $(document).ready(function() {
             document.getElementById("targyInfoSeminar").innerHTML = StateDataArray[index].seminar;
             document.getElementById("targyInfoLab").innerHTML = StateDataArray[index].lab;
             document.getElementById("targyInfoConsultation").innerHTML = StateDataArray[index].consultation;
+            document.getElementById("targyKovetelmeny").innerHTML = StateDataArray[index].requirement;
             try{
                 if(StateDataArray[index].substitutes === undefined){
                     document.getElementById("targyaAlternativ").innerHTML = "Nincs";

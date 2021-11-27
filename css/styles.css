@@ -271,7 +271,7 @@ body{
 }
 .szakiranyWrap{
 	position:relative;
-	width:40%;
+	width:58%;
 	float:left;
 }
 .selectWrap{
@@ -284,13 +284,14 @@ body{
 	font-family: 'raleway-semibold';
 	border:solid 1px #999999;
 	border-radius:1px;
+	margin-bottom: 8px;
 }
 .szakiranyWrap select option{
 font-family: 'raleway-semibold';
 }
 .targyInfo{
 	position:relative;
-	width:50%;
+	width:30%;
 	min-width:600px;
 	float:left;
 	border-radius:1px;
