@@ -45,18 +45,25 @@ body{
 }
 
 .Header{
+	position: relative;
 	background-image: url("..//element/bg.fw.png");
 	background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 35%;
+  	background-size: cover;
+  	background-position: 50% 35%;
 	color: #fff;
 	/* position:absolute; */
 	height: 90px;
 	width:100%;
 	margin: 0;
 }
-
-
+.logo a:link{
+	color: #FFF;
+	text-decoration: none;
+}
+.logo a:visited{
+	color: #FFF;
+	text-decoration: none;
+}
  .logo{
 	 position: absolute;
 	width:100%;
@@ -64,6 +71,12 @@ body{
 	margin-top: 20px;
 	text-align: center;
 	font-size: 26px;
+}
+.InfoIcon{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;;
+
 }
 .mainCont{
 	width: 100%;
@@ -78,6 +91,16 @@ body{
 	margin-bottom:40px;
 	box-shadow: 3px 3px 10px #aaaaaa;
 	padding-bottom: 25px;
+}
+.Infopage{
+	background-color: #fff;
+	min-height: 120px;
+	width: 55%;
+	margin:0 auto;
+	margin-top:20px;
+	margin-bottom:40px;
+	box-shadow: 3px 3px 10px #aaaaaa;
+	padding: 25px;
 }
 .Name{
 	width: 95%;
@@ -122,6 +145,27 @@ body{
     -ms-transition: 0.3s, ease;
     -o-transition:  0.3s, ease;
     transition:  0.3s, ease;
+}
+
+.Infopage a{
+	color: #785EA7;
+	text-decoration: none;
+}
+.Infopage a:active{
+	color: #785EA7;
+	text-decoration: none;
+}
+.Infopage a:link{
+	color: #785EA7;
+	text-decoration: none;
+}
+.Infopage a:visited{
+	color: #785EA7;
+	text-decoration: none;
+}
+.Infopage a:hover{
+	color: #A07DAC;
+	text-decoration: none;
 }
 a{
 	color: #333;
