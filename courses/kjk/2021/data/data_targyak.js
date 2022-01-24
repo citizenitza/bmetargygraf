@@ -140,7 +140,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 2,
-                    elo:[],
+                    elo:["KOVRA190$"],
                     substitutes:[],
                 },
                 {
@@ -1949,7 +1949,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 2,
-                    elo:[],
+                    elo:["KOVRA190$"],
                     substitutes:[],
                 },
                 {
@@ -3056,7 +3056,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 2,
-                    elo:[],
+                    elo:["KOVRA190$"],
                     substitutes:[],
                 },
                 {
