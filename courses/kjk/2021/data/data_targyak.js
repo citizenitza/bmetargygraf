@@ -2078,7 +2078,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Félévközi jegy",
                     felev: 3,
-                    elo:["KOJJA106"],
+                    elo:[],
                     substitutes:[],
                 },
                 {
