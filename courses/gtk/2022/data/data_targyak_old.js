@@ -1,18 +1,11 @@
 subjectsData = {
-    CurriculumType: "Simple",
+    CurriculumType: "EMK",
     MaxCredit: 240,
     Groups:[
         {
             type: "torzs",
             name: "torzsanyag",
             fullname: "Törzstárgyak",
-            subjects:[	
-            ]
-        },
-        {
-            type: "agazat",
-            name: "mumengraf",
-            fullname:"Műszaki menedzser", 
             subjects:[
                 {
                     name: "Közgazdaságtan műszaki menedzsereknek I.",
@@ -692,7 +685,14 @@ subjectsData = {
                     requirement: "Aláírás",
                     felev: 7,
                     elo:[]
-                },	
+                },				
+            ],
+        },
+        {
+            type: "agazat",
+            name: "mumengraf",
+            fullname:"Műszaki menedzser", 
+            subjects:[
             ],
             specializations:[
                 {

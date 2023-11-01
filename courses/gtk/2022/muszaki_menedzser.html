@@ -2,16 +2,16 @@
 <html xmlns="https://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>BME-ÉMK tárgygráf</title>
-    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <title>BME-GTK tárgygráf</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../../js/js.cookie.js"></script>
-    <script src="../../js/cookie.js"></script>
+    <script src="../../../js/js.cookie.js"></script>
+    <script src="../../../js/cookie.js"></script>
     <script src="data/data_targyak.js"></script>
-    <script src="../../js/data_load.js"></script>
-    <script src="../../js/main.js"></script>
-    <script src="../../js/state_handle.js"></script>
+    <script src="../../../js/data_load.js"></script>
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/state_handle.js"></script>
     <script defer data-domain="bmetargygraf.hu" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body onload="pageInit('mumengraf')" onunload="pageUnload('mumengraf')">
@@ -22,13 +22,13 @@
                     <div class="buttonCont">
                     <a href="mumengraf">
                         <div class="button">
-                            <div class="icon"><img src="../../icons/szerkezet.fw.png" /></div>
+                            <div class="icon"><img src="../../../icons/szerkezet.fw.png" /></div>
                             <div class="title">Műszaki menedzser</div>
                         </div>
                         </a>
                         <a href="../../info" >
                         <div class="button">
-                            <div class="icon"><img  src="../../icons/info.fw.png" /></div>
+                            <div class="icon"><img  src="../../../icons/info.fw.png" /></div>
                             <div class="title infospec">Info</div>
                         </div>
                         </a>
@@ -38,8 +38,8 @@
  
         <div class="content">
         <div class="gombWrap">
-        	<div class="gomb" id="share" title="Megosztás" onclick="createLink()"><img src="../../icons/share.fw.png" /></div>
-            <div class="gomb" id="clear" title="Törlés" onclick="deleteData()"><img src="../../icons/delete.fw.png" /></div>
+        	<div class="gomb" id="share" title="Megosztás" onclick="createLink()"><img src="../../../icons/share.fw.png" /></div>
+            <div class="gomb" id="clear" title="Törlés" onclick="deleteData()"><img src="../../../icons/delete.fw.png" /></div>
             <div class="clear"></div>
         </div>
         <!-- <div class="gombWrap">
@@ -106,54 +106,44 @@
         <div class="felevWrap">
                     <div class="felev">
                         <div class="title">1. félév</div>
-                        <div class="torzs" id="torzs_01">
-
+                        <div class="agazat" id="agazat_01">
                         </div>
                     </div>
+
                     <div class="felev">
                     <div class="title">2. félév</div>
-                        <div class="torzs" id="torzs_02">
-                            
+                        <div class="agazat" id="agazat_02">
                         </div>
                     </div>
+
                     <div class="felev">
                     <div class="title">3. félév</div>
-                    <div class="torzs" id="torzs_03">
-                            
+                    <div class="agazat" id="agazat_03">
                         </div>
                     </div>
+
                     <div class="felev">
                     <div class="title">4. félév</div>
-                    <div class="torzs" id="torzs_04">
-                            
+                        <div class="agazat" id="agazat_04">
+                                
+                        </div>
                     </div>
-                    <div class="agazat" id="agazat_04"> 
-                    </div>
-                    </div>
+
                     <div class="felev">
                         <div class="title">5. félév</div>
-                        <div class="torzs" id="torzs_05">
-                            
-                        </div>
                         <div class="agazat" id="agazat_05"> 
-                            </div>
+                        </div>
                     </div>
                     <div class="felev">
                         <div class="title">6. félév</div>
-                        <div class="torzs" id="torzs_06">
-                            
-                        </div>
                         <div class="agazat" id="agazat_06"> 
                         </div>
-						<div class="separator">Specializáció</div>
+                        <div class="separator">Specializáció</div>
                         <div class="spec" id="spec_06"> 
                         </div>
                     </div>
                     <div class="felev">
                     <div class="title">7. félév</div>
-                    <div class="torzs" id="torzs_07">
-                            
-                        </div>
                         <div class="agazat" id="agazat_07"> 
                         </div>
 						<div class="separator">Specializáció</div>
@@ -176,10 +166,10 @@
                 <div class="minta elokovetelmeny">Előfeltétel</div>
                 <div class="clear"></div>
             </div>
-            <div class="mintaSection"> 
+<!--             <div class="mintaSection"> 
                     <div class="minta alairas">Aláírás elegendő</div>
                     <div class="minta azonosfelev">Azonos félévben felvehető</div>
-            </div>
+            </div> -->
             <div class="mintaSection"> 
                 <br/>
                 <br/>
