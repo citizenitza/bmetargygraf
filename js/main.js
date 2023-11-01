@@ -1,14 +1,15 @@
-
+var currentBranch;
+var currentSpech;
 var StateDataArray = [];
 
 
 function pageInit(_branch){
+    currentBranch = _branch;
     //load state data array
     InitStateDataArray();
-
-
     //Create HTML objects for each semester
     //load dropdown menu
+    LoadSpecNames(_branch);
     LoadSpecNames(_branch);
     //torzsanyag
     LoadSubjectElements();
@@ -16,21 +17,30 @@ function pageInit(_branch){
     //agazat + spec
     jQuery(function($) {
 		var spec = $("#Specializations").find(':selected').attr('data-szak');
+        currentSpech = spec;
         LoadBranchElements(_branch,spec);
         LoadSpecElements(_branch,spec);
-        SetActive();
+        SetActive(_branch,spec);
         RefreshState();
     });
-
-    getCookie(_branch);
-    RefreshState();
+    //check for url param
+    var qSpec = getQueryVariable("spec");
+    var qData = getQueryVariable("data");
+    if(qSpec == false){ // no url -> load from cookie
+        getCookie(_branch);
+        RefreshState();
+    }else{//url query 
+        restoreFromURL(qData,qSpec,_branch);
+        RefreshState();
+    }
 }
 
 function RefreshState(){
     SetState();
     SetColor();
+    setCreditBar();
 }
-function SetActive(){
+function SetActive(_branch,_spec){
     //reset
     StateDataArray.forEach(item => {
         item.active = 0;
@@ -45,20 +55,33 @@ function SetActive(){
             unique = item.getAttribute("uniquecode");
         }
         for(var j =0;j<StateDataArray.length;j++){
+
             if(StateDataArray[j].uniquecode !== undefined){
                 if(StateDataArray[j].uniquecode == unique){
-                    //item found
-                    StateDataArray[j].active = 1;
-                    break;
+                    if(StateDataArray[j].branch == "torzsanyag" || StateDataArray[j].branch == _branch){
+                        //item found
+                        StateDataArray[j].active = 1;
+                        break;
+                    }else{
+                        var debug =55;
+                    }
                 }
             }else if(StateDataArray[j].code == code){
+                if(StateDataArray[j].branch == "torzsanyag" || StateDataArray[j].branch == _branch){
                     //item found
                     StateDataArray[j].active = 1;
                     break;
+                }else{
+                    var debug =55;
+                }
             }
-
         }
     }
+    StateDataArray.forEach(item => {
+        if(item.active == 0){
+            item.status = 0;
+        }
+    });
 }
 function InitStateDataArray(){
     //emty array
@@ -69,6 +92,8 @@ function InitStateDataArray(){
         branch.subjects.forEach(subject =>{
             //load all subject from group
             var newsubject ={
+                branch: branch.name,
+                spec: "NotSpec",
                 type: branch.type,
                 name:subject.name,
                 code:subject.code,
@@ -81,8 +106,14 @@ function InitStateDataArray(){
                 specprereq:0,
                 active:0,
                 substitutes:subject.substitutes,
+                lecture:subject.lecture,
+                seminar:subject.seminar,
+                lab:subject.lab,
+                consultation:subject.consultation,
+                requirement:subject.requirement,
             };
             StateDataArray.push(newsubject);
+            // console.log(newsubject.branch); 
         });
         if("specializations" in branch){
             branch.specializations.forEach(spec=>{
@@ -90,6 +121,8 @@ function InitStateDataArray(){
                 spec.subjects.forEach(specSubject =>{
                     //load all subject from spec
                     var newsubject ={
+                        branch: branch.name,
+                        spec:spec.name,
                         type: branch.type,
                         name:specSubject.name,
                         code:specSubject.code,
@@ -102,8 +135,14 @@ function InitStateDataArray(){
                         specprereq:0,
                         active:0,
                         substitutes:specSubject.substitutes,
+                        lecture:specSubject.lecture,
+                        seminar:specSubject.seminar,
+                        lab:specSubject.lab,
+                        consultation:specSubject.consultation,
+                        requirement:specSubject.requirement,
                     };
                     StateDataArray.push(newsubject);
+                    // console.log(newsubject.branch);
                 });
             });
         }
@@ -121,55 +160,58 @@ function ClearDataForSpecSubjects(){
 }
 function SetState(){
     StateDataArray.forEach(item =>{
-        //check for prequirements
-        if(item.prereq.length == 0){
-            item.felveheto = 1;
-        }else{
-            var AllCompleted = true;
-            item.prereq.forEach(preSubject =>{
-                if(item.name == "Vasbetonszerkezetek"){
-                    var debug1 = 45;//deubg break
-                }
-                var rawCode = "";
-                var type = 0;//0-normal, 1 -azonos felev,
-                if(preSubject.includes("!") && preSubject.includes("~")){
-                    type = 1;
-                    rawCode = preSubject.replace('!', '').replace('~', '');
-                }else if(preSubject.includes("!")){
-                    type = 1;
-                    rawCode = preSubject.replace('!', '');
-                }else if(preSubject.includes("~")){
-                    type = 0;                    
-                    rawCode = preSubject.replace('~', '');
-                }else{
-                    type = 0;
-                    rawCode = preSubject;
-                }
-                // var
-                for(var i = 0; i<StateDataArray.length;i++){
-                    if(StateDataArray[i].code == rawCode && StateDataArray[i].active == 1){
-                        if(type == 0){
-                            if(StateDataArray[i].status == 0 || StateDataArray[i].status == 1){
-                                AllCompleted = false;
-                                break;
-                            }
-                        }else if(type == 1){
-                            if(StateDataArray[i].status == 0){
-                                AllCompleted = false;
-                                break;
-                            } 
-                        }
-                    }   
-                }
-            });
-            if(AllCompleted){
+        if(item.active == 1){
+            //check for prequirements
+            if(item.prereq.length == 0){
                 item.felveheto = 1;
             }else{
-                item.felveheto = 0;
-                item.status = 0;
+                var AllCompleted = true;
+                item.prereq.forEach(preSubject =>{
+                    if(item.name == "Építmény-információs mod. és menedzsment proj."){
+                        var debug1 = 45;//deubg break
+                    }
+                    var rawCode = "";
+                    var type = 0;//0-normal, 1 -azonos felev,
+                    if(preSubject.includes("!") && preSubject.includes("~")){
+                        type = 1;
+                        rawCode = preSubject.replace('!', '').replace('~', '');
+                    }else if(preSubject.includes("!")){
+                        type = 1;
+                        rawCode = preSubject.replace('!', '');
+                    }else if(preSubject.includes("~")){
+                        type = 0;                    
+                        rawCode = preSubject.replace('~', '');
+                    }else{
+                        type = 0;
+                        rawCode = preSubject;
+                    }
+                    // var
+                    for(var i = 0; i<StateDataArray.length;i++){
+                        if(StateDataArray[i].code == rawCode && StateDataArray[i].active == 1){
+                            if(StateDataArray[i].branch == "torzsanyag" || StateDataArray[i].branch == currentBranch){
+                                if(type == 0){
+                                    if(StateDataArray[i].status == 0 || StateDataArray[i].status == 1){
+                                        AllCompleted = false;
+                                        break;
+                                    }
+                                }else if(type == 1){
+                                    if(StateDataArray[i].status == 0){
+                                        AllCompleted = false;
+                                        break;
+                                    } 
+                                }
+                            }
+                        }   
+                    }
+                });
+                if(AllCompleted){
+                    item.felveheto = 1;
+                }else{
+                    item.felveheto = 0;
+                    item.status = 0;
+                }
             }
         }
-    
     });
 }
 
@@ -179,9 +221,15 @@ function deleteData(){
     });
     RefreshState();
 }
-
-function PushDatatoDisplay(){
-    
+function createLink(){
+    var url = "";
+    url = getURL();
+    const el = document.createElement('textarea');
+    el.value = url;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    alert("Copied!");
 }
 
 /*******************************************************************************************************
@@ -203,17 +251,21 @@ function SetColor(){
         for(var j =0;j<StateDataArray.length;j++){
             if(StateDataArray[j].uniquecode !== undefined){
                 if(StateDataArray[j].uniquecode == unique){
-                    //item found
-                    found = true;
-                    index = j;
-                    break;
+                    if(StateDataArray[j].branch == "torzsanyag" || StateDataArray[j].branch == currentBranch){
+                        //item found
+                        found = true;
+                        index = j;
+                        break;
+                    }
                 }
             }else{
                 if(StateDataArray[j].code == code){
-                    //item found
-                    found = true;
-                    index = j;
-                    break;
+                    if(StateDataArray[j].branch == "torzsanyag" || StateDataArray[j].branch == currentBranch){
+                        //item found
+                        found = true;
+                        index = j;
+                        break;
+                    }
                 }
             }
 
@@ -232,4 +284,34 @@ function SetColor(){
             }
         }
     }
+}
+/*******************************************************************************************************
+ * Credit bar
+ * *****************************************************************************************************/
+function setCreditBar(){
+    jQuery(function($) {
+		var teljsum = 0;
+		var felvsum = 0;
+
+        for (var i = 0; i < StateDataArray.length; i++) {//branch check
+            if(StateDataArray[i].active == 1){
+                if(StateDataArray[i].status == 1){
+                    felvsum += StateDataArray[i].credit;
+                }else if(StateDataArray[i].status == 2){
+                    teljsum += StateDataArray[i].credit;
+                }
+            }
+        }
+        document.getElementById("Felv").innerHTML = felvsum.toString();
+        document.getElementById("Telj").innerHTML = teljsum.toString();
+		
+		var x_f = felvsum/subjectsData.MaxCredit;
+		var x_t = teljsum/subjectsData.MaxCredit;
+		var width = document.getElementById("kreditBar").offsetWidth;
+		var width_f = x_f*width;
+		var width_t = x_t*width;
+		
+		$('.Felv').animate({width: width_f}, 200 );
+		$('.Telj').animate({width: width_t}, 200 );
+	});
 }

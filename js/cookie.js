@@ -1,15 +1,6 @@
-
-function DebugTest(){
-    prepareCookie();
-    setCookie("szerkezet");
-}
-function DebugTest2(){
-    getCookie("szerkezet");
-}
 function pageUnload(_agazatname){
     setCookie(_agazatname);
 }
-
 function setCookie(_agazatname) {
     var cookiestring = prepareCookie();
     var specCookieName = _agazatname + "_spec";
@@ -17,14 +8,6 @@ function setCookie(_agazatname) {
     //save cookies
     Cookies.set(_agazatname, cookiestring, { expires: 60 });
     Cookies.set(specCookieName, spec, { expires: 60 });
-
-    var d = new Date();
-    d.setTime(d.getTime() + (60*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-
-    // document.cookie = _agazatname + "=" + cookiestring + ";" + expires;
-    // document.cookie = specCookieName + "=" + spec + ";" + expires;
-
 }
 function getCookie(_agazatname) {
     jQuery(function($) {
@@ -36,9 +19,9 @@ function getCookie(_agazatname) {
         if(retVal == 0){
             var dataTargyak = Cookies.get(_agazatname);
             var decodedData = window.atob(dataTargyak);
-            console.log("restore start");    
+            // console.log("restore start");      
             restoreFromCookie(decodedData);
-            console.log("restore end");   
+            // console.log("restore end");   
         }
     });
 }
@@ -72,4 +55,36 @@ function SetSpecialization(data) {
 			}
 		}
 	});
+}
+function restoreFromURL(data,spec,_agazatname){
+    jQuery(function($) {
+        var decodedData = window.atob(data);
+        // console.log(decodedData);
+        SetSpecialization(spec);
+        var retVal = SpecializationsChanged(_agazatname);
+        if(retVal == 0){
+            for(var i = 0;i<decodedData.length;i+=2){
+                var currentIndex = i/2;
+                StateDataArray[currentIndex].status = Number(decodedData.charAt(i));
+                StateDataArray[currentIndex].felveheto = Number(decodedData.charAt(i + 1));
+            }
+            RefreshState();
+        }
+    });
+}
+function getURL(){
+    var cookiestring = prepareCookie();
+    var spec = $("#Specializations").find(':selected').attr('data-szak');
+    var currentURL =location.protocol + '//' + location.host + location.pathname; 
+    var result = currentURL + "?spec=" + spec + "&data=" + cookiestring;
+    return result;
+}
+function getQueryVariable(variable){
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+    }
+    return(false);
 }

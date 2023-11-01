@@ -7,9 +7,11 @@ $(document).ready(function() {
         var SourceAddress = this.getAttribute("code");
         var PrereqArray = [];
         StateDataArray.forEach(subject => {    
-            if(subject.code == SourceAddress){
-                PrereqArray = subject.prereq;
-                // console.log(subject.name +" _status:  " +subject.status);
+            if(subject.branch == "torzsanyag" || subject.branch == currentBranch){
+                if(subject.code == SourceAddress){
+                    PrereqArray = subject.prereq;
+                    // console.log(subject.name +" _status:  " +subject.status);
+                }
             }
         });
 
@@ -34,6 +36,11 @@ $(document).ready(function() {
                     if(newCode == code){
                         cTargy_array[i].className += " alairas";
                     }
+                }else if(x.includes("$")){//ajanlott
+                    var newCode = x.replace('$', '');
+                    if(newCode == code){
+                        cTargy_array[i].className += " ajanlott";
+                    }
                 }else{//sima elokovetelmeny
                     if(x == code){
                         cTargy_array[i].className += " elokovetelmeny";
@@ -46,42 +53,44 @@ $(document).ready(function() {
                 if(subject.code == code && subject.code != ""){
                     utoPrereqArray = subject.prereq;
                 }
-                if(utoPrereqArray.length != 0){
-                    utoPrereqArray.forEach(x => {
-                        if(x.includes("!") && x.includes("~")){
-                            var newCode = x.replace('!', '').replace('~', '');
-                            if(newCode == SourceAddress){
-                                if(!cTargy_array[i].className.includes("alairasAzonosfelevuto")){
-                                    cTargy_array[i].className += " alairasAzonosfelevuto";
+                if(subject.branch == "torzsanyag" || subject.branch == currentBranch){
+                    if(utoPrereqArray.length != 0){
+                        utoPrereqArray.forEach(x => {
+                            if(x.includes("!") && x.includes("~")){
+                                var newCode = x.replace('!', '').replace('~', '');
+                                if(newCode == SourceAddress){
+                                    if(!cTargy_array[i].className.includes("alairasAzonosfelevuto")){
+                                        cTargy_array[i].className += " alairasAzonosfelevuto";
+                                    }
+                                }
+                            }else if(x.includes("!")){ //azonos felev
+                                var newCode = x.replace('!', '');
+                                if(newCode == SourceAddress){
+                                    if(!cTargy_array[i].className.includes("azonosfelevuto")){
+                                        cTargy_array[i].className += " azonosfelevuto";
+                                    }
+                                }
+                            }else if(x.includes("~")){//alairas
+                                var newCode = x.replace('~', '');
+                                if(newCode == SourceAddress){
+                                    if(!cTargy_array[i].className.includes("alairasuto")){
+                                        cTargy_array[i].className += " alairasuto";
+                                    }
+                                }
+                            }else{//sima elokovetelmeny
+                                if(x == SourceAddress){
+                                    if(!cTargy_array[i].className.includes("utokovetelmeny")){
+                                        cTargy_array[i].className += " utokovetelmeny";
+                                    }
                                 }
                             }
-                        }else if(x.includes("!")){ //azonos felev
-                            var newCode = x.replace('!', '');
-                            if(newCode == SourceAddress){
-                                if(!cTargy_array[i].className.includes("azonosfelevuto")){
-                                    cTargy_array[i].className += " azonosfelevuto";
-                                }
-                            }
-                        }else if(x.includes("~")){//alairas
-                            var newCode = x.replace('~', '');
-                            if(newCode == SourceAddress){
-                                if(!cTargy_array[i].className.includes("alairasuto")){
-                                    cTargy_array[i].className += " alairasuto";
-                                }
-                            }
-                        }else{//sima elokovetelmeny
-                            if(x == SourceAddress){
-                                if(!cTargy_array[i].className.includes("utokovetelmeny")){
-                                    cTargy_array[i].className += " utokovetelmeny";
-                                }
-                            }
-                        }
-                    });
-                    // if(utoPrereqArray.some(x=> x == SourceAddress)){
-                        // if(!cTargy_array[i].className.includes("utokovetelmeny")){
-                        // cTargy_array[i].className += " utokovetelmeny";
+                        });
+                        // if(utoPrereqArray.some(x=> x == SourceAddress)){
+                            // if(!cTargy_array[i].className.includes("utokovetelmeny")){
+                            // cTargy_array[i].className += " utokovetelmeny";
+                            // }
                         // }
-                    // }
+                    }
                 }
             });
             if(uniquecode != null){
@@ -101,6 +110,7 @@ $(document).ready(function() {
             cTargy_array[i].className = cTargy_array[i].className.replace(' azonosfelev', '');
             cTargy_array[i].className = cTargy_array[i].className.replace(' alairas', '');
             cTargy_array[i].className = cTargy_array[i].className.replace(' elokovetelmeny', '');
+            cTargy_array[i].className = cTargy_array[i].className.replace(' ajanlott', '');
         }
     });
 
@@ -121,23 +131,31 @@ $(document).ready(function() {
         for(var j = 0; j < StateDataArray.length; j++){
             if(StateDataArray[j].uniquecode !== undefined){
                 if(StateDataArray[j].uniquecode == unique){
-                    //item found
-                    found = true;
-                    index = j;
-                    break;
+                    if(StateDataArray[j].branch == "torzsanyag" || StateDataArray[j].branch == currentBranch){
+                        //item found
+                        found = true;
+                        index = j;
+                        break;
+                    }else{
+                        var debug = 45;
+                    }
                 }
             }else{
                 if(StateDataArray[j].code == code){
-                    //item found
-                    found = true;
-                    index = j;
-                    break;
+                    if(StateDataArray[j].branch == "torzsanyag" || StateDataArray[j].branch == currentBranch){
+                        //item found
+                        found = true;
+                        index = j;
+                        break;
+                    }else{
+                        var debug = 45;
+                    }
                 }
             }
 
         }
         if(found){
-            console.log(StateDataArray[index].name + "_" + index);
+            // console.log(StateDataArray[index].name + "_" + index);
             if(StateDataArray[index].felveheto == 1){
                 StateDataArray[index].status += 1;
                 if(StateDataArray[index].status >=3){
@@ -148,26 +166,29 @@ $(document).ready(function() {
             document.getElementById("targyNev").innerHTML = StateDataArray[index].name;
             document.getElementById("targyKredit").innerHTML = StateDataArray[index].credit;
             document.getElementById("targyKod").innerHTML = StateDataArray[index].code;
-            if(StateDataArray[index].substitutes === undefined){
-                document.getElementById("targyaAlternativ").innerHTML = "Nincs";
-            }else{
-                document.getElementById("targyaAlternativ").innerHTML = "";
-                if(StateDataArray[index].substitutes.length != 0){
-                    for(var k = 0;k <StateDataArray[index].substitutes.length;k++){
-                        document.getElementById("targyaAlternativ").innerHTML += "<div class='alterSubject'>" + (k+1) + ". " +StateDataArray[index].substitutes[k].name + " - <b>"+StateDataArray[index].substitutes[k].code + "<b>" + "</div>";
-                        
-                        
-                    }
+            document.getElementById("targyInfoLecture").innerHTML = StateDataArray[index].lecture;
+            document.getElementById("targyInfoSeminar").innerHTML = StateDataArray[index].seminar;
+            document.getElementById("targyInfoLab").innerHTML = StateDataArray[index].lab;
+            document.getElementById("targyInfoConsultation").innerHTML = StateDataArray[index].consultation;
+            document.getElementById("targyKovetelmeny").innerHTML = StateDataArray[index].requirement;
+            try{
+                if(StateDataArray[index].substitutes === undefined){
+                    document.getElementById("targyaAlternativ").innerHTML = "Nincs";
                 }else{
-                    document.getElementById("targyaAlternativ").innerHTML = "Nincs";                    
+                    document.getElementById("targyaAlternativ").innerHTML = "";
+                    if(StateDataArray[index].substitutes.length != 0){
+                        for(var k = 0;k <StateDataArray[index].substitutes.length;k++){
+                            document.getElementById("targyaAlternativ").innerHTML += "<div class='alterSubject'>" + (k+1) + ". " +StateDataArray[index].substitutes[k].name + " - <b>"+StateDataArray[index].substitutes[k].code + "<b>" + "</div>";       
+                        }
+                    }else{
+                        document.getElementById("targyaAlternativ").innerHTML = "Nincs";                    
+                    }
                 }
+            }catch{
+                //not defined
             }
-
         }
-
-        
         RefreshState();
-
         
     });
 
