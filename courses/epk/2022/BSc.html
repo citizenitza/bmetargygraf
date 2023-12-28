@@ -1,8 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>BME-GTK tárgygráf</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BME-ÉMK tárgygráf</title>
     <link rel="stylesheet" type="text/css" href="../../../css/styles.css" />
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,16 +14,28 @@
     <script src="../../../js/state_handle.js"></script>
     <script defer data-domain="bmetargygraf.hu" src="https://plausible.io/js/plausible.js"></script>
 </head>
-<body onload="pageInit('mumengraf')" onunload="pageUnload('mumengraf')">
+<body onload="pageInit('geoinformatika')" onunload="pageUnload('geoinformatika')">
     <div class="pageWrap">
         <div class="container">
             <div class="sidebar">
                 <div class="sidebarInner">
                     <div class="buttonCont">
-                    <a href="mumengraf">
+                    <a href="#">
                         <div class="button">
-                            <div class="icon"><img src="../../../icons/gtk_mm_white.fw.png" /></div>
-                            <div class="title">Műszaki menedzser</div>
+                            <div class="icon"><img src="../../../icons/epk_bsc_white.fw.png" /></div>
+                            <div class="title">BSc képzés</div>
+                        </div>
+                        </a>
+                        <a href="#">
+                        <div class="button">
+                            <div class="icon"><img src="../../../icons/epk_msc_white.fw.png" /></div>
+                            <div class="title">MSc képzés</div>
+                        </div>
+                        </a>
+                        <a href="#" >
+                        <div class="button">
+                            <div class="icon"><img  src="../../../icons/epk_oszt_white.fw.png" /></div>
+                            <div class="title">Osztatlan képzés</div>
                         </div>
                         </a>
                         <a href="../../../info" >
@@ -37,15 +49,15 @@
             </div>
  
         <div class="content">
-        <div class="gombWrap">
-        	<div class="gomb" id="share" title="Megosztás" onclick="createLink()"><img src="../../../icons/share.fw.png" /></div>
-            <div class="gomb" id="clear" title="Törlés" onclick="deleteData()"><img src="../../../icons/delete.fw.png" /></div>
-            <div class="clear"></div>
-        </div>
+            <div class="gombWrap">
+                <div class="gomb" id="share" title="Megosztás" onclick="createLink()"><img src="../../../icons/share.fw.png" /></div>
+                <div class="gomb" id="clear" title="Törlés" onclick="deleteData()"><img src="../../../icons/delete.fw.png" /></div> 
+                <div class="clear"></div>
+            </div>
         <!-- <div class="gombWrap">
             <div id="linkToShare"></div>
         </div> -->
-        <h2 class="pageTitle">Műszaki menedzser BSc</h2>
+        <h2 class="pageTitle">Építészmérnöki Bsc képzés</h2>
         <div class="kreditWrap">
             <div>
                     <div id="kreditBar" class="kreditBar">
@@ -60,13 +72,11 @@
             <div class="szakiranyWrap">
                 <div class="selectWrap">
                     <h4>Specializáció:</h4>
-                    <select id="Specializations" onchange="SpecializationsChanged('mumengraf')">
+                    <select id="Specializations" onchange="SpecializationsChanged('geoinformatika')">
 
                     </select>
                 </div>
             </div>
-
-
 
             <div class="targyInfo">
                 <div class="targyInfoBox">
@@ -99,43 +109,53 @@
                 </div>
             </div>
 
-            
+
         </div>
         <br class="clear" />
 
         <div class="felevWrap">
                     <div class="felev">
                         <div class="title">1. félév</div>
-                        <div class="agazat" id="agazat_01">
+                        <div class="torzs" id="torzs_01">
+
                         </div>
                     </div>
-
                     <div class="felev">
                     <div class="title">2. félév</div>
-                        <div class="agazat" id="agazat_02">
+                        <div class="torzs" id="torzs_02">
+                            
                         </div>
                     </div>
-
                     <div class="felev">
                     <div class="title">3. félév</div>
-                    <div class="agazat" id="agazat_03">
+                    <div class="torzs" id="torzs_03">
+                            
                         </div>
                     </div>
-
                     <div class="felev">
                     <div class="title">4. félév</div>
-                        <div class="agazat" id="agazat_04">
-                                
-                        </div>
+                    <div class="torzs" id="torzs_04">
+                            
                     </div>
-
+                    <div class="separator">Ágazat</div>
+                    <div class="agazat" id="agazat_04"> 
+                    </div>
+                    </div>
                     <div class="felev">
                         <div class="title">5. félév</div>
-                        <div class="agazat" id="agazat_05"> 
+                        <div class="torzs" id="torzs_05">
+                            
                         </div>
+                        <div class="separator">Ágazat</div>
+                        <div class="agazat" id="agazat_05"> 
+                            </div>
                     </div>
                     <div class="felev">
                         <div class="title">6. félév</div>
+                        <div class="torzs" id="torzs_06">
+                            
+                        </div>
+                        <div class="separator">Ágazat</div>
                         <div class="agazat" id="agazat_06"> 
                         </div>
                         <div class="separator">Specializáció</div>
@@ -144,10 +164,26 @@
                     </div>
                     <div class="felev">
                     <div class="title">7. félév</div>
+                    <div class="torzs" id="torzs_07">
+                            
+                        </div>
+                        <div class="separator">Ágazat</div>
                         <div class="agazat" id="agazat_07"> 
                         </div>
-						<div class="separator">Specializáció</div>
+                        <div class="separator">Specializáció</div>
                         <div class="spec" id="spec_07"> 
+                        </div>
+                    </div>
+                    <div class="felev">
+                        <div class="title">8. félév</div>
+                        <div class="torzs" id="torzs_08">
+                            
+                        </div>
+                        <!-- <div class="separator">Ágazat</div>
+                        <div class="agazat" id="agazat_08"> 
+                        </div> -->
+                        <div class="separator">Specializáció</div>
+                        <div class="spec" id="spec_08"> 
                         </div>
                     </div>
                     <div class="clear"></div>
@@ -166,18 +202,18 @@
                 <div class="minta elokovetelmeny">Előfeltétel</div>
                 <div class="clear"></div>
             </div>
-<!--             <div class="mintaSection"> 
+            <div class="mintaSection"> 
                     <div class="minta alairas">Aláírás elegendő</div>
                     <div class="minta azonosfelev">Azonos félévben felvehető</div>
-            </div> -->
+            </div>
             <div class="mintaSection"> 
                 <br/>
                 <br/>
             </div>
         </div>
-    </div>
-    <a href="https://www.mystat.hu/query.php?id=158374" target="_blank"><script language="JavaScript" type="text/javascript" src="https://stat.mystat.hu/stat.php?h=1&amp;id=158374"></script></a><noscript><a href="https://www.mystat.hu/query.php?id=158374" target="_blank"><img src="https://stat.mystat.hu/collect.php?id=158374&amp;h=1" alt="mystat" border="0"></img></a></noscript>
+   </div>
+</div>
+<a href="https://www.mystat.hu/query.php?id=158374" target="_blank"><script language="JavaScript" type="text/javascript" src="https://stat.mystat.hu/stat.php?h=1&amp;id=158374"></script></a><noscript><a href="https://www.mystat.hu/query.php?id=158374" target="_blank"><img src="https://stat.mystat.hu/collect.php?id=158374&amp;h=1" alt="mystat" border="0"></img></a></noscript>
 </body>
-
 </html>
 
