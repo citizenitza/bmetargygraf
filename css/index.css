@@ -136,9 +136,9 @@ body{
 	padding: 5px;
 	float: left;
 	display: table-row;
-	cursor: pointer;
+	/* cursor: pointer; */
 }
-.Course:hover{
+.CourseSubText:hover{
 	background-color:rgba(0, 0, 0, 0.1);
 	-webkit-transition:  0.3s, ease;
     -moz-transition:  0.3s, ease;
@@ -169,6 +169,8 @@ body{
 }
 a{
 	color: #333;
+	text-decoration: none;
+
 }
 a:active{
 	color: #333;
@@ -188,8 +190,18 @@ a:visited{
 
 }
 .CourseSubText{
-	font-size: 12px;
+	font-size: 15px;
+	line-height: 40px;
+	text-decoration: none;
 	color: #666;
+}
+.CourseSubText:hover{
+	background-color:rgba(0, 0, 0, 0.1);
+	-webkit-transition:  0.3s, ease;
+    -moz-transition:  0.3s, ease;
+    -ms-transition: 0.3s, ease;
+    -o-transition:  0.3s, ease;
+    transition:  0.3s, ease;
 }
 .clear{
 	clear:both;
