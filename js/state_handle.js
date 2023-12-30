@@ -3,7 +3,8 @@ $(document).ready(function() {
 /*******************************************************************************************************
  * Hover
  * *****************************************************************************************************/
-    $(document).on('mouseenter', '.targy', function() {
+    $(document).on('mouseenter', ".targy, .alterSubject", function() {
+        // $(document).on('mouseenter', '.targy', function() {
         var SourceAddress = this.getAttribute("code");
         var PrereqArray = [];
         StateDataArray.forEach(subject => {    
@@ -99,7 +100,8 @@ $(document).ready(function() {
 
     });
 
-    $(document).on('mouseleave', '.targy', function() {
+    $(document).on('mouseleave', ".targy, .alterSubject", function() {
+        // $(document).on('mouseleave', '.targy', function() {
         var cTargy_array = document.getElementsByClassName('targy');
         for (var i = 0; i < cTargy_array.length; ++i) {
             cTargy_array[i].className = cTargy_array[i].className.replace(' alairasAzonosfelevuto', '');
@@ -178,7 +180,7 @@ $(document).ready(function() {
                     document.getElementById("targyaAlternativ").innerHTML = "";
                     if(StateDataArray[index].substitutes.length != 0){
                         for(var k = 0;k <StateDataArray[index].substitutes.length;k++){
-                            document.getElementById("targyaAlternativ").innerHTML += "<div class='alterSubject'>" + (k+1) + ". " +StateDataArray[index].substitutes[k].name + " - <b>"+StateDataArray[index].substitutes[k].code + "<b>" + "</div>";       
+                            document.getElementById("targyaAlternativ").innerHTML += "<div class='alterSubject' code="+ StateDataArray[index].substitutes[k].code+ ">" + (k+1) + ". " +StateDataArray[index].substitutes[k].name + " - <b>"+StateDataArray[index].substitutes[k].code + "<b>" + "</div>";       
                         }
                     }else{
                         document.getElementById("targyaAlternativ").innerHTML = "Nincs";                    

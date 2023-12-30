@@ -74,18 +74,21 @@ function LoadBranchElements(_branch, _spec){ //spec needed because
         if(branch.type == "agazat" && branch.name == _branch){
             console.log("bramch");
             branch.subjects.forEach(element => {
-                if("parentSpecializations" in element){
-                    if(element.parentSpecializations.length > 0){
-                        if(element.parentSpecializations.some(x => x == _spec)){ //if specializations array containst the currently selected spec
-                            document.getElementById("agazat_0" + element.felev).innerHTML += '<div class="targy" status="0" code="' + element.code +'" uniquecode="' + element.uniquecode +'">' + element.name + '</div>'
+                if(isNaN(element.felev)){//spec groups here
+                }else{
+                    if("parentSpecializations" in element){
+                        if(element.parentSpecializations.length > 0){
+                            if(element.parentSpecializations.some(x => x == _spec)){ //if specializations array containst the currently selected spec
+                                document.getElementById("agazat_0" + element.felev).innerHTML += '<div class="targy" status="0" code="' + element.code +'" uniquecode="' + element.uniquecode +'">' + element.name + '</div>'
+                            }
+                        
+                        }else{//list size 0 -> no spec requirement
+                            document.getElementById("agazat_0" + element.felev).innerHTML += '<div class="targy" status="0" code="' + element.code +'">' + element.name + '</div>'
                         }
-                    
-                    }else{//list size 0 -> no spec requirement
+                    }else{//no specializations field in object -> no spec requieremnt
                         document.getElementById("agazat_0" + element.felev).innerHTML += '<div class="targy" status="0" code="' + element.code +'">' + element.name + '</div>'
+                        console.log("subject added");
                     }
-                }else{//no specializations field in object -> no spec requieremnt
-                    document.getElementById("agazat_0" + element.felev).innerHTML += '<div class="targy" status="0" code="' + element.code +'">' + element.name + '</div>'
-                    console.log("subject added");
                 }
             });
         }

@@ -1488,7 +1488,7 @@ subjectsData = {
                         {
                             name: "Szerkezetépítése-technológia projektfeladat",
                             code: "BMEEOEMA-KP",
-                            credit: 06,
+                            credit: 6,
                             lecture: 0,
                             seminar: 0,
                             lab: 0,

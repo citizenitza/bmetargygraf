@@ -167,9 +167,9 @@ function SetState(){
             }else{
                 var AllCompleted = true;
                 item.prereq.forEach(preSubject =>{
-                    if(item.name == "Építmény-információs mod. és menedzsment proj."){
-                        var debug1 = 45;//deubg break
-                    }
+                    // if(item.name == "Építmény-információs mod. és menedzsment proj."){
+                    //     var debug1 = 45;//debug break
+                    // }
                     var rawCode = "";
                     var type = 0;//0-normal, 1 -azonos felev,
                     if(preSubject.includes("!") && preSubject.includes("~")){
@@ -179,7 +179,7 @@ function SetState(){
                         type = 1;
                         rawCode = preSubject.replace('!', '');
                     }else if(preSubject.includes("~")){
-                        type = 0;                    
+                        type = 1;                    
                         rawCode = preSubject.replace('~', '');
                     }else{
                         type = 0;
