@@ -244,7 +244,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 3,
-                    elo:["KOJSA498","KOJSA499$","KOJSA192!"],
+                    elo:["KOJSA499"],
                     substitutes:[],
                 },
                 {
@@ -332,7 +332,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 4,
-                    elo:["KOJSA493","KOJJA162$"],
+                    elo:["KOJSA499"],
                 },
                 {
                     name: "Járműgyártás és javítás",
@@ -369,7 +369,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Félévközi jegy",
                     felev: 5,
-                    elo:["KOJSA595"],
+                    elo:[],
                 },
                 {
                     name: "Jármű- és hajtáselemek 3.",
@@ -381,7 +381,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 5,
-                    elo:["KOJSA494", "KOGJA450$"],
+                    elo:["KOJSA499", "KOJSA494~"],
                 },
                 {
                     name: "Járművek hő- és áramlástech. berendezései 1.",
@@ -405,7 +405,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Félévközi jegy",
                     felev: 5,
-                    elo:["KOKAA139","TE90AX53!","KOKAA146$"],
+                    elo:["KOKAA139~","KOKAA146$"],
                 },
                 {
                     name: "Irányítástechnika",
@@ -417,7 +417,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 5,
-                    elo:["KOKAA146","KOKAA139","TE90AX53$"],
+                    elo:["KOKAA146","KOKAA139~","TE90AX53$"],
                 },
                 {
                     name: "Szabadon választható 3",
@@ -2040,7 +2040,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Félévközi jegy",
                     felev: 3,
-                    elo:["KOKAA139","TE90AX53!","KOKAA146$"],
+                    elo:["KOKAA139~","KOKAA146$"],
                 },
                 {
                     name: "Anyagtechnológia, járműfenntartás",
@@ -2201,7 +2201,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 5,
-                    elo:["KOKAA146", "KOKAA139","TE90AX53$"],
+                    elo:["KOKAA146","KOKAA139~","TE90AX53$"],
                 },
                 {
                     name: "Közlekedés-gazdaságtan A",
@@ -2493,7 +2493,7 @@ subjectsData = {
                             consultation: 0,
                             requirement: "Vizsga",
                             felev: 6,
-                            elo:["KOKKA252"],
+                            elo:[],
                             substitutes:[],
                         },
                         {
@@ -3211,7 +3211,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 4,
-                    elo:["KOKAA146", "KOKAA139","TE90AX53$"],
+                    elo:["KOKAA146","KOKAA139~","TE90AX53$"],
                 },
                 {
                     name: "Logisztikai információs rendszerek",
@@ -3223,7 +3223,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 4,
-                    elo:["KOALA340"],
+                    elo:["KOALA340~"],
                 },
                 {
                     name: "Logisztikai identifikációs rendszerek ",
