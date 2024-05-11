@@ -127,7 +127,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 2,
-                    elo:["VEKTAK01$"],
+                    elo:["VEKTAKO1$"],
                     substitutes:[],
                 },
                 {
@@ -2073,7 +2073,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 2,
-                    elo:["VEKTAK01$"],
+                    elo:["VEKTAKO1$"],
                     substitutes:[],
                 },
                 {
@@ -2292,7 +2292,7 @@ subjectsData = {
                     elo:["KOVRA190","KOVRA189","TE90AX53$","KOJSA191$"],
                 },
                 {
-                    name: "Közlekedési automatika",
+                    name: "Közlekedési automatika A",
                     code: "KOKAA179",
                     credit: 4,
                     lecture: 2,
@@ -2767,7 +2767,7 @@ subjectsData = {
                             consultation: 0,
                             requirement: "Vizsga",
                             felev: 6,
-                            elo:["KOKKA252"],
+                            elo:[],
                             substitutes:[],
                         },
                         {
@@ -2904,7 +2904,7 @@ subjectsData = {
                             consultation: 0,
                             requirement: "Vizsga",
                             felev: 6,
-                            elo:["KOKKA252"],
+                            elo:[],
                             substitutes:[],
                         },
                         {
@@ -3041,7 +3041,7 @@ subjectsData = {
                             consultation: 0,
                             requirement: "Vizsga",
                             felev: 6,
-                            elo:["KOKKA252"],
+                            elo:[],
                             substitutes:[],
                         },
                         {
@@ -3180,7 +3180,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 2,
-                    elo:["VEKTAK01$"],
+                    elo:["VEKTAKO1$"],
                     substitutes:[],
                 },
                 {
@@ -3360,7 +3360,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 4,
-                    elo:["KOALA340~"],
+                    elo:["KOALA340"],
                 },
                 {
                     name: "Logisztikai identifikációs rendszerek ",
@@ -3372,7 +3372,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Félévközi jegy",
                     felev: 4,
-                    elo:["KOKAA139"],
+                    elo:["KOKAA139~"],
                 },
                 {
                     name: "Szállítási logisztika",
