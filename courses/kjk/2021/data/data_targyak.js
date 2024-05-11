@@ -41,7 +41,7 @@ subjectsData = {
                 },
                 {
                     name: "Műszaki kémia",
-                    code: "VEKTAK01",
+                    code: "VEKTAKO1",
                     credit: 3,
                     lecture: 2,
                     seminar:0,
@@ -99,7 +99,7 @@ subjectsData = {
                     seminar:3,
                     lab: 0,
                     consultation: 0,
-                    requirement: "Vizsga",
+                    requirement: "Félévközi jegy",
                     felev: 1,
                     elo:[],
                     substitutes:[],
@@ -196,8 +196,8 @@ subjectsData = {
                     substitutes:[],
                 },
                 {
-                    name: "Mechanika 2A",
-                    code: "KOJSA142",
+                    name: "Mechanika 2",
+                    code: "EOTMAK02",
                     credit: 4,
                     lecture: 2,
                     seminar:2,
@@ -205,11 +205,11 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 3,
-                    elo:["KOJSA191"],
+                    elo:["KOJSA191","TE90AX00"],
                     substitutes:[],
                 },
                 {
-                    name: "Mechanika 2B",
+                    name: "Szerkezetek statikája",
                     code: "KOJSA192",
                     credit: 2,
                     lecture: 0,
@@ -1158,7 +1158,7 @@ subjectsData = {
                             consultation: 0,
                             requirement: "Vizsga",
                             felev: 6,
-                            elo:["KOVRA497"],
+                            elo:["KOVRA497$"],
                             substitutes:[],
                         },
                         {
@@ -1378,7 +1378,7 @@ subjectsData = {
                         },
                         {
                             name: "Hajózás II. (Hajózási gazdaságtan)",
-                            code: "KOVRA544",
+                            code: "KORHA544",
                             credit: 3,
                             lecture: 2,
                             seminar: 0,
@@ -1850,7 +1850,7 @@ subjectsData = {
                 },
                 {
                     name: "Műszaki kémia",
-                    code: "VEKTAK01",
+                    code: "VEKTAKO1",
                     credit: 3,
                     lecture: 2,
                     seminar:0,
@@ -2005,8 +2005,8 @@ subjectsData = {
                     substitutes:[],
                 },
                 {
-                    name: "Mechanika 2A",
-                    code: "KOJSA142",
+                    name: "Mechanika 2",
+                    code: "EOTMAK02",
                     credit: 4,
                     lecture: 2,
                     seminar:2,
@@ -2014,7 +2014,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 3,
-                    elo:["KOJSA191"],
+                    elo:["KOJSA191","TE90AX00"],
                     substitutes:[],
                 },
                 {
@@ -2957,7 +2957,7 @@ subjectsData = {
                 },
                 {
                     name: "Műszaki kémia",
-                    code: "VEKTAK01",
+                    code: "VEKTAKO1",
                     credit: 3,
                     lecture: 2,
                     seminar:0,
@@ -3112,8 +3112,8 @@ subjectsData = {
                     substitutes:[],
                 },
                 {
-                    name: "Mechanika 2A",
-                    code: "KOJSA142",
+                    name: "Mechanika 2",
+                    code: "EOTMAK02",
                     credit: 4,
                     lecture: 2,
                     seminar:2,
@@ -3121,7 +3121,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 3,
-                    elo:["KOJSA191"],
+                    elo:["KOJSA191","TE90AX00"],
                     substitutes:[],
                 },
                 {
