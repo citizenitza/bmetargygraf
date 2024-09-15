@@ -1,0 +1,16 @@
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\bin\Debug\net8.0\emk_parser.exe
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\bin\Debug\net8.0\emk_parser.deps.json
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\bin\Debug\net8.0\emk_parser.runtimeconfig.json
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\bin\Debug\net8.0\emk_parser.dll
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\bin\Debug\net8.0\emk_parser.pdb
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\obj\Debug\net8.0\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\obj\Debug\net8.0\emk_parser.csproj.ResolveComReference.cache
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\obj\Debug\net8.0\emk_parser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\obj\Debug\net8.0\emk_parser.AssemblyInfoInputs.cache
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\obj\Debug\net8.0\emk_parser.AssemblyInfo.cs
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\obj\Debug\net8.0\emk_parser.csproj.CoreCompileInputs.cache
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\obj\Debug\net8.0\emk_parser.dll
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\obj\Debug\net8.0\refint\emk_parser.dll
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\obj\Debug\net8.0\emk_parser.pdb
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\obj\Debug\net8.0\emk_parser.genruntimeconfig.cache
+C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\obj\Debug\net8.0\ref\emk_parser.dll
