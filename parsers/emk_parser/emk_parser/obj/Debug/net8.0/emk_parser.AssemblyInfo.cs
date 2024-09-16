@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("emk_parser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3046e26138f80ba39491911da93a81d79793cb16")]
 [assembly: System.Reflection.AssemblyProductAttribute("emk_parser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("emk_parser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

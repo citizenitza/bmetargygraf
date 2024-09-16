@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dm\\Desktop\\New folder\\emk_parser\\emk_parser\\emk_parser.csproj": {}
+    "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dm\\Desktop\\New folder\\emk_parser\\emk_parser\\emk_parser.csproj": {
+    "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dm\\Desktop\\New folder\\emk_parser\\emk_parser\\emk_parser.csproj",
+        "projectUniqueName": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj",
         "projectName": "emk_parser",
-        "projectPath": "C:\\Users\\dm\\Desktop\\New folder\\emk_parser\\emk_parser\\emk_parser.csproj",
+        "projectPath": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj",
         "packagesPath": "C:\\Users\\dm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dm\\Desktop\\New folder\\emk_parser\\emk_parser\\obj\\",
+        "outputPath": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = emk_parser
-build_property.ProjectDir = C:\Users\dm\Desktop\New folder\emk_parser\emk_parser\
+build_property.ProjectDir = E:\Work\Web\emk_targygraf\emk_targygraf\parsers\emk_parser\emk_parser\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

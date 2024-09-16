@@ -24,6 +24,7 @@ namespace emk_parser1 {
         public int consultation;
         public string requirement;
         public int felev;
+        public bool HasSubstitues;
         public List<string> elo = new List<string>();
         public List<Substitute> substitutes = new List<Substitute>();
     }
@@ -37,7 +38,7 @@ namespace emk_parser1 {
         Spec
     }
     internal static class Parser {
-        static Dictionary<string, string> NameLookup =  new Dictionary<string, string>();
+        static Dictionary<string, string> NameLookup = new Dictionary<string, string>();
         static subjectsData Result = new subjectsData();
         static string path = System.AppDomain.CurrentDomain.BaseDirectory + "input.xlsx";
         static Excel.Application ExcelApp;
@@ -45,23 +46,23 @@ namespace emk_parser1 {
         static Excel.Worksheet Worksheet;
 
         public static void AddNames() {
-            NameLookup.Add("Szerkezet-Építőmérnöki Ágazat", "szerkezet");
-            NameLookup.Add("Magasépítési Specializáció", "magasepites");
-            NameLookup.Add("Híd és Műtárgy Specializáció", "hidesmutargy");
-            NameLookup.Add("Geotechnika Specializáció", "geotech");
-            NameLookup.Add("Építéstechnológia és Menedzsment Specializáció", "epitestech");
-            NameLookup.Add("Szerkezeti Anyagok és Technológiák Specializáció", "szerkezetianyagok");
-            NameLookup.Add("Építmény-információs Modellezés és Menedzsment Specializáció", "epitmenyinformacio");
-            NameLookup.Add("Infrastruktúra-Építőmérnöki Ágazat", "infrastruktura");
-            NameLookup.Add("Közlekedési Létesítmények Specializáció", "kozlekedesiletesitmeny");
-            NameLookup.Add("Vízmérnöki Specializáció", "vizimernoki");
-            NameLookup.Add("Vízi Közmű és Környezetmérnöki Specializáció", "vizkikozmu");
+            NameLookup.Add("Szerkezet-építőmérnöki ágazat", "szerkezet");
+            NameLookup.Add("Magasépítési specializáció", "magasepites");
+            NameLookup.Add("Híd és műtárgy specializáció", "hidesmutargy");
+            NameLookup.Add("Geotechnika specializáció", "geotech");
+            NameLookup.Add("Építéstechnológia és menedzsment specializáció", "epitestech");
+            NameLookup.Add("Szerkezeti anyagok és technológiák specializáció", "szerkezetianyagok");
             NameLookup.Add("Építmény-információs modellezés és menedzsment specializáció", "epitmenyinformacio");
-            NameLookup.Add("Geotechnika Specializáció", "geotech");
-            NameLookup.Add("Geoinformatika-Építőmérnöki Ágazat", "geoinformatika");
-            NameLookup.Add("Geodézia Specializáció", "geodezia");
-            NameLookup.Add("Térinformatikai Specializáció", "terinfo");
-            NameLookup.Add("Építmény-információs modellezés és menedzsment specializáció", "epitmenyinformacio");
+            NameLookup.Add("Infrastruktúra-építőmérnöki ágazat", "infrastruktura");
+            NameLookup.Add("Közlekedési létesítmények specializáció", "kozlekedesiletesitmeny");
+            NameLookup.Add("Vízmérnöki specializáció", "vizimernoki");
+            NameLookup.Add("Vízi közmű és környezetmérnöki specializáció", "vizkikozmu");
+            //NameLookup.Add("Építmény-információs modellezés és menedzsment specializáció", "epitmenyinformacio");
+            // NameLookup.Add("Geotechnika Specializáció", "geotech");
+            NameLookup.Add("Geoinformatika-építőmérnöki ágazat", "geoinformatika");
+            NameLookup.Add("Geodézia specializáció", "geodezia");
+            NameLookup.Add("Térinformatikai specializáció", "terinfo");
+            // NameLookup.Add("Építmény-információs modellezés és menedzsment specializáció", "epitmenyinformacio");
         }
         public static void OpenExcel(string newpath) {
             path = newpath;
@@ -98,33 +99,83 @@ namespace emk_parser1 {
                 if (!(first[1, 2]?.ToString().IndexOf("bsc", StringComparison.OrdinalIgnoreCase) >= 0)) {
                     //not bsc
                     continue;
-                }
-                else {
+                } else {
                     for (int i = 3; i <= rowCount; i++) {
                         object[,] currentRow = (object[,])WsRange.Rows[i, Type.Missing].Value;
                         if (currentRow[1, 2]?.ToString().IndexOf("Törzstárgyak", StringComparison.OrdinalIgnoreCase) >= 0) {
                             currentState = CurrentState.Torzs;
-                        }
-                        else if (currentRow[1, 2]?.ToString().IndexOf(" ágazat ", StringComparison.OrdinalIgnoreCase) >= 0) {
+                        } else if (currentRow[1, 2]?.ToString().IndexOf(" ágazat ", StringComparison.OrdinalIgnoreCase) >= 0) {
                             currentState = CurrentState.Agazat;
-                            string newAgazat = currentRow[1, 2].ToString().Split('(')[0];
-                            if(newAgazat != CurrentAgazat) {
+                            string newAgazat = currentRow[1, 2].ToString().Split('(')[0].Trim();
+                            if (newAgazat != CurrentAgazat) {
                                 //create new agazat
+                                CurrentAgazat = newAgazat;
+                                Group newAgazatGroup = new Group();
+                                newAgazatGroup.type = "agazat";
+                                newAgazatGroup.fullname = newAgazat;
+                                newAgazatGroup.name = NameLookup[newAgazat];
+                                Result.Groups.Add(newAgazatGroup);
                             }
-                        }
-                        else if (currentRow[1, 2]?.ToString().IndexOf("specializáció", StringComparison.OrdinalIgnoreCase) >= 0) {
+                        } else if (currentRow[1, 2]?.ToString().IndexOf("specializáció", StringComparison.OrdinalIgnoreCase) >= 0) {
                             currentState = CurrentState.Spec;
-                            string newsSpec = currentRow[1, 2].ToString();
+                            string newsSpec = currentRow[1, 2].ToString().Trim();
                             if (newsSpec != CurrentSpec) {
                                 //create new agazat
+                                Group newSpecGroup = new Group();
+                                newSpecGroup.type = "spec";
+                                newSpecGroup.fullname = newsSpec;
+                                try {
+                                    newSpecGroup.name = NameLookup[newsSpec];
+                                    Result.Groups.Last().specializations.Add(newSpecGroup);
+                                } catch (Exception ex) when (ex is System.Collections.Generic.KeyNotFoundException) {
+                                    continue;
+                                }
                             }
                         }
-                        
-                        if (currentRow[1,3]?.ToString().IndexOf("bme", StringComparison.OrdinalIgnoreCase) >= 0) {
+
+                        if (currentRow[1, 3]?.ToString().IndexOf("bme", StringComparison.OrdinalIgnoreCase) >= 0) {
                             //subject
+
                             if (currentRow[1, 4]?.ToString() == string.Empty) {
                                 //alternative targy
 
+                            } else {
+                                //regular
+                                Subject newSubject = new Subject();
+                                newSubject.name = currentRow[1, 2].ToString();
+                                newSubject.code = currentRow[1, 3].ToString();
+                                newSubject.credit = (int)currentRow[1, 4];
+                                newSubject.lecture = (int)currentRow[1, 5];
+                                newSubject.seminar = (int)currentRow[1, 6];
+                                newSubject.lab = (int)currentRow[1, 7];
+                                newSubject.consultation = (int)currentRow[1, 8];
+                                if (currentRow[1, 10].ToString() == "F") {
+                                    newSubject.requirement = "Félévközi";
+                                } else if (currentRow[1, 10].ToString() == "V") {
+                                    newSubject.requirement = "Vizsga";
+                                } else if (currentRow[1, 10].ToString() == "A") {
+                                    newSubject.requirement = "Aláírás";
+                                }
+                                if (currentRow[1, 13].ToString() == "X") {
+                                    newSubject.felev = 1;
+                                } else if (currentRow[1, 14].ToString() == "X") {
+                                    newSubject.felev = 2;
+                                } else if (currentRow[1, 15].ToString() == "X") {
+                                    newSubject.felev = 3;
+                                } else if (currentRow[1, 16].ToString() == "X") {
+                                    newSubject.felev = 4;
+                                } else if (currentRow[1, 17].ToString() == "X") {
+                                    newSubject.felev = 5;
+                                } else if (currentRow[1, 18].ToString() == "X") {
+                                    newSubject.felev = 6;
+                                } else if (currentRow[1, 19].ToString() == "X") {
+                                    newSubject.felev = 7;
+                                } else if (currentRow[1, 20].ToString() == "X") {
+                                    newSubject.felev = 8;
+                                }
+                                if((currentRow[1, 21].ToString() == "-"{
+
+                                }
                             }
                         }
                     }
