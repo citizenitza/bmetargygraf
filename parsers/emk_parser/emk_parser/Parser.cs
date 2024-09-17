@@ -1,6 +1,8 @@
 ﻿using Microsoft.Office.Interop.Excel;
 using Excel = Microsoft.Office.Interop.Excel;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.IO;
 
 namespace emk_parser1 {
     public record subjectsData {
@@ -9,6 +11,7 @@ namespace emk_parser1 {
         public List<Group> Groups = new List<Group>();
     }
     public record Group {
+        [JsonProperty]
         public string type;
         public string name;
         public string fullname;
@@ -62,7 +65,7 @@ namespace emk_parser1 {
             //NameLookup.Add("Építmény-információs modellezés és menedzsment specializáció", "epitmenyinformacio");
             // NameLookup.Add("Geotechnika Specializáció", "geotech");
             NameLookup.Add("Geoinformatika-építőmérnöki ágazat", "geoinformatika");
-            NameLookup.Add("Geodézia specializáció", "geodezia");
+            NameLookup.Add("Geodézia és térinformatika specializáció", "geodezia");
             NameLookup.Add("Térinformatikai specializáció", "terinfo");
             // NameLookup.Add("Építmény-információs modellezés és menedzsment specializáció", "epitmenyinformacio");
         }
@@ -229,14 +232,18 @@ namespace emk_parser1 {
         public static void GenerateOutput() {
             string path = System.AppDomain.CurrentDomain.BaseDirectory + @"output.txt";
             using (StreamWriter sw = File.AppendText(path)) {
-                string result = FormatJson(JsonConvert.SerializeObject(Result));
-                sw.WriteLine(result);
-            }
-        }
-        private static string FormatJson(string json) {
-            dynamic parsedJson = JsonConvert.DeserializeObject(json);
-            return JsonConvert.SerializeObject(parsedJson, Formatting.Indented);
-        }
+                var serializer = new JsonSerializer();
+                var stringWriter = new StringWriter();
+                using (var writer = new JsonTextWriter(stringWriter)) {
+                    writer.QuoteName = false;
+                    writer.Formatting = Formatting.Indented;
+                    serializer.Serialize(writer, Result);
+                }
 
+                var json = "subjectsData = " + stringWriter.ToString();
+                sw.Write(json);
+            }
+
+        }
     }
 }
