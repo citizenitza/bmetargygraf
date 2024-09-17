@@ -1,5 +1,6 @@
 ﻿using Microsoft.Office.Interop.Excel;
 using Excel = Microsoft.Office.Interop.Excel;
+using Newtonsoft.Json;
 
 namespace emk_parser1 {
     public record subjectsData {
@@ -35,7 +36,8 @@ namespace emk_parser1 {
     public enum CurrentState {
         Torzs,
         Agazat,
-        Spec
+        Spec,
+        NA
     }
     internal static class Parser {
         static Dictionary<string, string> NameLookup = new Dictionary<string, string>();
@@ -76,7 +78,7 @@ namespace emk_parser1 {
             } catch (Exception ex) {
                 Console.WriteLine(ex.Message);
             }
-            CurrentState currentState;
+            CurrentState currentState = CurrentState.NA;
             bool TorzsDone = false;
             bool AgazatDone = false;
             string CurrentAgazat = "";
@@ -115,6 +117,7 @@ namespace emk_parser1 {
                                 newAgazatGroup.fullname = newAgazat;
                                 newAgazatGroup.name = NameLookup[newAgazat];
                                 Result.Groups.Add(newAgazatGroup);
+                                AgazatDone = false;
                             }
                         } else if (currentRow[1, 2]?.ToString().IndexOf("specializáció", StringComparison.OrdinalIgnoreCase) >= 0) {
                             currentState = CurrentState.Spec;
@@ -144,50 +147,96 @@ namespace emk_parser1 {
                                 Subject newSubject = new Subject();
                                 newSubject.name = currentRow[1, 2].ToString();
                                 newSubject.code = currentRow[1, 3].ToString();
-                                newSubject.credit = (int)currentRow[1, 4];
-                                newSubject.lecture = (int)currentRow[1, 5];
-                                newSubject.seminar = (int)currentRow[1, 6];
-                                newSubject.lab = (int)currentRow[1, 7];
-                                newSubject.consultation = (int)currentRow[1, 8];
-                                if (currentRow[1, 10].ToString() == "F") {
+                                newSubject.credit = (int)Convert.ToUInt32(currentRow[1, 4]);
+                                newSubject.lecture = (int)Convert.ToUInt32(currentRow[1, 5]);
+                                newSubject.seminar = (int)Convert.ToUInt32(currentRow[1, 6]);
+                                newSubject.lab = (int)Convert.ToUInt32(currentRow[1, 7]);
+                                newSubject.consultation = (int)Convert.ToUInt32(currentRow[1, 8]);
+                                if (currentRow[1, 10]?.ToString() == "F") {
                                     newSubject.requirement = "Félévközi";
-                                } else if (currentRow[1, 10].ToString() == "V") {
+                                } else if (currentRow[1, 10]?.ToString() == "V") {
                                     newSubject.requirement = "Vizsga";
-                                } else if (currentRow[1, 10].ToString() == "A") {
+                                } else if (currentRow[1, 10]?.ToString() == "A") {
                                     newSubject.requirement = "Aláírás";
                                 }
-                                if (currentRow[1, 13].ToString() == "X") {
+                                if (currentRow[1, 13]?.ToString() == "X") {
                                     newSubject.felev = 1;
-                                } else if (currentRow[1, 14].ToString() == "X") {
+                                } else if (currentRow[1, 14]?.ToString() == "X") {
                                     newSubject.felev = 2;
-                                } else if (currentRow[1, 15].ToString() == "X") {
+                                } else if (currentRow[1, 15]?.ToString() == "X") {
                                     newSubject.felev = 3;
-                                } else if (currentRow[1, 16].ToString() == "X") {
+                                } else if (currentRow[1, 16]?.ToString() == "X") {
                                     newSubject.felev = 4;
-                                } else if (currentRow[1, 17].ToString() == "X") {
+                                } else if (currentRow[1, 17]?.ToString() == "X") {
                                     newSubject.felev = 5;
-                                } else if (currentRow[1, 18].ToString() == "X") {
+                                } else if (currentRow[1, 18]?.ToString() == "X") {
                                     newSubject.felev = 6;
-                                } else if (currentRow[1, 19].ToString() == "X") {
+                                } else if (currentRow[1, 19]?.ToString() == "X") {
                                     newSubject.felev = 7;
-                                } else if (currentRow[1, 20].ToString() == "X") {
+                                } else if (currentRow[1, 20]?.ToString() == "X") {
                                     newSubject.felev = 8;
                                 }
-                                if((currentRow[1, 21].ToString() == "-"{
+                                if(currentRow[1, 1]?.ToString() == "*") {
+                                    newSubject.HasSubstitues = true;
+                                } else {
+                                    newSubject.HasSubstitues = false;
+                                }
+                                string test = currentRow[1, 21]?.ToString();
+                                if (test != "-" && test != null) {
+                                    if ((currentRow[1, 21]?.ToString().IndexOf("vagy", StringComparison.OrdinalIgnoreCase)>=0)){
+                                        newSubject.elo.Add("BME" + currentRow[1, 21].ToString().Split("vagy")[1].Trim());
+                                    } else {
+                                        newSubject.elo.Add("BME" + currentRow[1, 21].ToString().Trim());
+                                    }
 
                                 }
+                                test = currentRow[1, 22]?.ToString();
+                                if (test != "-" && test != null) {
+                                    newSubject.elo.Add("BME" + currentRow[1, 22].ToString().Trim());
+                                }
+                                test = currentRow[1, 23]?.ToString();
+                                if (test != "-" && test != null) {
+                                    newSubject.elo.Add("BME" + currentRow[1, 23].ToString().Trim());
+                                }
+                               
+                                //add subject
+                                if(currentState == CurrentState.Torzs && !TorzsDone) {
+                                    Result.Groups[0].subjects.Add(newSubject);//add to torzs
+                                }else if(currentState == CurrentState.Agazat && !AgazatDone) {
+                                    Result.Groups.Last().subjects.Add(newSubject);
+                                } else if(currentState == CurrentState.Spec) {
+                                    Result.Groups.Last().specializations.Last().subjects.Add(newSubject);
+                                }
+
                             }
                         }
                     }
 
 
                 }
+
+                if (!TorzsDone) {
+                    TorzsDone = true;
+                }
+                if (!AgazatDone) {
+                    AgazatDone = true;
+                }
             }
+            GenerateOutput();
         }
 
 
         public static void GenerateOutput() {
-
+            string path = System.AppDomain.CurrentDomain.BaseDirectory + @"output.txt";
+            using (StreamWriter sw = File.AppendText(path)) {
+                string result = FormatJson(JsonConvert.SerializeObject(Result));
+                sw.WriteLine(result);
+            }
         }
+        private static string FormatJson(string json) {
+            dynamic parsedJson = JsonConvert.DeserializeObject(json);
+            return JsonConvert.SerializeObject(parsedJson, Formatting.Indented);
+        }
+
     }
 }

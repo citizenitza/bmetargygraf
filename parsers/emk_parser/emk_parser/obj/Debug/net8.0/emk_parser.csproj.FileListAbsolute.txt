@@ -31,3 +31,6 @@ E:\Work\Web\emk_targygraf\emk_targygraf\parsers\emk_parser\emk_parser\obj\Debug\
 E:\Work\Web\emk_targygraf\emk_targygraf\parsers\emk_parser\emk_parser\obj\Debug\net8.0\emk_parser.pdb
 E:\Work\Web\emk_targygraf\emk_targygraf\parsers\emk_parser\emk_parser\obj\Debug\net8.0\emk_parser.genruntimeconfig.cache
 E:\Work\Web\emk_targygraf\emk_targygraf\parsers\emk_parser\emk_parser\obj\Debug\net8.0\ref\emk_parser.dll
+E:\Work\Web\emk_targygraf\emk_targygraf\parsers\emk_parser\emk_parser\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\Work\Web\emk_targygraf\emk_targygraf\parsers\emk_parser\emk_parser\obj\Debug\net8.0\emk_parser.csproj.AssemblyReference.cache
+E:\Work\Web\emk_targygraf\emk_targygraf\parsers\emk_parser\emk_parser\obj\Debug\net8.0\emk_parser.csproj.Up2Date
