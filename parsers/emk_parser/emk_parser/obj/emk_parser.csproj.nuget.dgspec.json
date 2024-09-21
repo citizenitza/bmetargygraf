@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj": {}
+    "C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj": {}
   },
   "projects": {
-    "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj": {
+    "C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj",
+        "projectUniqueName": "C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj",
         "projectName": "emk_parser",
-        "projectPath": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj",
-        "packagesPath": "C:\\Users\\dm\\.nuget\\packages\\",
-        "outputPath": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\obj\\",
+        "projectPath": "C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj",
+        "packagesPath": "C:\\Users\\DanielM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\dm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DanielM\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

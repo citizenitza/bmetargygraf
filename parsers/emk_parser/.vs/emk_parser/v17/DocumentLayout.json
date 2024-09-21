@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\",
+  "WorkspaceRootPath": "C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D8DD9B53-75AA-40BB-932D-87A7E39C500F}|emk_parser\\emk_parser.csproj|e:\\work\\web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D8DD9B53-75AA-40BB-932D-87A7E39C500F}|emk_parser\\emk_parser.csproj|c:\\users\\danielm\\desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8DD9B53-75AA-40BB-932D-87A7E39C500F}|emk_parser\\emk_parser.csproj|solutionrelative:emk_parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8DD9B53-75AA-40BB-932D-87A7E39C500F}|emk_parser\\emk_parser.csproj|e:\\work\\web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{D8DD9B53-75AA-40BB-932D-87A7E39C500F}|emk_parser\\emk_parser.csproj|C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{D8DD9B53-75AA-40BB-932D-87A7E39C500F}|emk_parser\\emk_parser.csproj|solutionrelative:emk_parser\\emk_parser.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D8DD9B53-75AA-40BB-932D-87A7E39C500F}|emk_parser\\emk_parser.csproj|e:\\work\\web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D8DD9B53-75AA-40BB-932D-87A7E39C500F}|emk_parser\\emk_parser.csproj|C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8DD9B53-75AA-40BB-932D-87A7E39C500F}|emk_parser\\emk_parser.csproj|solutionrelative:emk_parser\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,23 +28,22 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "emk_parser",
-              "DocumentMoniker": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj",
+              "DocumentMoniker": "C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj",
               "RelativeDocumentMoniker": "emk_parser\\emk_parser.csproj",
-              "ToolTip": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj",
+              "ToolTip": "C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj",
               "RelativeToolTip": "emk_parser\\emk_parser.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-14T17:14:26.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-14T17:14:26.935Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Parser.cs",
-              "DocumentMoniker": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\Parser.cs",
+              "DocumentMoniker": "C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\Parser.cs",
               "RelativeDocumentMoniker": "emk_parser\\Parser.cs",
-              "ToolTip": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\Parser.cs",
+              "ToolTip": "C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\Parser.cs",
               "RelativeToolTip": "emk_parser\\Parser.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAAAQwPIAAAAoAAAAAAAAAA==",
+              "ViewState": "AQIAAMsAAAAAAAAAAAAqwOYAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T16:27:47.32Z",
               "EditorCaption": ""
@@ -53,14 +52,13 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\Program.cs",
               "RelativeDocumentMoniker": "emk_parser\\Program.cs",
-              "ToolTip": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\Program.cs",
+              "ToolTip": "C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\Program.cs",
               "RelativeToolTip": "emk_parser\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T16:07:18.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-14T16:07:18.438Z"
             }
           ]
         }

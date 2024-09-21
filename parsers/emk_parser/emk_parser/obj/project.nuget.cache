@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DGbGSgvtxz8=",
+  "dgSpecHash": "BQhv6Wty6mFcWEXZ7KivJFSTxL/w3lszlLFq43uizxX3wubaw4IoaOZoxAjKzXXRGRPvBb2sdbP2KVVXZmjF3w==",
   "success": true,
-  "projectFilePath": "E:\\Work\\Web\\emk_targygraf\\emk_targygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj",
+  "projectFilePath": "C:\\Users\\DanielM\\Desktop\\bmetargygraf-master\\bmetargygraf\\parsers\\emk_parser\\emk_parser\\emk_parser.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dm\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\DanielM\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

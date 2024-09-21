@@ -141,15 +141,17 @@ namespace emk_parser1 {
 
                         if (currentRow[1, 3]?.ToString().IndexOf("bme", StringComparison.OrdinalIgnoreCase) >= 0) {
                             //subject
-
-                            if (currentRow[1, 4]?.ToString() == string.Empty) {
+                            if(currentRow[1, 2].ToString() == "BIM az építőiparban") {
+                                ;
+                            }
+                            if (currentRow[1, 4]?.ToString() == null) {
                                 //alternative targy
 
                             } else {
                                 //regular
                                 Subject newSubject = new Subject();
-                                newSubject.name = currentRow[1, 2].ToString();
-                                newSubject.code = currentRow[1, 3].ToString();
+                                newSubject.name = currentRow[1, 2].ToString().Trim();
+                                newSubject.code = currentRow[1, 3].ToString().Trim();
                                 newSubject.credit = (int)Convert.ToUInt32(currentRow[1, 4]);
                                 newSubject.lecture = (int)Convert.ToUInt32(currentRow[1, 5]);
                                 newSubject.seminar = (int)Convert.ToUInt32(currentRow[1, 6]);
@@ -225,9 +227,29 @@ namespace emk_parser1 {
                     AgazatDone = true;
                 }
             }
+            for(int i = 0; i < 6; i++) {
+                AddSzabadonValasztott(i+1);
+            }
             GenerateOutput();
         }
-
+        public static void AddSzabadonValasztott(int id) {
+            Subject newSubject = new Subject();
+            newSubject.name = "Szabadon választható " + id.ToString();
+            newSubject.code = "Szabad0" + id.ToString();
+            newSubject.credit = 2;
+            newSubject.lecture = 2;
+            newSubject.seminar = 0;
+            newSubject.lab = 0;
+            newSubject.consultation = 0;
+            newSubject.requirement = "Félévközi/Vizsga";
+            newSubject.HasSubstitues = false;
+            if(id <= 3 ) {
+                newSubject.felev = 7;
+            } else {
+                newSubject.felev = 8;
+            }
+            Result.Groups[0].subjects.Add(newSubject);//add to torzs
+        }
 
         public static void GenerateOutput() {
             string path = System.AppDomain.CurrentDomain.BaseDirectory + @"output.txt";
