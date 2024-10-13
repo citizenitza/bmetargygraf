@@ -10,6 +10,7 @@ subjectsData = {
         {
           name: "Geodézia I.",
           code: "BMEEOAFAT45",
+          uniquecode: "",
           credit: 3,
           lecture: 1,
           seminar: 0,
@@ -19,11 +20,13 @@ subjectsData = {
           felev: 1,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Építőmérnöki kémia",
           code: "BMEEOEMAT41",
+          uniquecode: "",
           credit: 2,
           lecture: 2,
           seminar: 0,
@@ -33,11 +36,13 @@ subjectsData = {
           felev: 1,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Építőmérnöki ábrázolás",
           code: "BMEEOEMAT42",
+          uniquecode: "",
           credit: 4,
           lecture: 2,
           seminar: 2,
@@ -47,11 +52,13 @@ subjectsData = {
           felev: 1,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Építőmérnöki CAD",
           code: "BMEEOFTAT41",
+          uniquecode: "",
           credit: 2,
           lecture: 0,
           seminar: 0,
@@ -61,11 +68,13 @@ subjectsData = {
           felev: 1,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Geológia",
           code: "BMEEOGMAT41",
+          uniquecode: "",
           credit: 3,
           lecture: 1,
           seminar: 0,
@@ -75,11 +84,13 @@ subjectsData = {
           felev: 1,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "A statika és dinamika alapjai",
           code: "BMEEOTMAT41",
+          uniquecode: "",
           credit: 6,
           lecture: 0,
           seminar: 5,
@@ -89,11 +100,13 @@ subjectsData = {
           felev: 1,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Matematika A1a",
           code: "BMETE90AX00",
+          uniquecode: "",
           credit: 6,
           lecture: 4,
           seminar: 2,
@@ -103,11 +116,13 @@ subjectsData = {
           felev: 1,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Építőmérnöki fizika",
           code: "BMETE11AX13",
+          uniquecode: "",
           credit: 2,
           lecture: 2,
           seminar: 0,
@@ -117,11 +132,13 @@ subjectsData = {
           felev: 1,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Geodézia II.",
           code: "BMEEOAFAT42",
+          uniquecode: "",
           credit: 4,
           lecture: 2,
           seminar: 0,
@@ -131,13 +148,16 @@ subjectsData = {
           felev: 2,
           HasSubstitues: false,
           elo: [
+            "BMEEOAFAT41~",
             "BMEEOAFAT45~"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Építőanyagok I.",
           code: "BMEEOEMAT43",
+          uniquecode: "",
           credit: 5,
           lecture: 2,
           seminar: 0,
@@ -149,11 +169,13 @@ subjectsData = {
           elo: [
             "BMEEOEMAT41"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Építőmérnöki informatika",
           code: "BMEEOFTAT42",
+          uniquecode: "",
           credit: 5,
           lecture: 2,
           seminar: 2,
@@ -163,11 +185,13 @@ subjectsData = {
           felev: 2,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Magasépítéstan alapjai",
           code: "BMEEOEMAT44",
+          uniquecode: "",
           credit: 3,
           lecture: 1,
           seminar: 2,
@@ -179,11 +203,13 @@ subjectsData = {
           elo: [
             "BMEEOEMAT42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Elemi szilárdságtan",
           code: "BMEEOTMAT42",
+          uniquecode: "",
           credit: 6,
           lecture: 0,
           seminar: 5,
@@ -196,11 +222,13 @@ subjectsData = {
             "BMEEOTMAT41",
             "BMETE90AX00~"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Hidraulika I.",
           code: "BMEEOVVAT42",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 1,
@@ -210,11 +238,13 @@ subjectsData = {
           felev: 2,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Matematika A2a",
           code: "BMETE90AX02",
+          uniquecode: "",
           credit: 6,
           lecture: 4,
           seminar: 2,
@@ -226,11 +256,13 @@ subjectsData = {
           elo: [
             "BMETE90AX00"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Testnevelés BSc 1/A",
           code: "BMEGT70BS1A",
+          uniquecode: "",
           credit: 0,
           lecture: 0,
           seminar: 2,
@@ -240,11 +272,13 @@ subjectsData = {
           felev: 2,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Geodézia mérőgyakorlat",
           code: "BMEEOAFAT43",
+          uniquecode: "",
           credit: 3,
           lecture: 0,
           seminar: 0,
@@ -256,11 +290,13 @@ subjectsData = {
           elo: [
             "BMEEOAFAT42!~"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Talajmechanika",
           code: "BMEEOGMAT42",
+          uniquecode: "",
           credit: 4,
           lecture: 2,
           seminar: 2,
@@ -273,11 +309,13 @@ subjectsData = {
             "BMEEOGMAT41",
             "BMEEOTMAT42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Térinformatika",
           code: "BMEEOFTAT43",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -287,11 +325,13 @@ subjectsData = {
           felev: 3,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Tartószerkezetek méretezésének alapjai",
           code: "BMEEOHSAT41",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -303,11 +343,13 @@ subjectsData = {
           elo: [
             "BMEEOTMAT41"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Tartók statikája I.",
           code: "BMEEOTMAT43",
+          uniquecode: "",
           credit: 4,
           lecture: 4,
           seminar: 0,
@@ -320,11 +362,13 @@ subjectsData = {
             "BMEEOTMAT42",
             "BMETE90AX00"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Vasúti pályák",
           code: "BMEEOUVAT41",
+          uniquecode: "",
           credit: 3,
           lecture: 3,
           seminar: 0,
@@ -334,11 +378,13 @@ subjectsData = {
           felev: 3,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Környezetmérnöki alapok",
           code: "BMEEOVKAT41",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -348,11 +394,13 @@ subjectsData = {
           felev: 3,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Közművek I.",
           code: "BMEEOVKAT42",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 1,
@@ -364,11 +412,13 @@ subjectsData = {
           elo: [
             "BMEEOVVAT42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Hidrológia I.",
           code: "BMEEOVVAT41",
+          uniquecode: "",
           credit: 3,
           lecture: 1,
           seminar: 1,
@@ -378,11 +428,13 @@ subjectsData = {
           felev: 3,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Matematika A3 építömérnököknek",
           code: "BMETE90AX07",
+          uniquecode: "",
           credit: 4,
           lecture: 2,
           seminar: 2,
@@ -394,11 +446,13 @@ subjectsData = {
           elo: [
             "BMETE90AX02"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Testnevelés BSc 2/A",
           code: "BMEGT70BS2A",
+          uniquecode: "",
           credit: 0,
           lecture: 0,
           seminar: 2,
@@ -408,11 +462,13 @@ subjectsData = {
           felev: 3,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Földművek",
           code: "BMEEOGMAT43",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 1,
@@ -424,11 +480,13 @@ subjectsData = {
           elo: [
             "BMEEOGMAT42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Acélszerkezetek",
           code: "BMEEOHSAT42",
+          uniquecode: "",
           credit: 3,
           lecture: 3,
           seminar: 0,
@@ -442,11 +500,13 @@ subjectsData = {
             "BMEEOEMAT43~",
             "BMEEOHSAT41"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Vasbetonszerkezetek",
           code: "BMEEOHSAT43",
+          uniquecode: "",
           credit: 3,
           lecture: 3,
           seminar: 0,
@@ -460,11 +520,13 @@ subjectsData = {
             "BMEEOEMAT43~",
             "BMEEOHSAT41"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Utak",
           code: "BMEEOUVAT42",
+          uniquecode: "",
           credit: 2,
           lecture: 2,
           seminar: 0,
@@ -476,11 +538,13 @@ subjectsData = {
           elo: [
             "BMEEOUVAT41"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Vízépítés, vízgazdálkodás",
           code: "BMEEOVVAT43",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 1,
@@ -493,11 +557,13 @@ subjectsData = {
             "BMEEOVVAT41",
             "BMEEOVVAT42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Építőmérnöki kommunikációs készs.-B2",
           code: "BMEGT60Z913",
+          uniquecode: "",
           credit: 2,
           lecture: 0,
           seminar: 2,
@@ -507,11 +573,13 @@ subjectsData = {
           felev: 4,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Üzleti jog",
           code: "BMEGT55A001",
+          uniquecode: "",
           credit: 2,
           lecture: 2,
           seminar: 0,
@@ -521,11 +589,13 @@ subjectsData = {
           felev: 4,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Alapozás",
           code: "BMEEOGMAT45",
+          uniquecode: "",
           credit: 4,
           lecture: 2,
           seminar: 1,
@@ -537,11 +607,13 @@ subjectsData = {
           elo: [
             "BMEEOGMAT43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Menedzsment és vállalkozásgazdaságtan",
           code: "BMEGT20A001",
+          uniquecode: "",
           credit: 4,
           lecture: 4,
           seminar: 0,
@@ -551,11 +623,13 @@ subjectsData = {
           felev: 5,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Mikro- és makroökonómia",
           code: "BMEGT30A001",
+          uniquecode: "",
           credit: 4,
           lecture: 4,
           seminar: 0,
@@ -565,11 +639,13 @@ subjectsData = {
           felev: 6,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Építési projektek szervezése",
           code: "BMEEPEKAT41",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 1,
@@ -582,11 +658,13 @@ subjectsData = {
             "BMEEOEMAT44",
             "BMEEOGMAT42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Település- és régiófejlesztés",
           code: "BMEEOUVAT43",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -596,11 +674,13 @@ subjectsData = {
           felev: 7,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Szabadon választható 1",
           code: "Szabad01",
+          uniquecode: "",
           credit: 2,
           lecture: 2,
           seminar: 0,
@@ -610,11 +690,13 @@ subjectsData = {
           felev: 7,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Szabadon választható 2",
           code: "Szabad02",
+          uniquecode: "",
           credit: 2,
           lecture: 2,
           seminar: 0,
@@ -624,11 +706,13 @@ subjectsData = {
           felev: 7,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Szabadon választható 3",
           code: "Szabad03",
+          uniquecode: "",
           credit: 2,
           lecture: 2,
           seminar: 0,
@@ -638,11 +722,13 @@ subjectsData = {
           felev: 7,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Szabadon választható 4",
           code: "Szabad04",
+          uniquecode: "",
           credit: 2,
           lecture: 2,
           seminar: 0,
@@ -652,11 +738,13 @@ subjectsData = {
           felev: 8,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Szabadon választható 5",
           code: "Szabad05",
+          uniquecode: "",
           credit: 2,
           lecture: 2,
           seminar: 0,
@@ -666,11 +754,13 @@ subjectsData = {
           felev: 8,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Szabadon választható 6",
           code: "Szabad06",
+          uniquecode: "",
           credit: 2,
           lecture: 2,
           seminar: 0,
@@ -680,7 +770,8 @@ subjectsData = {
           felev: 8,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         }
       ],
       specializations: []
@@ -693,6 +784,7 @@ subjectsData = {
         {
           name: "Magasépítéstan I.",
           code: "BMEEOEMAS42",
+          uniquecode: "",
           credit: 3,
           lecture: 1,
           seminar: 2,
@@ -704,11 +796,13 @@ subjectsData = {
           elo: [
             "BMEEOEMAT44"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Faszerkezetek",
           code: "BMEEOHSAS44",
+          uniquecode: "BMEEOHSAS44_1",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -721,11 +815,106 @@ subjectsData = {
             "BMEEOTMAT42",
             "BMEEOHSAT41"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: [
+            "magasepites",
+            "hidesmutargy"
+          ]
+        },
+        {
+          name: "Faszerkezetek",
+          code: "BMEEOHSAS44",
+          uniquecode: "BMEEOHSAS44_2",
+          credit: 3,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 4,
+          HasSubstitues: true,
+          elo: [
+            "BMEEOTMAT42",
+            "BMEEOHSAT41"
+          ],
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Közlekedési földművek és víztelenítése",
+              code: "BMEEOGMAI41"
+            },
+            {
+              name: "Városi környezetvédelem",
+              code: "BMEEOVKAI42"
+            },
+            {
+              name: "Közlekedési létesítmények pályaszerkezetei",
+              code: "BMEEOUVAI41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            }
+          ],
+          parentSpecializations: [
+            "geotech",
+            "epitestech",
+            "szerkezetianyagok"
+          ]
+        },
+        {
+          name: "Faszerkezetek",
+          code: "BMEEOHSAS44",
+          uniquecode: "BMEEOHSAS44_3",
+          credit: 3,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 4,
+          HasSubstitues: true,
+          elo: [
+            "BMEEOTMAT42",
+            "BMEEOHSAT41"
+          ],
+          substitutes: [
+            {
+              name: "Közlekedési földművek és víztelenítése",
+              code: "BMEEOGMAI41"
+            },
+            {
+              name: "Városi környezetvédelem",
+              code: "BMEEOVKAI42"
+            },
+            {
+              name: "Közlekedési létesítmények pályaszerkezetei",
+              code: "BMEEOUVAI41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            }
+          ],
+          parentSpecializations: [
+            "epitmenyinformacio"
+          ]
         },
         {
           name: "Általános szilárdságtan",
           code: "BMEEOTMAS41",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -737,11 +926,13 @@ subjectsData = {
           elo: [
             "BMEEOTMAT43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Építőanyagok II.",
           code: "BMEEOEMAS41",
+          uniquecode: "",
           credit: 3,
           lecture: 1,
           seminar: 0,
@@ -753,11 +944,13 @@ subjectsData = {
           elo: [
             "BMEEOEMAT43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Magasépítéstan II.",
           code: "BMEEOEMAS43",
+          uniquecode: "",
           credit: 3,
           lecture: 1,
           seminar: 2,
@@ -769,11 +962,13 @@ subjectsData = {
           elo: [
             "BMEEOEMAS42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Acél- és öszvérszerkezetek",
           code: "BMEEOHSAS47",
+          uniquecode: "",
           credit: 4,
           lecture: 3,
           seminar: 0,
@@ -786,11 +981,13 @@ subjectsData = {
             "BMEEOHSAT42",
             "BMEEOHSAT43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Vasbeton- és falszerkezetek",
           code: "BMEEOHSAS42",
+          uniquecode: "",
           credit: 4,
           lecture: 2,
           seminar: 1,
@@ -803,11 +1000,13 @@ subjectsData = {
             "BMEEOHSAT43",
             "BMEEOEMAS42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Hidak és infrastruktúra szerkezetek",
           code: "BMEEOHSAS43",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -820,11 +1019,13 @@ subjectsData = {
             "BMEEOHSAT42",
             "BMEEOHSAT43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Szerkezet és anyagvizsgáló laborgyakorlat",
           code: "BMEEOHSAS46",
+          uniquecode: "",
           credit: 2,
           lecture: 0,
           seminar: 0,
@@ -837,11 +1038,13 @@ subjectsData = {
             "BMEEOHSAT42",
             "BMEEOHSAT43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Tartók statikája II.",
           code: "BMEEOTMAS42",
+          uniquecode: "",
           credit: 4,
           lecture: 3,
           seminar: 1,
@@ -854,11 +1057,13 @@ subjectsData = {
             "BMEEOTMAS41",
             "BMETE90AX07"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Kőzetmechanika",
           code: "BMEEOGMAS41",
+          uniquecode: "BMEEOGMAS41_1",
           credit: 3,
           lecture: 1,
           seminar: 1,
@@ -870,11 +1075,104 @@ subjectsData = {
           elo: [
             "BMEEOGMAT41"
           ],
-          substitutes: []
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Közlekedési földművek és víztelenítése",
+              code: "BMEEOGMAI41"
+            },
+            {
+              name: "Városi környezetvédelem",
+              code: "BMEEOVKAI42"
+            },
+            {
+              name: "Közlekedési létesítmények pályaszerkezetei",
+              code: "BMEEOUVAI41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            }
+          ],
+          parentSpecializations: [
+            "magasepites",
+            "hidesmutargy",
+            "epitestech",
+            "szerkezetianyagok"
+          ]
+        },
+        {
+          name: "Kőzetmechanika",
+          code: "BMEEOGMAS41",
+          uniquecode: "BMEEOGMAS41_2",
+          credit: 3,
+          lecture: 1,
+          seminar: 1,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 6,
+          HasSubstitues: false,
+          elo: [
+            "BMEEOGMAT41"
+          ],
+          substitutes: [],
+          parentSpecializations: [
+            "geotech"
+          ]
+        },
+        {
+          name: "Kőzetmechanika",
+          code: "BMEEOGMAS41",
+          uniquecode: "BMEEOGMAS41_3",
+          credit: 3,
+          lecture: 1,
+          seminar: 1,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 6,
+          HasSubstitues: true,
+          elo: [
+            "BMEEOGMAT41"
+          ],
+          substitutes: [
+            {
+              name: "Közlekedési földművek és víztelenítése",
+              code: "BMEEOGMAI41"
+            },
+            {
+              name: "Városi környezetvédelem",
+              code: "BMEEOVKAI42"
+            },
+            {
+              name: "Közlekedési létesítmények pályaszerkezetei",
+              code: "BMEEOUVAI41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            }
+          ],
+          parentSpecializations: [
+            "epitmenyinformacio"
+          ]
         },
         {
           name: "Földalatti műtárgyak, mélyalapozás",
           code: "BMEEOGMAS42",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 1,
@@ -886,11 +1184,13 @@ subjectsData = {
           elo: [
             "BMEEOGMAT45"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "3D szerkezetkonstruálás",
           code: "BMEEOHSAS45",
+          uniquecode: "",
           credit: 3,
           lecture: 0,
           seminar: 2,
@@ -903,11 +1203,13 @@ subjectsData = {
             "BMEEOHSAT42",
             "BMEEOHSAT43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Szerkezettervezés projektfeladat",
           code: "BMEEODHAS41",
+          uniquecode: "",
           credit: 6,
           lecture: 0,
           seminar: 0,
@@ -921,11 +1223,13 @@ subjectsData = {
             "BMEEOHSAS42",
             "BMEEOGMAT45"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Közigazgatástan, ingatlan nyilvántartás",
           code: "BMEEOUVAT44",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -935,11 +1239,13 @@ subjectsData = {
           felev: 7,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Szerkezetek geodéziája mérőgyak.",
           code: "BMEEOAFAS42",
+          uniquecode: "",
           credit: 1,
           lecture: 0,
           seminar: 0,
@@ -952,11 +1258,13 @@ subjectsData = {
             "BMEEOAFAT43!",
             "BMEEOEMAT44"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Tartók dinamikája",
           code: "BMEEOTMAS43",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -969,11 +1277,13 @@ subjectsData = {
             "BMEEOTMAT43",
             "BMETE90AX02"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Technikusi gyakorlat",
           code: "BMEEODHAS42",
+          uniquecode: "",
           credit: 0,
           lecture: 0,
           seminar: 0,
@@ -986,7 +1296,26 @@ subjectsData = {
             "BMEEOHSAS47",
             "BMEEOHSAS42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
+        },
+        {
+          name: "BIM az építőiparban",
+          code: "BMEEOFTAM41",
+          uniquecode: "",
+          credit: 3,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 5,
+          HasSubstitues: false,
+          elo: [],
+          substitutes: [],
+          parentSpecializations: [
+            "epitmenyinformacio"
+          ]
         }
       ],
       specializations: [
@@ -998,6 +1327,7 @@ subjectsData = {
             {
               name: "Magasépítési acélszerkezetek",
               code: "BMEEOHSA-A1",
+              uniquecode: "",
               credit: 5,
               lecture: 3,
               seminar: 1,
@@ -1009,11 +1339,13 @@ subjectsData = {
               elo: [
                 "BMEEOHSAS47"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Magasépítési vasbetonszerkezetek",
               code: "BMEEOHSA-A2",
+              uniquecode: "",
               credit: 5,
               lecture: 3,
               seminar: 1,
@@ -1026,11 +1358,13 @@ subjectsData = {
                 "BMEEOHSAS42",
                 "BMEEOHSAS44"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Épületszerkezettervezés metodikája",
               code: "BMEEOEMA-A1",
+              uniquecode: "",
               credit: 2,
               lecture: 1,
               seminar: 1,
@@ -1042,11 +1376,13 @@ subjectsData = {
               elo: [
                 "BMEEOEMAS43"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szerkezettechnológia",
               code: "BMEEOHSA-K1",
+              uniquecode: "",
               credit: 3,
               lecture: 1,
               seminar: 1,
@@ -1059,11 +1395,26 @@ subjectsData = {
                 "BMEEOHSAS47",
                 "BMEEOHSAS42"
               ],
-              substitutes: []
+              substitutes: [
+                {
+                  name: "Mérnöki nagylétesítmények megvalósítása",
+                  code: "BMEEPEKA-D1"
+                },
+                {
+                  name: "Szerkezetek szerelésének szervezése",
+                  code: "BMEEPEKA-D2"
+                },
+                {
+                  name: "Betontechnológia I.",
+                  code: "BMEEOEMA-K1"
+                }
+              ],
+              parentSpecializations: []
             },
             {
               name: "Magasépítés projektfeladat",
               code: "BMEEOHSA-AP",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -1077,11 +1428,13 @@ subjectsData = {
                 "BMEEOHSA-A1",
                 "BMEEOHSA-A2"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat előkészítő",
               code: "BMEEODHA-AT",
+              uniquecode: "",
               credit: 9,
               lecture: 0,
               seminar: 0,
@@ -1093,11 +1446,13 @@ subjectsData = {
               elo: [
                 "BMEEOHSA-AP"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat",
               code: "BMEEODHA-AS",
+              uniquecode: "",
               credit: 15,
               lecture: 0,
               seminar: 0,
@@ -1109,7 +1464,8 @@ subjectsData = {
               elo: [
                 "BMEEODHA-AT!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             }
           ],
           specializations: []
@@ -1122,6 +1478,7 @@ subjectsData = {
             {
               name: "Acélhidak",
               code: "BMEEOHSA-B1",
+              uniquecode: "",
               credit: 5,
               lecture: 3,
               seminar: 1,
@@ -1134,11 +1491,13 @@ subjectsData = {
                 "BMEEOHSAS47",
                 "BMEEOHSAS43"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Vasbeton hidak",
               code: "BMEEOHSA-B2",
+              uniquecode: "",
               credit: 4,
               lecture: 2,
               seminar: 1,
@@ -1152,11 +1511,13 @@ subjectsData = {
                 "BMEEOHSAS43",
                 "BMEEOHSAS44"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Mélyépítési műtárgyak",
               code: "BMEEOHSA-B3",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -1170,11 +1531,13 @@ subjectsData = {
                 "BMEEOHSAS43",
                 "BMEEOGMAS42"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szerkezettechnológia",
               code: "BMEEOHSA-K1",
+              uniquecode: "",
               credit: 3,
               lecture: 1,
               seminar: 1,
@@ -1187,11 +1550,26 @@ subjectsData = {
                 "BMEEOHSAS47",
                 "BMEEOHSAS42"
               ],
-              substitutes: []
+              substitutes: [
+                {
+                  name: "Mérnöki nagylétesítmények megvalósítása",
+                  code: "BMEEPEKA-D1"
+                },
+                {
+                  name: "Szerkezetek szerelésének szervezése",
+                  code: "BMEEPEKA-D2"
+                },
+                {
+                  name: "Betontechnológia I.",
+                  code: "BMEEOEMA-K1"
+                }
+              ],
+              parentSpecializations: []
             },
             {
               name: "Hídépítés projektfeladat",
               code: "BMEEOHSA-BP",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -1205,11 +1583,13 @@ subjectsData = {
                 "BMEEOHSA-B1",
                 "BMEEOHSA-B2"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat előkészítő",
               code: "BMEEODHA-BT",
+              uniquecode: "",
               credit: 9,
               lecture: 0,
               seminar: 0,
@@ -1221,11 +1601,13 @@ subjectsData = {
               elo: [
                 "BMEEOHSA-BP"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat",
               code: "BMEEODHA-BS",
+              uniquecode: "",
               credit: 15,
               lecture: 0,
               seminar: 0,
@@ -1237,7 +1619,8 @@ subjectsData = {
               elo: [
                 "BMEEODHA-BT!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             }
           ],
           specializations: []
@@ -1250,6 +1633,7 @@ subjectsData = {
             {
               name: "Geotechnika",
               code: "BMEEOGMA-C1",
+              uniquecode: "",
               credit: 7,
               lecture: 3,
               seminar: 1,
@@ -1261,11 +1645,13 @@ subjectsData = {
               elo: [
                 "BMEEOGMAT45"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Betontechnológia I.",
               code: "BMEEOEMA-K1",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -1277,11 +1663,22 @@ subjectsData = {
               elo: [
                 "BMEEOEMAT43"
               ],
-              substitutes: []
+              substitutes: [
+                {
+                  name: "Mérnöki nagylétesítmények megvalósítása",
+                  code: "BMEEPEKA-D1"
+                },
+                {
+                  name: "Szerkezetek szerelésének szervezése",
+                  code: "BMEEPEKA-D2"
+                }
+              ],
+              parentSpecializations: []
             },
             {
               name: "Mérnökgeológia",
               code: "BMEEOGMA-C2",
+              uniquecode: "",
               credit: 2,
               lecture: 1,
               seminar: 1,
@@ -1293,11 +1690,13 @@ subjectsData = {
               elo: [
                 "BMEEOGMAS41"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Mélyépítési műtárgyak",
               code: "BMEEOHSA-B3",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -1311,11 +1710,13 @@ subjectsData = {
                 "BMEEOHSAS43",
                 "BMEEOGMAS42"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Mélyépítés projektfeladat",
               code: "BMEEOGMA-CP",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -1328,11 +1729,13 @@ subjectsData = {
                 "BMEEODHAS41",
                 "BMEEOGMA-C1"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat előkészítő",
               code: "BMEEODHA-CT",
+              uniquecode: "",
               credit: 9,
               lecture: 0,
               seminar: 0,
@@ -1344,11 +1747,13 @@ subjectsData = {
               elo: [
                 "BMEEOGMA-CP"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat",
               code: "BMEEODHA-CS",
+              uniquecode: "",
               credit: 15,
               lecture: 0,
               seminar: 0,
@@ -1360,7 +1765,8 @@ subjectsData = {
               elo: [
                 "BMEEODHA-CT!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             }
           ],
           specializations: []
@@ -1373,6 +1779,7 @@ subjectsData = {
             {
               name: "Építéstechnológia I.",
               code: "BMEEOEMA-D1",
+              uniquecode: "",
               credit: 2,
               lecture: 2,
               seminar: 0,
@@ -1384,11 +1791,13 @@ subjectsData = {
               elo: [
                 "BMEEOEMAS43"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Többdimenziós projektelemzés",
               code: "BMEEOEMA-D3",
+              uniquecode: "",
               credit: 4,
               lecture: 2,
               seminar: 1,
@@ -1401,11 +1810,13 @@ subjectsData = {
                 "BMEEOEMAS43",
                 "BMEEPEKAT41!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Építéstechnológia II.",
               code: "BMEEOEMA-D2",
+              uniquecode: "",
               credit: 3,
               lecture: 1,
               seminar: 1,
@@ -1417,11 +1828,13 @@ subjectsData = {
               elo: [
                 "BMEEOEMA-D1"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Mérnöki nagylétesítmények megvalósítása",
               code: "BMEEPEKA-D1",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -1433,11 +1846,13 @@ subjectsData = {
               elo: [
                 "BMEEPEKAT41"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szerkezetek szerelésének szervezése",
               code: "BMEEPEKA-D2",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -1449,11 +1864,13 @@ subjectsData = {
               elo: [
                 "BMEEPEKAT41"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Magasépítési technológia projektfeladat",
               code: "BMEEOEMA-DP",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -1467,11 +1884,13 @@ subjectsData = {
                 "BMEEOEMA-D1",
                 "BMEEOEMA-D3"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat előkészítő",
               code: "BMEEODHA-DT",
+              uniquecode: "",
               credit: 9,
               lecture: 0,
               seminar: 0,
@@ -1483,11 +1902,13 @@ subjectsData = {
               elo: [
                 "BMEEOEMA-DP"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat",
               code: "BMEEODHA-DS",
+              uniquecode: "",
               credit: 15,
               lecture: 0,
               seminar: 0,
@@ -1499,7 +1920,8 @@ subjectsData = {
               elo: [
                 "BMEEODHA-DT!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             }
           ],
           specializations: []
@@ -1512,6 +1934,7 @@ subjectsData = {
             {
               name: "Betontechnológia I.",
               code: "BMEEOEMA-K1",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -1523,11 +1946,13 @@ subjectsData = {
               elo: [
                 "BMEEOEMAT43"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Újrahasznosítás az építőiparban",
               code: "BMEEOEMA-K3",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -1539,11 +1964,13 @@ subjectsData = {
               elo: [
                 "BMEEOEMAT43"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Betontechnológia II.",
               code: "BMEEOEMA-K2",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -1555,11 +1982,13 @@ subjectsData = {
               elo: [
                 "BMEEOEMA-K1"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Mélyépítési műtárgyak",
               code: "BMEEOHSA-B3",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -1573,11 +2002,13 @@ subjectsData = {
                 "BMEEOHSAS43",
                 "BMEEOGMAS42"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szerkezettechnológia",
               code: "BMEEOHSA-K1",
+              uniquecode: "",
               credit: 3,
               lecture: 1,
               seminar: 1,
@@ -1590,11 +2021,22 @@ subjectsData = {
                 "BMEEOHSAS47",
                 "BMEEOHSAS42"
               ],
-              substitutes: []
+              substitutes: [
+                {
+                  name: "Mérnöki nagylétesítmények megvalósítása",
+                  code: "BMEEPEKA-D1"
+                },
+                {
+                  name: "Szerkezetek szerelésének szervezése",
+                  code: "BMEEPEKA-D2"
+                }
+              ],
+              parentSpecializations: []
             },
             {
               name: "Szerkezetépítés-technológia projektfeladat",
               code: "BMEEOEMA-KP",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -1607,11 +2049,13 @@ subjectsData = {
                 "BMEEODHAS41",
                 "BMEEOEMA-K1"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat előkészítő",
               code: "BMEEODHA-KT",
+              uniquecode: "",
               credit: 9,
               lecture: 0,
               seminar: 0,
@@ -1623,11 +2067,13 @@ subjectsData = {
               elo: [
                 "BMEEOEMA-KP"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat",
               code: "BMEEODHA-KS",
+              uniquecode: "",
               credit: 15,
               lecture: 0,
               seminar: 0,
@@ -1639,7 +2085,8 @@ subjectsData = {
               elo: [
                 "BMEEODHA-KT!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             }
           ],
           specializations: []
@@ -1652,6 +2099,7 @@ subjectsData = {
             {
               name: "Építmény-információs mod. és menedzsment",
               code: "BMEEOFTA-M1",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -1661,11 +2109,13 @@ subjectsData = {
               felev: 6,
               HasSubstitues: false,
               elo: [],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Építmény-információs rendszerek",
               code: "BMEEOFTA-M2",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -1677,11 +2127,13 @@ subjectsData = {
               elo: [
                 "BMEEOFTA-M1!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "BIM alkalmazások és technológiák",
               code: "BMEEOEMA-M3",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -1693,11 +2145,13 @@ subjectsData = {
               elo: [
                 "BMEEOFTAM41!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakági együttműködés BIM alapokon",
               code: "BMEEOTMA-M4",
+              uniquecode: "",
               credit: 3,
               lecture: 0,
               seminar: 0,
@@ -1709,11 +2163,13 @@ subjectsData = {
               elo: [
                 "BMEEOFTAM41!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Építmény-információs mod. és menedzs. proj.",
               code: "BMEEOEMA-MP",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -1723,13 +2179,17 @@ subjectsData = {
               felev: 7,
               HasSubstitues: false,
               elo: [
-                "BMEDHAI41"
+                "BMEEODHAS41",
+                "BMEEODHAI41",
+                "BMEEODHAG41"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat előkészítő",
               code: "BMEEODHA-MT",
+              uniquecode: "",
               credit: 9,
               lecture: 0,
               seminar: 0,
@@ -1741,11 +2201,13 @@ subjectsData = {
               elo: [
                 "BMEEOEMA-MP"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat",
               code: "BMEEODHA-MS",
+              uniquecode: "",
               credit: 15,
               lecture: 0,
               seminar: 0,
@@ -1757,7 +2219,8 @@ subjectsData = {
               elo: [
                 "BMEEODHA-MT!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             }
           ],
           specializations: []
@@ -1772,6 +2235,7 @@ subjectsData = {
         {
           name: "Infra CAD gyakorlat",
           code: "BMEEOUVAI45",
+          uniquecode: "",
           credit: 1,
           lecture: 0,
           seminar: 0,
@@ -1784,11 +2248,13 @@ subjectsData = {
             "BMEEOUVAT41",
             "BMEEOFTAT41"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Víz- és környezetkémia, hidrobiológia",
           code: "BMEEOVKAI43",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -1798,11 +2264,13 @@ subjectsData = {
           felev: 4,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Víz- és környezeti jog",
           code: "BMEEOVKAI45",
+          uniquecode: "BMEEOVKAI45_1",
           credit: 2,
           lecture: 2,
           seminar: 0,
@@ -1812,11 +2280,99 @@ subjectsData = {
           felev: 4,
           HasSubstitues: true,
           elo: [],
-          substitutes: []
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Hidak és infrastruktúra szerkezetek",
+              code: "BMEEOHSAS43"
+            },
+            {
+              name: "Földalatti műtárgyak, mélyalapozás",
+              code: "BMEEOGMAS42"
+            },
+            {
+              name: "Kőzetmechanika",
+              code: "BMEEOGMAS41"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Építőanyagok II.",
+              code: "BMEEOEMAS41"
+            }
+          ],
+          parentSpecializations: [
+            "kozlekedesiletesitmeny",
+            "vizimernoki"
+          ]
+        },
+        {
+          name: "Víz- és környezeti jog",
+          code: "BMEEOVKAI45",
+          uniquecode: "BMEEOVKAI45_2",
+          credit: 2,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 4,
+          HasSubstitues: false,
+          elo: [],
+          substitutes: [],
+          parentSpecializations: [
+            "vizkikozmu",
+            "epitmenyinformacio"
+          ]
+        },
+        {
+          name: "Víz- és környezeti jog",
+          code: "BMEEOVKAI45",
+          uniquecode: "BMEEOVKAI45_3",
+          credit: 2,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 4,
+          HasSubstitues: true,
+          elo: [],
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Építmény-információs mod. és menedzsment",
+              code: "BMEEOEMAS41"
+            }
+          ],
+          parentSpecializations: [
+            "geotech"
+          ]
         },
         {
           name: "Hidraulika II.",
           code: "BMEEOVVAI42",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 1,
@@ -1828,11 +2384,13 @@ subjectsData = {
           elo: [
             "BMEEOVVAT42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Közlekedési létesítmények pályaszerkezetei",
           code: "BMEEOUVAI41",
+          uniquecode: "",
           credit: 5,
           lecture: 4,
           seminar: 0,
@@ -1844,11 +2402,13 @@ subjectsData = {
           elo: [
             "BMEEOUVAT42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Közlekedéstervezés",
           code: "BMEEOUVAI43",
+          uniquecode: "",
           credit: 5,
           lecture: 3,
           seminar: 2,
@@ -1860,11 +2420,13 @@ subjectsData = {
           elo: [
             "BMEEOUVAT42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Közművek II.",
           code: "BMEEOVKAI41",
+          uniquecode: "",
           credit: 5,
           lecture: 2,
           seminar: 2,
@@ -1876,11 +2438,13 @@ subjectsData = {
           elo: [
             "BMEEOVKAT42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Városi környezetvédelem",
           code: "BMEEOVKAI42",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -1892,11 +2456,13 @@ subjectsData = {
           elo: [
             "BMEEOVKAT41"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Vízminőségszabályozás",
           code: "BMEEOVKAI44",
+          uniquecode: "BMEEOVKAI44_1",
           credit: 3,
           lecture: 2,
           seminar: 1,
@@ -1908,11 +2474,103 @@ subjectsData = {
           elo: [
             "BMEEOVKAI43"
           ],
-          substitutes: []
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Hidak és infrastruktúra szerkezetek",
+              code: "BMEEOHSAS43"
+            },
+            {
+              name: "Földalatti műtárgyak, mélyalapozás",
+              code: "BMEEOGMAS42"
+            },
+            {
+              name: "Kőzetmechanika",
+              code: "BMEEOGMAS41"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Építőanyagok II.",
+              code: "BMEEOEMAS41"
+            }
+          ],
+          parentSpecializations: [
+            "kozlekedesiletesitmeny"
+          ]
+        },
+        {
+          name: "Vízminőségszabályozás",
+          code: "BMEEOVKAI44",
+          uniquecode: "BMEEOVKAI44_2",
+          credit: 3,
+          lecture: 2,
+          seminar: 1,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 5,
+          HasSubstitues: false,
+          elo: [
+            "BMEEOVKAI43"
+          ],
+          substitutes: [],
+          parentSpecializations: [
+            "vizimernoki",
+            "vizkikozmu",
+            "epitmenyinformacio"
+          ]
+        },
+        {
+          name: "Vízminőségszabályozás",
+          code: "BMEEOVKAI44",
+          uniquecode: "BMEEOVKAI44_3",
+          credit: 3,
+          lecture: 2,
+          seminar: 1,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 5,
+          HasSubstitues: true,
+          elo: [
+            "BMEEOVKAI43"
+          ],
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Építmény-információs mod. és menedzsment",
+              code: "BMEEOEMAS41"
+            }
+          ],
+          parentSpecializations: [
+            "geotech"
+          ]
         },
         {
           name: "Hidrológia II.",
           code: "BMEEOVVAI41",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 1,
@@ -1924,11 +2582,13 @@ subjectsData = {
           elo: [
             "BMEEOVVAT41"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Közlekedési hálózatok",
           code: "BMEEOUVAI42",
+          uniquecode: "BMEEOUVAI42_1",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -1940,11 +2600,147 @@ subjectsData = {
           elo: [
             "BMEEOUVAT42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: [
+            "kozlekedesiletesitmeny"
+          ]
+        },
+        {
+          name: "Közlekedési hálózatok",
+          code: "BMEEOUVAI42",
+          uniquecode: "BMEEOUVAI42_2",
+          credit: 3,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 6,
+          HasSubstitues: true,
+          elo: [
+            "BMEEOUVAT42"
+          ],
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Hidak és infrastruktúra szerkezetek",
+              code: "BMEEOHSAS43"
+            },
+            {
+              name: "Földalatti műtárgyak, mélyalapozás",
+              code: "BMEEOGMAS42"
+            },
+            {
+              name: "Kőzetmechanika",
+              code: "BMEEOGMAS41"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Építőanyagok II.",
+              code: "BMEEOEMAS41"
+            }
+          ],
+          parentSpecializations: [
+            "vizimernoki",
+            "vizkikozmu"
+          ]
+        },
+        {
+          name: "Közlekedési hálózatok",
+          code: "BMEEOUVAI42",
+          uniquecode: "BMEEOUVAI42_3",
+          credit: 3,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 6,
+          HasSubstitues: true,
+          elo: [
+            "BMEEOUVAT42"
+          ],
+          substitutes: [
+            {
+              name: "Hidak és infrastruktúra szerkezetek",
+              code: "BMEEOHSAS43"
+            },
+            {
+              name: "Földalatti műtárgyak, mélyalapozás",
+              code: "BMEEOGMAS42"
+            },
+            {
+              name: "Kőzetmechanika",
+              code: "BMEEOGMAS41"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Építőanyagok II.",
+              code: "BMEEOEMAS41"
+            }
+          ],
+          parentSpecializations: [
+            "epitmenyinformacio"
+          ]
+        },
+        {
+          name: "Közlekedési hálózatok",
+          code: "BMEEOUVAI42",
+          uniquecode: "BMEEOUVAI42_4",
+          credit: 3,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 6,
+          HasSubstitues: true,
+          elo: [
+            "BMEEOUVAT42"
+          ],
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Építmény-információs mod. és menedzsment",
+              code: "BMEEOEMAS41"
+            }
+          ],
+          parentSpecializations: [
+            "geotech"
+          ]
         },
         {
           name: "Út-vasút laborgyakorlat",
           code: "BMEEOUVAI44",
+          uniquecode: "BMEEOUVAI44_1",
           credit: 1,
           lecture: 0,
           seminar: 0,
@@ -1956,11 +2752,147 @@ subjectsData = {
           elo: [
             "BMEEOUVAI41"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: [
+            "kozlekedesiletesitmeny"
+          ]
+        },
+        {
+          name: "Út-vasút laborgyakorlat",
+          code: "BMEEOUVAI44",
+          uniquecode: "BMEEOUVAI44_2",
+          credit: 1,
+          lecture: 0,
+          seminar: 0,
+          lab: 3,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 6,
+          HasSubstitues: true,
+          elo: [
+            "BMEEOUVAI41"
+          ],
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Hidak és infrastruktúra szerkezetek",
+              code: "BMEEOHSAS43"
+            },
+            {
+              name: "Földalatti műtárgyak, mélyalapozás",
+              code: "BMEEOGMAS42"
+            },
+            {
+              name: "Kőzetmechanika",
+              code: "BMEEOGMAS41"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Építőanyagok II.",
+              code: "BMEEOEMAS41"
+            }
+          ],
+          parentSpecializations: [
+            "vizimernoki",
+            "vizkikozmu"
+          ]
+        },
+        {
+          name: "Út-vasút laborgyakorlat",
+          code: "BMEEOUVAI44",
+          uniquecode: "BMEEOUVAI44_3",
+          credit: 1,
+          lecture: 0,
+          seminar: 0,
+          lab: 3,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 6,
+          HasSubstitues: true,
+          elo: [
+            "BMEEOUVAI41"
+          ],
+          substitutes: [
+            {
+              name: "Hidak és infrastruktúra szerkezetek",
+              code: "BMEEOHSAS43"
+            },
+            {
+              name: "Földalatti műtárgyak, mélyalapozás",
+              code: "BMEEOGMAS42"
+            },
+            {
+              name: "Kőzetmechanika",
+              code: "BMEEOGMAS41"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Építőanyagok II.",
+              code: "BMEEOEMAS41"
+            }
+          ],
+          parentSpecializations: [
+            "epitmenyinformacio"
+          ]
+        },
+        {
+          name: "Út-vasút laborgyakorlat",
+          code: "BMEEOUVAI44",
+          uniquecode: "BMEEOUVAI44_4",
+          credit: 1,
+          lecture: 0,
+          seminar: 0,
+          lab: 3,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 6,
+          HasSubstitues: true,
+          elo: [
+            "BMEEOUVAI41"
+          ],
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Építmény-információs mod. és menedzsment",
+              code: "BMEEOEMAS41"
+            }
+          ],
+          parentSpecializations: [
+            "geotech"
+          ]
         },
         {
           name: "Vízkészletgazdálkodás",
           code: "BMEEOVVAI43",
+          uniquecode: "BMEEOVVAI43_1",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -1972,11 +2904,103 @@ subjectsData = {
           elo: [
             "BMEEOVVAT43"
           ],
-          substitutes: []
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Hidak és infrastruktúra szerkezetek",
+              code: "BMEEOHSAS43"
+            },
+            {
+              name: "Földalatti műtárgyak, mélyalapozás",
+              code: "BMEEOGMAS42"
+            },
+            {
+              name: "Kőzetmechanika",
+              code: "BMEEOGMAS41"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Építőanyagok II.",
+              code: "BMEEOEMAS41"
+            }
+          ],
+          parentSpecializations: [
+            "kozlekedesiletesitmeny"
+          ]
+        },
+        {
+          name: "Vízkészletgazdálkodás",
+          code: "BMEEOVVAI43",
+          uniquecode: "BMEEOVVAI43_2",
+          credit: 3,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Vizsga",
+          felev: 6,
+          HasSubstitues: false,
+          elo: [
+            "BMEEOVVAT43"
+          ],
+          substitutes: [],
+          parentSpecializations: [
+            "vizimernoki",
+            "vizkikozmu",
+            "epitmenyinformacio"
+          ]
+        },
+        {
+          name: "Vízkészletgazdálkodás",
+          code: "BMEEOVVAI43",
+          uniquecode: "BMEEOVVAI43_3",
+          credit: 3,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Vizsga",
+          felev: 6,
+          HasSubstitues: true,
+          elo: [
+            "BMEEOVVAT43"
+          ],
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Térinformatikai modellezés",
+              code: "BMEEOFTAG41"
+            },
+            {
+              name: "Műholdas helymeghatározás",
+              code: "BMEEOAFAG45"
+            },
+            {
+              name: "Építmény-információs mod. és menedzsment",
+              code: "BMEEOEMAS41"
+            }
+          ],
+          parentSpecializations: [
+            "geotech"
+          ]
         },
         {
           name: "Vízmérnöki mérőgyakorlat",
           code: "BMEEOVVAI44",
+          uniquecode: "",
           credit: 2,
           lecture: 0,
           seminar: 0,
@@ -1989,11 +3013,13 @@ subjectsData = {
             "BMEEOVVAI41",
             "BMEEOVVAI42!~"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Infrastruktúra tervezés projektfeladat",
           code: "BMEEODHAI41",
+          uniquecode: "",
           credit: 6,
           lecture: 0,
           seminar: 0,
@@ -2007,11 +3033,13 @@ subjectsData = {
             "BMEEOUVAI43",
             "BMEEOVKAI41"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Közigazgatástan, ingatlan nyilvántartás",
           code: "BMEEOUVAT44",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -2021,11 +3049,13 @@ subjectsData = {
           felev: 7,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Közlekedési földművek és víztelenítése",
           code: "BMEEOGMAI41",
+          uniquecode: "",
           credit: 3,
           lecture: 3,
           seminar: 0,
@@ -2037,11 +3067,13 @@ subjectsData = {
           elo: [
             "BMEEOGMAT43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Technikusi gyakorlat",
           code: "BMEEODHAI42",
+          uniquecode: "",
           credit: 0,
           lecture: 0,
           seminar: 0,
@@ -2055,7 +3087,87 @@ subjectsData = {
             "BMEEOUVAI43",
             "BMEEOVKAI41"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
+        },
+        {
+          name: "BIM az építőiparban",
+          code: "BMEEOFTAM41",
+          uniquecode: "",
+          credit: 3,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 5,
+          HasSubstitues: false,
+          elo: [],
+          substitutes: [],
+          parentSpecializations: [
+            "epitmenyinformacio"
+          ]
+        },
+        {
+          name: "Hidak és infrastruktúra szerkezetek",
+          code: "BMEEOHSAS43",
+          uniquecode: "",
+          credit: 3,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Vizsga",
+          felev: 5,
+          HasSubstitues: false,
+          elo: [
+            "BMEEOHSAT42",
+            "BMEEOHSAT43"
+          ],
+          substitutes: [],
+          parentSpecializations: [
+            "geotech"
+          ]
+        },
+        {
+          name: "Földalatti műtárgyak, mélyalapozás",
+          code: "BMEEOGMAS42",
+          uniquecode: "",
+          credit: 3,
+          lecture: 2,
+          seminar: 1,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 6,
+          HasSubstitues: false,
+          elo: [
+            "BMEEOGMAT45"
+          ],
+          substitutes: [],
+          parentSpecializations: [
+            "geotech"
+          ]
+        },
+        {
+          name: "Kőzetmechanika",
+          code: "BMEEOGMAS41",
+          uniquecode: "",
+          credit: 3,
+          lecture: 1,
+          seminar: 1,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 6,
+          HasSubstitues: false,
+          elo: [
+            "BMEEOGMAT41"
+          ],
+          substitutes: [],
+          parentSpecializations: [
+            "geotech"
+          ]
         }
       ],
       specializations: [
@@ -2067,6 +3179,7 @@ subjectsData = {
             {
               name: "Útépítés és fenntartás",
               code: "BMEEOUVA-E3",
+              uniquecode: "",
               credit: 3,
               lecture: 3,
               seminar: 0,
@@ -2078,11 +3191,13 @@ subjectsData = {
               elo: [
                 "BMEEOUVAI41"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Vasútépítés és fenntartás",
               code: "BMEEOUVA-E4",
+              uniquecode: "",
               credit: 3,
               lecture: 3,
               seminar: 0,
@@ -2094,11 +3209,13 @@ subjectsData = {
               elo: [
                 "BMEEOUVAI41"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Úttervezés",
               code: "BMEEOUVA-E1",
+              uniquecode: "",
               credit: 3,
               lecture: 0,
               seminar: 2,
@@ -2110,11 +3227,13 @@ subjectsData = {
               elo: [
                 "BMEEOUVAI43"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Vasúttervezés",
               code: "BMEEOUVA-E2",
+              uniquecode: "",
               credit: 3,
               lecture: 0,
               seminar: 2,
@@ -2126,11 +3245,13 @@ subjectsData = {
               elo: [
                 "BMEEOUVAI43"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Települési közlekedés",
               code: "BMEEOUVA-E5",
+              uniquecode: "",
               credit: 3,
               lecture: 0,
               seminar: 2,
@@ -2143,11 +3264,13 @@ subjectsData = {
                 "BMEEOUVAI42",
                 "BMEEOUVAI43"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Közlekedésépítés projektfeladat",
               code: "BMEEOUVA-EP",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -2160,11 +3283,13 @@ subjectsData = {
                 "BMEEODHAI41",
                 "BMEEOUVAI44"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat előkészítő",
               code: "BMEEODHA-ET",
+              uniquecode: "",
               credit: 9,
               lecture: 0,
               seminar: 0,
@@ -2176,11 +3301,13 @@ subjectsData = {
               elo: [
                 "BMEEOUVA-EP"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat",
               code: "BMEEODHA-ES",
+              uniquecode: "",
               credit: 15,
               lecture: 0,
               seminar: 0,
@@ -2192,7 +3319,8 @@ subjectsData = {
               elo: [
                 "BMEEODHA-ET!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             }
           ],
           specializations: []
@@ -2205,6 +3333,7 @@ subjectsData = {
             {
               name: "Vízkárelhárítás, vízhasznosítás",
               code: "BMEEOVVA-F1",
+              uniquecode: "",
               credit: 5,
               lecture: 4,
               seminar: 0,
@@ -2218,11 +3347,13 @@ subjectsData = {
                 "BMEEOVVAI41",
                 "BMEEOVVAI42"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Vízgazdálkodási projektek",
               code: "BMEEOVVA-F4",
+              uniquecode: "",
               credit: 2,
               lecture: 2,
               seminar: 0,
@@ -2232,11 +3363,13 @@ subjectsData = {
               felev: 6,
               HasSubstitues: false,
               elo: [],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Vízgyűjtőgazdálkodás",
               code: "BMEEOVVA-F2",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -2249,11 +3382,13 @@ subjectsData = {
                 "BMEEOVVAI43",
                 "BMEEOVKAI44!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Hidroinformatika",
               code: "BMEEOVVA-F3",
+              uniquecode: "",
               credit: 5,
               lecture: 2,
               seminar: 1,
@@ -2265,11 +3400,13 @@ subjectsData = {
               elo: [
                 "BMEEOVVAI42"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Vízépítés projektfeladat",
               code: "BMEEOVVA-FP",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -2283,11 +3420,13 @@ subjectsData = {
                 "BMEEOVVA-F1",
                 "BMEEOVVA-F3!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat előkészítő",
               code: "BMEEODHA-FT",
+              uniquecode: "",
               credit: 9,
               lecture: 0,
               seminar: 0,
@@ -2299,11 +3438,13 @@ subjectsData = {
               elo: [
                 "BMEEOVVA-FP"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat",
               code: "BMEEODHA-FS",
+              uniquecode: "",
               credit: 15,
               lecture: 0,
               seminar: 0,
@@ -2315,7 +3456,8 @@ subjectsData = {
               elo: [
                 "BMEEODHA-FT!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             }
           ],
           specializations: []
@@ -2328,6 +3470,7 @@ subjectsData = {
             {
               name: "Víz- és szennyvíztisztítás",
               code: "BMEEOVKA-H1",
+              uniquecode: "",
               credit: 4,
               lecture: 3,
               seminar: 0,
@@ -2339,11 +3482,13 @@ subjectsData = {
               elo: [
                 "BMEEOVKAI44"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Közműhálózatok tervezése",
               code: "BMEEOVKA-H4",
+              uniquecode: "",
               credit: 4,
               lecture: 3,
               seminar: 0,
@@ -2355,11 +3500,13 @@ subjectsData = {
               elo: [
                 "BMEEOVKAI41"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Környezeti kárelhárítás",
               code: "BMEEOVKA-H2",
+              uniquecode: "",
               credit: 4,
               lecture: 3,
               seminar: 0,
@@ -2373,11 +3520,13 @@ subjectsData = {
                 "BMEEOVKAI44",
                 "BMEEOVVAI43"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Környezeti hatásvizsgálatok",
               code: "BMEEOVKA-H3",
+              uniquecode: "",
               credit: 3,
               lecture: 3,
               seminar: 0,
@@ -2391,11 +3540,13 @@ subjectsData = {
                 "BMEEOVKAI44",
                 "BMEEOVKAI45"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Vízi közmű projektfeladat",
               code: "BMEEOVKA-HP",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -2409,11 +3560,13 @@ subjectsData = {
                 "BMEEOVKA-H1",
                 "BMEEOVKA-H4"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat előkészítő",
               code: "BMEEODHA-HT",
+              uniquecode: "",
               credit: 9,
               lecture: 0,
               seminar: 0,
@@ -2425,11 +3578,13 @@ subjectsData = {
               elo: [
                 "BMEEOVKA-HP"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat",
               code: "BMEEODHA-HS",
+              uniquecode: "",
               credit: 15,
               lecture: 0,
               seminar: 0,
@@ -2441,7 +3596,8 @@ subjectsData = {
               elo: [
                 "BMEEODHA-HT!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             }
           ],
           specializations: []
@@ -2454,6 +3610,7 @@ subjectsData = {
             {
               name: "Építmény-információs mod. és menedzsment",
               code: "BMEEOFTA-M1",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -2463,11 +3620,13 @@ subjectsData = {
               felev: 6,
               HasSubstitues: false,
               elo: [],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Építmény-információs rendszerek",
               code: "BMEEOFTA-M2",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -2479,11 +3638,13 @@ subjectsData = {
               elo: [
                 "BMEEOFTA-M1!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "BIM alkalmazások és technológiák",
               code: "BMEEOEMA-M3",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -2495,11 +3656,13 @@ subjectsData = {
               elo: [
                 "BMEEOFTAM41!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakági együttműködés BIM alapokon",
               code: "BMEEOTMA-M4",
+              uniquecode: "",
               credit: 3,
               lecture: 0,
               seminar: 0,
@@ -2511,11 +3674,13 @@ subjectsData = {
               elo: [
                 "BMEEOFTAM41!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Építmény-információs mod. és menedzs. proj.",
               code: "BMEEOEMA-MP",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -2525,13 +3690,17 @@ subjectsData = {
               felev: 7,
               HasSubstitues: false,
               elo: [
-                "BMEDHAI41"
+                "BMEEODHAS41",
+                "BMEEODHAI41",
+                "BMEEODHAG41"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat előkészítő",
               code: "BMEEODHA-MT",
+              uniquecode: "",
               credit: 9,
               lecture: 0,
               seminar: 0,
@@ -2543,11 +3712,13 @@ subjectsData = {
               elo: [
                 "BMEEOEMA-MP"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat",
               code: "BMEEODHA-MS",
+              uniquecode: "",
               credit: 15,
               lecture: 0,
               seminar: 0,
@@ -2559,7 +3730,8 @@ subjectsData = {
               elo: [
                 "BMEEODHA-MT!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             }
           ],
           specializations: []
@@ -2572,6 +3744,7 @@ subjectsData = {
             {
               name: "Geotechnika",
               code: "BMEEOGMA-C1",
+              uniquecode: "",
               credit: 7,
               lecture: 3,
               seminar: 1,
@@ -2583,11 +3756,13 @@ subjectsData = {
               elo: [
                 "BMEEOGMAT45"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Betontechnológia I.",
               code: "BMEEOEMA-K1",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -2599,11 +3774,22 @@ subjectsData = {
               elo: [
                 "BMEEOEMAT43"
               ],
-              substitutes: []
+              substitutes: [
+                {
+                  name: "Mérnöki nagylétesítmények megvalósítása",
+                  code: "BMEEPEKA-D1"
+                },
+                {
+                  name: "Szerkezetek szerelésének szervezése",
+                  code: "BMEEPEKA-D2"
+                }
+              ],
+              parentSpecializations: []
             },
             {
               name: "Mérnökgeológia",
               code: "BMEEOGMA-C2",
+              uniquecode: "",
               credit: 2,
               lecture: 1,
               seminar: 1,
@@ -2615,11 +3801,13 @@ subjectsData = {
               elo: [
                 "BMEEOGMAS41"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Mélyépítési műtárgyak",
               code: "BMEEOHSA-B3",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -2633,11 +3821,13 @@ subjectsData = {
                 "BMEEOHSAS43",
                 "BMEEOGMAS42"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Mélyépítés projektfeladat",
               code: "BMEEOGMA-CP",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -2650,11 +3840,13 @@ subjectsData = {
                 "BMEEODHAI41",
                 "BMEEOGMA-C1"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat előkészítő",
               code: "BMEEODHA-CT",
+              uniquecode: "",
               credit: 9,
               lecture: 0,
               seminar: 0,
@@ -2666,11 +3858,13 @@ subjectsData = {
               elo: [
                 "BMEEOGMA-CP"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat",
               code: "BMEEODHA-CS",
+              uniquecode: "",
               credit: 15,
               lecture: 0,
               seminar: 0,
@@ -2682,7 +3876,8 @@ subjectsData = {
               elo: [
                 "BMEEODHA-CT!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             }
           ],
           specializations: []
@@ -2697,6 +3892,7 @@ subjectsData = {
         {
           name: "Ingatlan-nyilvántartás és -értékbecslés",
           code: "BMEEOAFAT44",
+          uniquecode: "",
           credit: 3,
           lecture: 3,
           seminar: 0,
@@ -2706,11 +3902,13 @@ subjectsData = {
           felev: 4,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Geofizikai alapismeretek",
           code: "BMEEOAFAG42",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -2722,11 +3920,13 @@ subjectsData = {
           elo: [
             "BMETE90AX02"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Kiegyenlítő számítások",
           code: "BMEEOFTAG42",
+          uniquecode: "",
           credit: 4,
           lecture: 1,
           seminar: 0,
@@ -2739,11 +3939,13 @@ subjectsData = {
             "BMEEOAFAT42",
             "BMETE90AX02"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Nagyméretarányú térképezés",
           code: "BMEEOAFAG41",
+          uniquecode: "",
           credit: 4,
           lecture: 1,
           seminar: 2,
@@ -2755,11 +3957,13 @@ subjectsData = {
           elo: [
             "BMEEOAFAT44"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Geodéziai alaphálózatok",
           code: "BMEEOAFAG43",
+          uniquecode: "",
           credit: 4,
           lecture: 3,
           seminar: 1,
@@ -2771,11 +3975,13 @@ subjectsData = {
           elo: [
             "BMEEOFTAG42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Műholdas helymeghatározás",
           code: "BMEEOAFAG45",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -2785,11 +3991,63 @@ subjectsData = {
           felev: 5,
           HasSubstitues: true,
           elo: [],
-          substitutes: []
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Hidak és infrastruktúra szerkezetek",
+              code: "BMEEOHSAS43"
+            },
+            {
+              name: "Közlekedési hálózatok",
+              code: "BMEEOUVAI42"
+            },
+            {
+              name: "Városi környezetvédelem",
+              code: "BMEEOVKAI42"
+            }
+          ],
+          parentSpecializations: [
+            "geodezia"
+          ]
+        },
+        {
+          name: "Műholdas helymeghatározás",
+          code: "BMEEOAFAG45",
+          uniquecode: "BMEEOAFAG45_2",
+          credit: 3,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Vizsga",
+          felev: 5,
+          HasSubstitues: true,
+          elo: [],
+          substitutes: [
+            {
+              name: "Hidak és infrastruktúra szerkezetek",
+              code: "BMEEOHSAS43"
+            },
+            {
+              name: "Közlekedési hálózatok",
+              code: "BMEEOUVAI42"
+            },
+            {
+              name: "Városi környezetvédelem",
+              code: "BMEEOVKAI42"
+            }
+          ],
+          parentSpecializations: [
+            "epitmenyinformacio"
+          ]
         },
         {
           name: "Mérnökgeodézia",
           code: "BMEEOAFAG46",
+          uniquecode: "",
           credit: 5,
           lecture: 2,
           seminar: 2,
@@ -2801,11 +4059,13 @@ subjectsData = {
           elo: [
             "BMEEOFTAG42"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Térinformatikai modellezés",
           code: "BMEEOFTAG41",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 1,
@@ -2817,11 +4077,13 @@ subjectsData = {
           elo: [
             "BMEEOFTAT43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Fotogrammetria és lézerszkennelés",
           code: "BMEEOFTAG43",
+          uniquecode: "",
           credit: 4,
           lecture: 2,
           seminar: 0,
@@ -2831,11 +4093,13 @@ subjectsData = {
           felev: 5,
           HasSubstitues: false,
           elo: [],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Felsőgeodézia",
           code: "BMEEOAFAG44",
+          uniquecode: "",
           credit: 4,
           lecture: 3,
           seminar: 1,
@@ -2848,11 +4112,13 @@ subjectsData = {
             "BMEEOAFAG42",
             "BMEEOAFAG43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Alaphálózatok mérőgyakorlat",
           code: "BMEEOAFAG47",
+          uniquecode: "",
           credit: 2,
           lecture: 0,
           seminar: 0,
@@ -2864,11 +4130,13 @@ subjectsData = {
           elo: [
             "BMEEOAFAG43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Távérzékelés",
           code: "BMEEOFTAG44",
+          uniquecode: "",
           credit: 4,
           lecture: 2,
           seminar: 0,
@@ -2880,11 +4148,13 @@ subjectsData = {
           elo: [
             "BMEEOFTAG43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Térinformatika mérőgyakorlat",
           code: "BMEEOFTAG46",
+          uniquecode: "",
           credit: 2,
           lecture: 0,
           seminar: 0,
@@ -2896,11 +4166,13 @@ subjectsData = {
           elo: [
             "BMEEOFTAG41"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Geodézia és térinformatika projektfeladat",
           code: "BMEEODHAG41",
+          uniquecode: "",
           credit: 6,
           lecture: 0,
           seminar: 0,
@@ -2914,11 +4186,13 @@ subjectsData = {
             "BMEEOAFAG41",
             "BMEEOFTAG43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
         },
         {
           name: "Topográfia",
           code: "BMEEOFTAG45",
+          uniquecode: "",
           credit: 3,
           lecture: 2,
           seminar: 0,
@@ -2930,11 +4204,65 @@ subjectsData = {
           elo: [
             "BMEEOFTAT43"
           ],
-          substitutes: []
+          substitutes: [
+            {
+              name: "BIM az építőiparban",
+              code: "BMEEOFTAM41"
+            },
+            {
+              name: "Hidak és infrastruktúra szerkezetek",
+              code: "BMEEOHSAS43"
+            },
+            {
+              name: "Közlekedési hálózatok",
+              code: "BMEEOUVAI42"
+            },
+            {
+              name: "Városi környezetvédelem",
+              code: "BMEEOVKAI42"
+            }
+          ],
+          parentSpecializations: [
+            "geodezia"
+          ]
+        },
+        {
+          name: "Topográfia",
+          code: "BMEEOFTAG45",
+          uniquecode: "BMEEOFTAG45_2",
+          credit: 3,
+          lecture: 2,
+          seminar: 0,
+          lab: 1,
+          consultation: 0,
+          requirement: "Vizsga",
+          felev: 7,
+          HasSubstitues: true,
+          elo: [
+            "BMEEOFTAT43"
+          ],
+          substitutes: [
+            {
+              name: "Hidak és infrastruktúra szerkezetek",
+              code: "BMEEOHSAS43"
+            },
+            {
+              name: "Közlekedési hálózatok",
+              code: "BMEEOUVAI42"
+            },
+            {
+              name: "Városi környezetvédelem",
+              code: "BMEEOVKAI42"
+            }
+          ],
+          parentSpecializations: [
+            "epitmenyinformacio"
+          ]
         },
         {
           name: "Technikusi gyakorlat",
           code: "BMEEODHAG42",
+          uniquecode: "",
           credit: 0,
           lecture: 0,
           seminar: 0,
@@ -2948,7 +4276,26 @@ subjectsData = {
             "BMEEOAFAG41",
             "BMEEOFTAG43"
           ],
-          substitutes: []
+          substitutes: [],
+          parentSpecializations: []
+        },
+        {
+          name: "BIM az építőiparban",
+          code: "BMEEOFTAM41",
+          uniquecode: "",
+          credit: 3,
+          lecture: 2,
+          seminar: 0,
+          lab: 0,
+          consultation: 0,
+          requirement: "Félévközi",
+          felev: 5,
+          HasSubstitues: false,
+          elo: [],
+          substitutes: [],
+          parentSpecializations: [
+            "epitmenyinformacio"
+          ]
         }
       ],
       specializations: [
@@ -2960,6 +4307,7 @@ subjectsData = {
             {
               name: "Mérnöki létesítmények geodéziája",
               code: "BMEEOAFA-L1",
+              uniquecode: "",
               credit: 4,
               lecture: 2,
               seminar: 2,
@@ -2971,11 +4319,13 @@ subjectsData = {
               elo: [
                 "BMEEOAFAG46"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Geoinformatikai programozás",
               code: "BMEEOFTA-L2",
+              uniquecode: "",
               credit: 3,
               lecture: 0,
               seminar: 2,
@@ -2987,11 +4337,13 @@ subjectsData = {
               elo: [
                 "BMEEOFTAT42"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Minőségbiztosítás a geodéziában",
               code: "BMEEOAFA-L3",
+              uniquecode: "",
               credit: 4,
               lecture: 1,
               seminar: 2,
@@ -3003,11 +4355,13 @@ subjectsData = {
               elo: [
                 "BMEEODHAG41"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Térinformatikai adattárolás",
               code: "BMEEOFTA-L4",
+              uniquecode: "",
               credit: 4,
               lecture: 2,
               seminar: 1,
@@ -3019,11 +4373,13 @@ subjectsData = {
               elo: [
                 "BMEEOFTAG41"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Geoinformatika projektfeladat",
               code: "BMEEOAFA-LP",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -3035,11 +4391,13 @@ subjectsData = {
               elo: [
                 "BMEEODHAG41"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat előkészítő",
               code: "BMEEODHA-LT",
+              uniquecode: "",
               credit: 9,
               lecture: 0,
               seminar: 0,
@@ -3049,13 +4407,15 @@ subjectsData = {
               felev: 8,
               HasSubstitues: false,
               elo: [
-                "BMEEOFTA-LP"
+                "BMEEOAFA-LP"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat",
               code: "BMEEODHA-LS",
+              uniquecode: "",
               credit: 15,
               lecture: 0,
               seminar: 0,
@@ -3067,7 +4427,8 @@ subjectsData = {
               elo: [
                 "BMEEODHA-LT!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             }
           ],
           specializations: []
@@ -3080,6 +4441,7 @@ subjectsData = {
             {
               name: "Építmény-információs mod. és menedzsment",
               code: "BMEEOFTA-M1",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -3089,11 +4451,13 @@ subjectsData = {
               felev: 6,
               HasSubstitues: false,
               elo: [],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Építmény-információs rendszerek",
               code: "BMEEOFTA-M2",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -3105,11 +4469,13 @@ subjectsData = {
               elo: [
                 "BMEEOFTA-M1!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "BIM alkalmazások és technológiák",
               code: "BMEEOEMA-M3",
+              uniquecode: "",
               credit: 3,
               lecture: 2,
               seminar: 0,
@@ -3121,11 +4487,13 @@ subjectsData = {
               elo: [
                 "BMEEOFTAM41!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakági együttműködés BIM alapokon",
               code: "BMEEOTMA-M4",
+              uniquecode: "",
               credit: 3,
               lecture: 0,
               seminar: 0,
@@ -3137,11 +4505,13 @@ subjectsData = {
               elo: [
                 "BMEEOFTAM41!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Építmény-információs mod. és menedzs. proj.",
               code: "BMEEOEMA-MP",
+              uniquecode: "",
               credit: 6,
               lecture: 0,
               seminar: 0,
@@ -3151,13 +4521,17 @@ subjectsData = {
               felev: 7,
               HasSubstitues: false,
               elo: [
-                "BMEDHAI41"
+                "BMEEODHAS41",
+                "BMEEODHAI41",
+                "BMEEODHAG41"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat előkészítő",
               code: "BMEEODHA-MT",
+              uniquecode: "",
               credit: 9,
               lecture: 0,
               seminar: 0,
@@ -3169,11 +4543,13 @@ subjectsData = {
               elo: [
                 "BMEEOEMA-MP"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             },
             {
               name: "Szakdolgozat",
               code: "BMEEODHA-MS",
+              uniquecode: "",
               credit: 15,
               lecture: 0,
               seminar: 0,
@@ -3185,7 +4561,8 @@ subjectsData = {
               elo: [
                 "BMEEODHA-MT!"
               ],
-              substitutes: []
+              substitutes: [],
+              parentSpecializations: []
             }
           ],
           specializations: []

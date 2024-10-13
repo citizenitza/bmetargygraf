@@ -131,7 +131,7 @@ $(document).ready(function() {
         var found = false;
         var index = 0;
         for(var j = 0; j < StateDataArray.length; j++){
-            if(StateDataArray[j].uniquecode !== undefined){
+            if(StateDataArray[j].uniquecode !== undefined && StateDataArray[j].uniquecode != ""){
                 if(StateDataArray[j].uniquecode == unique){
                     if(StateDataArray[j].branch == "torzsanyag" || StateDataArray[j].branch == currentBranch){
                         //item found
