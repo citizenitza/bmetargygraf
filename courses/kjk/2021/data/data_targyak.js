@@ -66,7 +66,7 @@ subjectsData = {
                     substitutes:[],
                 },
                 {
-                    name: "Mérnöki alapismeretek",
+                    name: "Mérnöki alapismeretek / Mérnöki alapok",
                     code: "KOVRA190",
                     credit: 4,
                     lecture: 2,
@@ -417,7 +417,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 5,
-                    elo:["KOKAA146","KOKAA139~","TE90AX53$"],
+                    elo:["KOKAA139~","TE90AX53$"],
                 },
                 {
                     name: "Szabadon választható 3",
@@ -2012,7 +2012,7 @@ subjectsData = {
                     substitutes:[],
                 },
                 {
-                    name: "Mérnöki alapismeretek",
+                    name: "Mérnöki alapismeretek / Mérnöki alapok",
                     code: "KOVRA190",
                     credit: 4,
                     lecture: 2,
@@ -2338,7 +2338,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 5,
-                    elo:["KOKAA146","KOKAA139~","TE90AX53$"],
+                    elo:["KOKAA139~","TE90AX53$"],
                 },
                 {
                     name: "Közlekedés-gazdaságtan A",
@@ -2604,7 +2604,7 @@ subjectsData = {
                             consultation: 0,
                             requirement: "Félévközi jegy",
                             felev: 6,
-                            elo:["KOKKA185"],
+                            elo:[],
                             substitutes:[],
                         },
                         {
@@ -2741,7 +2741,7 @@ subjectsData = {
                             consultation: 0,
                             requirement: "Félévközi jegy",
                             felev: 6,
-                            elo:["KOKKA185"],
+                            elo:[],
                             substitutes:[],
                         },
                         {
@@ -2878,7 +2878,7 @@ subjectsData = {
                             consultation: 0,
                             requirement: "Félévközi jegy",
                             felev: 6,
-                            elo:["KOKKA185"],
+                            elo:[],
                             substitutes:[],
                         },
                         {
@@ -3015,7 +3015,7 @@ subjectsData = {
                             consultation: 0,
                             requirement: "Félévközi jegy",
                             felev: 6,
-                            elo:["KOKKA185"],
+                            elo:[],
                             substitutes:[],
                         },
                         {
@@ -3119,7 +3119,7 @@ subjectsData = {
                     substitutes:[],
                 },
                 {
-                    name: "Mérnöki alapismeretek",
+                    name: "Mérnöki alapismeretek / Mérnöki alapok",
                     code: "KOVRA190",
                     credit: 4,
                     lecture: 2,
@@ -3348,7 +3348,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Vizsga",
                     felev: 4,
-                    elo:["KOKAA146","KOKAA139~","TE90AX53$"],
+                    elo:["KOKAA139~","TE90AX53$"],
                 },
                 {
                     name: "Logisztikai információs rendszerek",

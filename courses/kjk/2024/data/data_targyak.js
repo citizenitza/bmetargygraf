@@ -132,7 +132,7 @@ subjectsData = {
                 },
                 {
                     name: "Electrotechnics – Electronics",
-                    code: "BMEKOKAA139 ",
+                    code: "BMEKOKAA139",
                     credit: 6,
                     lecture: 3,
                     seminar: 2,
@@ -569,7 +569,7 @@ subjectsData = {
                     consultation: 0,
                     requirement: "Exam",
                     felev: 6,
-                    elo:["BMETEMIBSGMAT3-0$","BMEKOKAA139~"],
+                    elo:["BMETEMIBSGMAT3-00$","BMEKOKAA139~"],
                     substitutes:[],
                 },
                 {
