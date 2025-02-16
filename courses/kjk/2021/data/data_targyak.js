@@ -584,8 +584,8 @@ subjectsData = {
                             consultation: 0,
                             requirement: "Félévközi jegy",
                             felev: 5,
-                            elo:[],
-                            substitutes:["KOGJA511"],
+                            elo:["KOGJA511"],
+                            substitutes:[],
                         },
                         {
                             name: "Gépjármű futóművek II.",
