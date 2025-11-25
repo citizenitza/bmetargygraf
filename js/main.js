@@ -19,8 +19,10 @@ function pageInit(_branch){
 		var spec = $("#Specializations").find(':selected').attr('data-szak');
         currentSpech = spec;
         LoadBranchElements(_branch,spec);
-        LoadSpecElements(_branch,spec);
-        SetActive(_branch,spec);
+        if (spec) {
+            LoadSpecElements(_branch,spec);
+            SetActive(_branch,spec);
+        }
         RefreshState();
     });
     //check for url param

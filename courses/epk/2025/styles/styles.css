@@ -1,0 +1,86 @@
+.sidebarInner{
+	background-color:#2c3e50;
+}
+.content{
+	background-color:#EEE;
+}
+.felev{
+	width:12.0%; 
+}
+.osztatlan{
+	width:8.5%; 
+}
+.felveheto{
+	background-color:#C0CEDC;
+	color:#333;
+	border:solid 1px #C0CEDC;
+}
+.felvett{
+	background-color:#6C8DAE;
+	color:#FFF;
+	border:solid 1px #6C8DAE;
+}
+.teljesitett{
+	background-color:#2c3e50;
+	color:#FFF;
+	border:solid 1px #2c3e50
+}
+.elokovetelmeny{
+	background-color:#e1b12c !important;
+	color:#fff!important;
+	border:solid 1px #e1b12c !important;	
+}
+.utokovetelmeny{
+		background-color:#c0392b;
+	color:#fff;
+	border:solid 1px #c0392b;	
+}
+.alairas{
+	background:linear-gradient(90deg,#0097e6 20%, #e1b12c 20%);
+	color:#fff;
+	border:solid 1px #999999;
+}
+.azonosfelev{
+	background:linear-gradient(90deg,#e1b12c 80%, #8c7ae6 20%);
+	color:#fff;
+	border:solid 1px #999999;
+}
+.alairasAzonosfelev{
+	background:linear-gradient(90deg,#0097e6 20%, #e1b12c 20%, #e1b12c 80%, #8c7ae6 20%);
+	color:#fff;
+	border:solid 1px #999999;
+}
+.alairasuto{
+	background:linear-gradient(90deg,#0097e6 20%, #c0392b 20%);
+	color:#fff;
+	border:solid 1px #999999;
+}
+.azonosfelevuto{
+	background:linear-gradient(90deg,#c0392b 80%, #8c7ae6 20%);
+	color:#fff;
+	border:solid 1px #999999;
+}
+.alairasAzonosfelevuto{
+	background:linear-gradient(90deg,#0097e6 20%, #c0392b 20%, #c0392b 80%, #8c7ae6 20%);
+	color:#fff;
+	border:solid 1px #999999;
+}
+.gomb{
+	background-color:#2c3e50;
+}
+.gomb:hover{
+	background-color:#6C8DAE;
+}
+.Telj{
+	background-color: #2c3e50;
+}
+.Felv{
+	background-color:#6C8DAE;
+}
+.targyInfo{
+	background:#C0CEDC;
+	border:solid 1px #999999;
+}
+.szakiranyWrap select{
+	background:#C0CEDC;
+}
