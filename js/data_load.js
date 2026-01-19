@@ -43,27 +43,8 @@ function SpecializationsChanged(_branch){
                 LoadBranchElements(_branch,spec);
                 if (spec) {
                     LoadSpecElements(_branch,spec);
-                    SetActive(_branch,spec);
                 }
-                RefreshState();
-            }else if(subjectsData.CurriculumType == "EPK2025"){
-                for(var i=1;i<=10;i++){ 
-                    try{
-                        var id = i < 10 ? "0" + i : i;
-                        document.getElementById("agazat_" + id).innerHTML ="";
-                    }catch{; }
-                    try{
-                        var id = i < 10 ? "0" + i : i;
-                        document.getElementById("spec_" + id).innerHTML = "";
-                    }catch{; }
-                }
-                var spec = $("#Specializations").find(':selected').attr('data-szak');
-                currentSpech = spec;
-                LoadBranchElements(_branch,spec);
-                if (spec) {
-                    LoadSpecElements(_branch,spec);
-                    SetActive(_branch,spec);
-                }
+                SetActive(_branch,spec);
                 RefreshState();
             }else if(subjectsData.CurriculumType == "Simple"){
                 for(var i=0;i<7;i++){ // for the 4 semester with branch and spec subjects
